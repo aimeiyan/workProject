@@ -1,0 +1,896 @@
+@charset "utf-8";
+
+/*begin reset */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, pre, form, p, blockquote, input, abbr, article, aside, figcaption, fieldset, figure, footer, header, mark, meter, menu, nav, output, progress, section, summary, time, button {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+iframe, a, img, button {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+article, aside, footer, header, nav, section, figure, figcaption {
+    display: block;
+}
+
+input, textarea, select, button {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+i, em {
+    font-style: normal;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tfbankstyle-clear {
+    clear: both;
+}
+
+.tfbankstyle-fleft {
+    float: left;
+    border-right:gold;
+}
+
+.tfbankstyle-fright {
+    float: right;
+}
+
+.tfbankstyle-clearfix:before, .tfbankstyle-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.tfbankstyle-clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.jnbankstyle-clearfix {
+    zoom: 1;
+}
+
+.jnbankstyle-none {
+    display: none;
+}
+
+.jnbankstyle-hidden {
+    visibility: hidden;
+}
+
+.jnbankstyle-inline-block {
+    display: inline-block;
+}
+
+.jnbankstyle-block {
+    display: block;
+}
+
+.jnbankstyle-t-center {
+    text-align: center;
+}
+
+.jnbankstyle-t-right {
+    text-align: right;
+}
+
+.jnbankstyle-t-left {
+    text-align: left;
+}
+
+.jnbankstyle-t-indent {
+    text-indent: 2em;
+}
+
+.jnbankstyle-middle {
+    vertical-align: middle;
+}
+
+.jnbankstyle-hand {
+    cursor: pointer;
+}
+
+input[type=submit], input[type=button], input[type=text], textarea, button, select {
+    -webkit-appearance: none;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+@media screen and (min-width: 1880px) {
+
+    /*begin 登录页面样式*/
+
+    /*end 首页样式*/
+}
+.jnbankstyle-mt5 {
+    margin-top: 5px !important;
+}
+
+.jnbankstyle-mt10 {
+    margin-top: 10px !important;
+}
+
+.jnbankstyle-mt15 {
+    margin-top: 15px !important;
+}
+
+.jnbankstyle-mt20 {
+    margin-top: 20px !important;
+}
+
+.jnbankstyle-mt25 {
+    margin-top: 25px !important;
+}
+
+.tfbankstyle-mt30 {
+    margin-top: 30px !important;
+}
+
+.jnbankstyle-mt40 {
+    margin-top: 40px !important;
+}
+
+.jnbankstyle-mt50 {
+    margin-top: 50px !important;
+}
+
+.jnbankstyle-mb5 {
+    margin-bottom: 5px !important;
+}
+
+.jnbankstyle-mb10 {
+    margin-bottom: 10px !important;
+}
+
+.jnbankstyle-mb15 {
+    margin-bottom: 15px !important;
+}
+
+.jnbankstyle-mb20 {
+    margin-bottom: 20px !important;
+}
+
+.jnbankstyle-mb25 {
+    margin-bottom: 25px !important;
+}
+
+.jnbankstyle-mb30 {
+    margin-bottom: 30px !important;
+}
+
+.jnbankstyle-ml5 {
+    margin-left: 5px !important;
+}
+
+.jnbankstyle-ml10 {
+    margin-left: 10px !important;
+}
+
+.jnbankstyle-ml15 {
+    margin-left: 15px !important;
+}
+
+.jnbankstyle-ml20 {
+    margin-left: 20px !important;
+}
+
+.jnbankstyle-ml30 {
+    margin-left: 30px !important;
+}
+
+.jnbankstyle-ml40 {
+    margin-left: 40px !important;
+}
+
+.jnbankstyle-ml50 {
+    margin-left: 50px !important;
+}
+
+.jnbankstyle-ml60 {
+    margin-left: 60px !important;
+}
+
+.jnbankstyle-mr5 {
+    margin-right: 5px !important;
+}
+
+.jnbankstyle-mr10 {
+    margin-right: 10px !important;
+}
+
+.jnbankstyle-mr15 {
+    margin-right: 15px !important;
+}
+
+.jnbankstyle-mr20 {
+    margin-right: 20px !important;
+}
+
+.jnbankstyle-mr25 {
+    margin-right: 25px !important;
+}
+
+.jnbankstyle-mr30 {
+    margin-right: 30px !important;
+}
+
+.jnbankstyle-mr40 {
+    margin-right: 40px !important;
+}
+
+.jnbankstyle-mr50 {
+    margin-right: 50px !important;
+}
+
+.jnbankstyle-mr60 {
+    margin-right: 60px !important;
+}
+
+.jnbankstyle-pl5 {
+    padding-left: 5px !important;
+}
+.tfbankstyle-pl0 {
+    padding-left: 0 !important;
+}
+
+.jnbankstyle-pl15 {
+    padding-left: 15px !important;
+}
+
+.jnbankstyle-pl10 {
+    padding-left: 10px !important;
+}
+
+.jnbankstyle-pl20 {
+    padding-left: 20px !important;
+}
+
+.jnbankstyle-pt10 {
+    padding-top: 10px !important;
+}
+
+.jnbankstyle-pt20 {
+    padding-top: 20px !important;
+}
+
+.jnbankstyle-pt5 {
+    padding-top: 5px !important;
+}
+
+.jnbankstyle-pt15 {
+    padding-top: 15px !important;
+}
+
+.jnbankstyle-pt25 {
+    padding-top: 25px !important;
+}
+
+.jnbankstyle-pb5 {
+    padding-bottom: 5px !important;
+}
+
+.jnbankstyle-pb10 {
+    padding-bottom: 10px !important;
+}
+
+.jnbankstyle-pb20 {
+    padding-bottom: 20px !important;
+}
+
+.jnbankstyle-pb15 {
+    padding-bottom: 15px !important;
+}
+
+.jnbankstyle-pr10 {
+    padding-right: 10px !important;
+}
+
+.jnbankstyle-pr15 {
+    padding-right: 15px !important;
+}
+
+.jnbankstyle-pr20 {
+    padding-right: 20px !important;
+}
+
+.jnbankstyle-f-12 {
+    font-size: 12px !important;
+}
+
+.jnbankstyle-f-14 {
+    font-size: 14px !important;
+}
+
+.jnbankstyle-f-16 {
+    font-size: 16px !important;
+}
+
+.jnbankstyle-f-17 {
+    font-size: 17px !important;
+}
+
+.jnbankstyle-f-15 {
+    font-size: 15px !important;
+}
+
+.jnbankstyle-f-18 {
+    font-size: 18px !important;
+}
+
+.jnbankstyle-f-20 {
+    font-size: 20px !important;
+}
+
+.jnbankstyle-f-22 {
+    font-size: 22px !important;
+}
+
+.jnbankstyle-f-24 {
+    font-size: 24px !important;
+}
+
+.jnbankstyle-f-26 {
+    font-size: 26px !important;
+}
+
+.jnbankstyle-f-36 {
+    font-size: 36px !important;
+}
+
+.jnbankstyle-f-50 {
+    font-size: 50px !important;
+}
+
+.jnbankstyle-f-w {
+    font-weight: bold !important;
+}
+
+.jnbankstyle-w100 {
+    width: 100% !important;
+}
+
+body {
+    font: 400 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+
+input, button, textarea {
+    font: 400 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    border: none;
+}
+
+u {
+    color: #eb7676;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a.a-u {
+    text-decoration: underline !important;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #ccc !important;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #ccc !important;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #ccc !important;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #ccc !important;
+}
+
+.jnbankstyle-txt-a97334 {
+    color: #6a3800 !important;
+}
+
+/*end reset */
+
+/*begin 登陆页样式*/
+.tfbankstyle-login-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 680px;
+    background: url("../images/tflogin_bg.png") no-repeat 50% 100% #f5f2ee;
+}
+.tfbankstyle_login_title{
+
+    font-size:30px;
+    color:#333;
+
+}
+.tfbankstyle-login-left{
+
+    margin:90px 10px 100px 70px;
+}
+.tfbankstyle-login-page .tfbankstyle-login-bg {
+    position: absolute;
+    height: 708px;
+    width: 100%;
+    top: 35%;
+    left: 0;
+    margin-top: -154px;
+}
+
+
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box {
+    width: 849px;
+    height:500px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    border:1px solid #eee;
+    box-shadow:0px 0px 6px #dfdfdf;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form {
+    position: absolute;
+    width: 280px;
+
+    right: 87px;
+    top: 37px;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input {
+
+    position: relative;
+
+    margin-top:30px;
+
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input input{
+    position: absolute;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    height: 30px;
+    margin-top:20px;
+    width:252px;
+    top:16px;
+    left: 0px;
+    padding-left:10px;
+
+}
+ 
+.tfbankstyle-login-input::-webkit-input-placeholder {
+  color: red;
+}
+ 
+.tfbankstyle-login-input:-moz-placeholder {
+  color: red;
+}
+ 
+.tfbankstyle-login-input:-ms-input-placeholder {
+  color: red;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input label {
+ 
+    color: #333;
+
+    font-size:20px;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input-passwd {
+    margin-top: 28px;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox {
+    position: relative;
+    margin-top: 38px;
+    width:120px;
+    height: 50px;
+}
+/*begin 1920分辨率的页面样式*/
+
+@media screen and (min-width: 1880px) {
+
+    /*begin 登陆页面样式*/
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form
+.tfbankstyle-login-checkbox .tfbankstyle-remember-password-action label {
+   font-size: 14px;
+    color:#333;
+}
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input label {
+
+    color: #333;
+    font-size:22px;
+}
+.tfbankstyle_login_title{
+
+    font-size:36px;
+    color:#333;
+
+}
+    /*end 登陆页面样式*/
+}
+
+/*end 1920分辨率的页面样式*/
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form
+.tfbankstyle-login-checkbox .tfbankstyle-remember-password-action label {
+
+   font-size: 12px;
+    color:#333;
+
+}
+.tfbankstyle-forget-password{
+    color:#337ec7;
+    float: right;
+    width:70px;
+    height: 30px;
+}
+ .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action input {
+  
+     width:20px; 
+     height:20px; 
+
+ } 
+
+/*.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action img {*/
+    /*position: absolute;*/
+    /*left: 1px;*/
+    /*top: 4px;*/
+    /*display: block;*/
+/*}*/
+ 
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action .tfbankstyle-check {
+    display: none;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-active .tfbankstyle-check {
+    display: block;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-active .tfbankstyle-empty {
+    display: none;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-login-btn {
+    margin: 40px 0 40px 0 ;
+}
+.tfbankstyle-login-login-btn img{
+    width:270px;
+}
+
+#tfbankstyle-erroer-Msg{
+    position: absolute;
+    top: -26px;
+    left: 63px;
+    color: #888;
+    font-size: 12px;
+}
+
+/*end 登陆页样式*/
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+/*begin 领导查询样式*/
+
+.tfbankstyle_leaderQuery_container {
+    background: url("../images/tfbank_homepage_bg.png") no-repeat;
+}
+
+.tfbankstyle_leaderQuery_container .tfankstyle_leaderQuery_top {
+    height: 45px;
+    background: url("../images/tfbank_homepage_top.png") repeat-x 0 0;
+}
+
+.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main .tfbankstyle_leaderQuery_logo {
+    position: relative;
+    height:70px;
+}
+
+.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main .tfbankstyle_leaderQuery_logo .tfbankstyle_leaderQuery_logo_right {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom:16px;
+    font-weight: bold;
+}
+
+.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main .tfbankstyle_leaderQuery_logo .tfbankstyle_leaderQuery_logo_right .tfbankstyle_leaderQuery_tuichu {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 15px;
+    background: url("../images/tfbank_homepage_tuichu.png") no-repeat 0 2px;
+}
+
+/*BEGIN 领导查询专有样式*/
+.tfbankstyle_leaderQuery_inner-container {
+  
+    margin: 0 auto;
+     
+}
+.tfbankstyle_avatar{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+}
+.tfbankstyle_leaderQuery_leader_nav li {
+    float: left;
+    height: 60px;
+    margin-right: 50px;
+}
+
+
+ .tfbankstyle_leaderQuery_leader_nav li:hover a {
+    color: #333;
+}
+
+  .tfbankstyle_leaderQuery_leader_nav li a {
+    color: #6a3800;
+    display: block;
+    text-align: center;
+    padding: 20px 0 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.tfbankstyle_leaderQuery_content{
+ 
+
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_leader_nav li.tfbankstyle_leaderQuery_active a {
+    color: #ae0a29;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_main {
+     
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container ul li{
+    float: left;
+    width:33%;
+     
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper {
+    padding-left: 20px;
+    
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper table {
+    line-height: 2;
+    margin-top: 5px;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper table a {
+    color: #3f3f3f;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_zuo {
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 56%;
+    height: 155px;
+    float: left;
+    box-shadow: 0px 0px 6px #dfdfdf;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_zhong {
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 960px;
+    height: 155px;
+    float: left;
+    box-shadow:0px 0px 6px #dfdfdf;
+    margin-top:20px;
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_bottom{
+	background-color: #fff;
+    padding: 10px 10px;
+    width: 980px;
+    height: 250px;
+    float: left;
+    box-shadow: 0px 0px 6px #dfdfdf;
+    margin-top:20px;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_you {
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 33%;
+    height: 155px;
+    float: right;
+    box-shadow: 0px 0px 6px #dfdfdf;
+
+}
+.tfbankstyle_leaderQuery_organ_summary{
+	clear:both;
+
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2.5;
+    position: relative;
+    color: #333;
+}
+.tfbankstyle_leaderQuery_big{
+	font-size: 22px;
+	font-weight: bold;
+	 
+
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title .tfbankstyle_leaderQuery_english {
+    font-size: 12px;
+    color: #999;
+    margin-left: 25px;
+}
+ 
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper table a .tfbankstyle_dot{
+    color: #6a3800;
+    font-weight: bold;
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title .tfbankstyle_leaderQuery_more {
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    top: 12px;
+    right:30px;
+    font-size: 12px;
+    color:#999;
+     
+}
+.tfbankstyle_leaderQuery_date{
+	padding-left:80px;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title_bg {
+    margin: 40px 0;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_organ_info {
+    width: 332px;
+    padding: 20px;
+    background: #fff;  
+    float: left;   
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_organ_chart {
+    width: 550px;
+    float: right;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_double_angle_right {
+    margin-right: 13px;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_organ_summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part:first-child {
+    width: 40%;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_organ_summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper {
+    margin-top: 10px;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_organ_summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper p {
+    line-height: 1.9;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary {
+    margin-top: -75px;
+    border:1px solid #333;
+}
+.tfbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container {
+	 box-shadow: 0px 0px 10px #ccc;
+    background: #fff;
+    height: 500px;
+    width: 100%;
+    border:1px solid red;
+}
+
+.tfbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part {
+    width: 100%;
+    box-shadow: 0px 0px 10px #ccc;
+    background: #fff;
+    height: 500px;
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper{
+	
+	height:500px;
+}
+.tfbankstyle_leaderQuery_part_wrapper{
+	height:500px;
+}
+.tfbankstyle_leaderQuery_subwrapper{
+	border-top:2px solid gold;
+}
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper ul li {
+    width: 33.33%;
+    float: left;
+}
+ 
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper ul li > div {
+    width: 333px;
+    height: 333px;
+    margin: 0 auto;
+}
+
+.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_t_ae0c2a {
+    color: #ae0c2a;
+}
+
+/*END 领导查询专有样式*/
+
+.tfbankstyle_leaderQuery_footer {   
+    height:80px;
+    line-height: 80px;  
+    color: #6a3800;
+    font-size: 12px;   
+    clear:both;
+    margin-top:20px;
+    text-align: center;
+}
+
+/*end 领导查询样式*/
+ 
