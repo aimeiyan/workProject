@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>数据列表</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">
+    <link type="text/css" rel="stylesheet" href="../js/ueditor/themes/default/css/ueditor.css">
+    <link type="text/css" rel="stylesheet"
+          href="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link type="text/css" rel="stylesheet"
+          href="../js/third/jQuery-Timepicker-Addon-master/jquery-ui-timepicker-addon.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/formData.css">
+</head>
+<body>
+<div class="main-page">
+    <!-- Left panel : Navigation area -->
+    <!-- Note: This width of the aside area can be adjusted through LESS variables -->
+
+    <!-- END NAVIGATION -->
+    <div id="main">
+        <div id="content">
+            <div class="page-name">
+                <div class="subpage-name">
+                    <h1 class="page-title"><i class="page-icon fa-home"></i>评测详情</h1>
+                </div>
+            </div>
+            <div class="widget-grid">
+                <div class="header">
+                    <span class="widget-icon"></span>
+                </div>
+                <div class="widget-body">
+                    <form id="smart-form-register" method="post" action="/" class="smart-form" autocomplete="off">
+                        <div class="fieldset">
+                            <div class="section">
+                                <label class="label">标题 *</label>
+
+                                <div class="input"><i class="icon-append fa fa-phone"></i>
+                                    <input id="phone" name="phone" type="text" autocomplete="off">
+
+                                    <div class="errorMessage">不可为空白</div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <label class="label">作者 *</label>
+
+                                <div class="input"><i class="icon-append fa fa-user"></i>
+                                    <input type="text" name="username" autocomplete="off">
+
+                                    <div class="errorMessage">不可为空白</div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <label class="label">发布时间 *</label>
+
+                                <div class="input"><i class="icon-append fa fa-time"></i>
+                                    <input type="text" name="issue-time" autocomplete="off" id="calendar">
+
+                                    <div class="errorMessage">不可为空白</div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <label class="label">文章类型 *</label>
+
+                                <div class="select">
+                                    <!--<i class="icon-append fa fa-user"></i>-->
+                                    <select name="IDType" autocomplete="off">
+                                        <option value="0" selected="" disabled="">请选择</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+
+                                    <div class="errorMessage">不可为空白</div>
+                                </div>
+                            </div>
+                            <div class="section newstextarea">
+                                <label class="label">摘要 *</label>
+                                <textarea rows="4" name="earnDetail" autocomplete="off"></textarea>
+
+                                <div class="errorMessage">不可为空白</div>
+                            </div>
+                            <div class="section newstextarea">
+                                <label class="label">正文内容 *</label>
+                                <script type="text/plain" id="myEditor" style="width:100%">
+                                    <p style="font-size:13px;">jsierufoegr</p>
+
+
+
+
+
+
+
+                                </script>
+                                <div class="errorMessage">不可为空白</div>
+                            </div>
+
+                        </div>
+                        <div class="footer">
+                            <button type="submit" class="btn btn-primary">
+                                创建
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                浏览
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                创建并发布
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+
+<!--BEGIN 编辑器-->
+<script type="text/javascript" src="../js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="../js/ueditor/ueditor.all.js"></script>
+<script type="text/javascript" src="../js/ueditor/third-party/zeroclipboard/ZeroClipboard.js"></script>
+<script type="text/javascript" src="../js/ueditor/third-party/codemirror/codemirror.js"></script>
+<!--END 编辑器-->
+<script type="text/javascript"
+        src="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+
+<script type="text/javascript"
+        src="../js/third/jQuery-Timepicker-Addon-master/jquery-ui-timepicker-addon.js"></script>
+
+<script>
+    /*
+     BEGIN 加载编辑器
+     */
+    $(function () {
+        window.renderEditor = function (textAreaID, width, autoHeight) {
+            editor = new UE.getEditor(textAreaID, {
+                initialFrameWidth: width,
+                initialFrameHeight: 400,
+                toolbars: [
+                    ["fontsize", "Bold", "Italic", "forecolor", "|", "insertorderedlist", "insertunorderedlist", "blockquote", "|", "simpleupload", "insertimage", "insertvideo", "Link", "|", "justifyleft", "justifycenter", "justifyright"]
+                ],
+                fontsize: [14, 16, 18],
+                wordCount: false,
+                elementPathEnabled: false,
+                autoHeightEnabled: autoHeight,
+                autoFloatEnabled: true,
+                topOffset: 60,
+                enableContextMenu: false,
+                customDomain: true,
+                pasteplain: true   //不允许粘贴样式
+            });
+
+            //对ueditor.min.js增加判断图片大小,回复框图片尺寸
+            editor.addListener('ready', function (editor) {
+                $('iframe').addClass('changeSize');
+            });
+
+
+            return editor;
+        };
+
+        window.commentEditor = renderEditor('myEditor', '100%', true);
+
+        /*
+         END 加载编辑器
+         */
+
+
+        /*
+         BEGIN dateTime effect
+         */
+        $.datepicker.regional["zh-CN"] = {
+            closeText: "关闭",
+            prevText: "&#x3c;上月",
+            nextText: "下月&#x3e;",
+            currentText: "今天",
+            monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthNamesShort: ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二"],
+            dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            dayNamesShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+            weekHeader: "周",
+            dateFormat: "yy-mm-dd",
+            firstDay: 1,
+            isRTL: !1,
+            showMonthAfterYear: !0,
+            yearSuffix: "年"
+        };
+
+        $.datepicker.setDefaults($.datepicker.regional["zh-CN"]);
+
+        var myControl = {
+            create: function (tp_inst, obj, unit, val, min, max, step) {
+                $('<input class="ui-timepicker-input" value="' + val + '" style="width:50%">')
+                        .appendTo(obj)
+                        .spinner({
+                            min: min,
+                            max: max,
+                            step: step,
+                            change: function (e, ui) { // key events
+                                // don't call if api was used and not key press
+                                if (e.originalEvent !== undefined)
+                                    tp_inst._onTimeChange();
+                                tp_inst._onSelectHandler();
+                            },
+                            spin: function (e, ui) { // spin events
+                                tp_inst.control.value(tp_inst, obj, unit, ui.value);
+                                tp_inst._onTimeChange();
+                                tp_inst._onSelectHandler();
+                            }
+                        });
+                return obj;
+            },
+            options: function (tp_inst, obj, unit, opts, val) {
+                if (typeof(opts) == 'string' && val !== undefined)
+                    return obj.find('.ui-timepicker-input').spinner(opts, val);
+                return obj.find('.ui-timepicker-input').spinner(opts);
+            },
+            value: function (tp_inst, obj, unit, val) {
+                if (val !== undefined)
+                    return obj.find('.ui-timepicker-input').spinner('value', val);
+                return obj.find('.ui-timepicker-input').spinner('value');
+            }
+        };
+
+        $("[name=issue-time]").datetimepicker({
+            controlType: myControl,
+            timeText: '时间',
+            hourText: '时',
+            minuteText: '分',
+            currentText: '现在',
+            closeText: '关闭',
+            dateFormat: "yy-mm-dd",
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            changeYear: true,          // 年下拉菜单
+            changeMonth: true          // 月下拉菜单
+        });
+
+        /*
+         END dateTime effect
+         */
+    })
+
+</script>
+</body>
+</html>

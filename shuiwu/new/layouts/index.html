@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>我要办税</title>
+    <link rel="stylesheet" type="text/css" href="../css/webappReset.css">
+    <link href="../third/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../third/swiper/swiper.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="row">
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a href="#"><img src="../images/slider/slider_00.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/slider/slider_01.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/slider/slider_02.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/slider/slider_03.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/slider/slider_04.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/slider/slider_05.jpg" alt=""></a></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="tax-project-wrapper">
+        <div class="tax-project">
+            <ul class="clearfix">
+                <li><a href="#">
+                    <div><i class="icon"></i></div>
+                    <p class="txt">身份绑定</p></a></li>
+                <li><a href="#">
+                    <div><i class="icon"></i></div>
+                    <p class="txt">申报缴税</p></a></li>
+                <li><a href="#">
+                    <div><i class="icon"></i></div>
+                    <p class="txt">版税指南</p></a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="#">
+                    <div><i class="icon"></i></div>
+                    <p class="txt">预约办税</p></a></li>
+                <li><a href="#">
+                    <div><i class="icon"></i></div>
+                    <p class="txt">办税厅实况</p></a></li>
+                <li><a href="#">
+                    <div><i class="icon"></i></div>
+                    <p class="txt">其他</p></a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="footer"><strong>Copyright</strong> 渠县国家税务局 © 2016</div>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../third/swiper/swiper.min.js"></script>
+<script>
+
+    /*Begin banner slider effect*/
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true
+    });
+    /*END banner slider effect*/
+
+</script>
+</body>
+</html>

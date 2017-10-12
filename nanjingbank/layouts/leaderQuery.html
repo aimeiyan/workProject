@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>领导查询</title>
+    <!--<link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">-->
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="page-container leader-query">
+    <div class="top-header">
+        <div class="inner-container clearfix">
+            <div class="fright">
+                <span>李想，您好，欢迎登录！</span><a href="login.html"><span class="t-ca2222 ml10">退出登录</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="inner-container clearfix">
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+            <div class="navigation fright">
+                <ul class="clearfix menu">
+                    <li><a href="index.html">HR首页</a></li>
+                    <li class="active"><a href="leaderQuery.html">领导查询</a></li>
+                    <li><a href="employeeSelfService.html">员工自助</a></li>
+                    <li><a href="#">公共下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-inner"></div>
+    </div>
+    <div class="content">
+        <div class="inner-container clearfix">
+            <div class="leader-nav">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">机构情况</a></li>
+                    <li><a href="#">人员情况</a></li>
+                    <li><a href="#">人员变动</a></li>
+                    <li><a href="#">考核信息</a></li>
+                    <li><a href="#">报表名册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="part-wrapper">
+            <div class="inner-container clearfix">
+                <div class="part fleft">
+                    <h3 class="title">最新公告<a class="more" href="#">More&gt;&gt;</a>
+                    </h3>
+
+                    <div class="subwrapper">
+                        <table class="w100">
+                            <tbody>
+                            <tr>
+                                <td><img class="double-angle-right" src="../images/double-angle-right.png" alt="">新入职员工张明等待您签订入职合同
+                                </td>
+                                <td class="date">2016-02-18</td>
+                            </tr>
+                            <tr>
+                                <td><img class="double-angle-right" src="../images/double-angle-right.png" alt="">南京银行荣获“2015年度银行卡跨行交易技术运营水...
+                                </td>
+                                <td class="date">2016-02-18</td>
+                            </tr>
+                            <tr>
+                                <td><img class="double-angle-right" src="../images/double-angle-right.png" alt="">南京银行互联网金融新品“南京e贷”上线运营
+                                </td>
+                                <td class="date">2016-02-18</td>
+                            </tr>
+                            <tr>
+                                <td><img class="double-angle-right" src="../images/double-angle-right.png" alt="">南京银行互联网金融新品“南京e贷”上线运营
+                                </td>
+                                <td class="date">2016-02-18</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="part fright">
+                    <h3 class="title">常用查询<a class="more" href="#">More&gt;&gt;</a>
+                    </h3>
+
+                    <div class="subwrapper">
+                        <table class="w100 border">
+                            <tbody>
+                            <tr>
+                                <td>本年内最新任免情况查询
+                                </td>
+                                <td>本年内最新任免情况查询</td>
+                            </tr>
+                            <tr>
+                                <td>本年内最新入行人员情况查询
+                                </td>
+                                <td>本年内最新入行人员情况查询</td>
+                            </tr>
+                            <tr>
+                                <td>本年内离职人员情况查询
+                                </td>
+                                <td>本年内离职人员情况查询</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part-wrapper organ-summary">
+            <div class="inner-container clearfix">
+                <div class="part fleft">
+                    <h3 class="title">机构概述
+                    </h3>
+
+                    <div class="subwrapper">
+                        <p>截止2013年12月，全行下有网点<span class="t-ca2222">224</span>家，总行1家，支行223家，村镇一行2家。</p>
+
+                        <p>一级支行<span class="t-ca2222">31</span>家，二级支行<span class="t-ca2222">192</span>家，总行营业部1家。</p>
+
+                        <p>其中，一级一类支行10家，异地支行3家</p>
+
+                        <p>一级二类支行18家</p>
+
+                        <p>二级一类支行48家</p>
+
+                        <p>二级二类支行93家</p>
+
+                        <p>二级三雷支行51家</p>
+                    </div>
+                </div>
+                <div class="part fright clearfix">
+                    <div id="organ-summary-container" style="width:600px;height:300px;float:right;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="part-wrapper personal-summary">
+            <div class="inner-container clearfix">
+                <div class="part">
+                    <h3 class="title">人员概述
+                    </h3>
+
+                    <div class="subwrapper">
+                        <ul class="clearfix">
+                            <li>
+                                <div id="age-summary-container"></div>
+
+                            </li>
+                            <li>
+                                <div id="academic-summary-container"></div>
+                            </li>
+                            <li>
+                                <div id="professional-summary-container"></div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="part fright">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer t-center">
+        版权所有@南京银行股份有限公司
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/highcharts.js"></script>
+<script type="text/javascript" src="../js/highcharts-3d.js"></script>
+
+<script type="text/javascript" src="../js/custom.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /*
+         BEGIN 机构数量图表
+         */
+        $('#organ-summary-container').highcharts({
+            title: {
+                text: '',
+                x: -20 //center
+            },
+            xAxis: {
+                categories: ['一分行', '二分行', '三分行', '四分行', '五分行', '六分行', '七分行', '八分行', '九分行', '十分行', '十一分行', '十二分行']
+            },
+            yAxis: {
+                title: {
+                    offset: 0,
+                    rotation: 0,
+                    align: 'high',
+                    y: -20,
+                    text: '数量 (家)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: '家'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'center',
+                verticalAlign: 'top',
+                borderWidth: 0
+            },
+            series: [{
+                name: '机构数量',
+                data: [90, 80, 80, 70, 90, 100, 110, 120, 90, 100, 110, 100]
+            }],
+            credits: {
+                enabled: false
+            }
+        });
+        /*
+         END 机构数量图表
+         */
+        /*
+         BEGIN 年龄构成图表
+         */
+        $('#age-summary-container').highcharts({
+            chart: {
+                renderTo: 'container',
+                type: 'pie',
+                backgroundColor: '#f6f6f6',
+                options3d: {
+                    enabled: true,
+                    alpha: 45
+                }
+            },
+            colors: [
+                '#990099',
+                '#3366cc',
+                '#ca2222',
+                '#109618'
+            ],
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+//                x: 0,
+//                y: 150,
+                borderWidth: 0,
+                labelFormatter: function () {
+                    return this.name + ' ' + this.y + '人&nbsp';
+                },
+                useHTML: true
+
+            },
+            title: {
+                align: 'left',
+                style: {
+                    color: "#ca2222",
+                    fontWeight: 'bold',
+                    fontFamily: 'Microsoft Yahei',
+                    fontSize: "16px"
+                },
+                text: '年龄构成'
+            },
+            plotOptions: {
+                pie: {
+                    innerSize: 60,
+                    depth: 25,
+                    showInLegend: true
+
+                },
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function () {
+                            return Math.round(this.percentage * 100) / 100 + ' %';
+                        },
+                        distance: 5,
+                        color: '#333333'
+                    }
+                }
+            },
+            tooltip: {
+                valueSuffix: '人'
+            },
+            series: [{
+                name: ' ',
+                data: [
+                    ['30岁及以下', 1000],
+                    ['31-40岁', 975],
+                    ['41-50岁', 1119],
+                    ['50岁以上', 103]
+                ]
+            }],
+            credits: {
+                enabled: false
+            }
+        });
+
+        /*
+         END 年龄构成图表
+         */
+
+        /*
+         BEGIN 学历构成图表
+         */
+        $('#academic-summary-container').highcharts({
+            chart: {
+                type: 'pie',
+                backgroundColor: '#f6f6f6',
+                options3d: {
+                    enabled: true,
+                    alpha: 45
+                }
+            },
+            colors: [
+                '#990099',
+                '#3366cc',
+                '#ca2222',
+                '#109618',
+                '#f8a20f'
+            ],
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                borderWidth: 0,
+                labelFormatter: function () {
+                    return this.name + ' ' + this.y + '人&nbsp';
+                },
+                useHTML: true
+
+            },
+            title: {
+                align: 'left',
+                style: {
+                    color: "#ca2222",
+                    fontWeight: 'bold',
+                    fontSize: "16px",
+                    fontFamily: 'Microsoft Yahei'
+                },
+                text: '学历构成'
+            },
+            plotOptions: {
+                pie: {
+                    innerSize: 60,
+                    depth: 25,
+                    showInLegend: true
+                },
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function () {
+                            return Math.round(this.percentage * 100) / 100 + ' %';
+                        },
+                        distance: 5,
+                        color: '#333333'
+                    }
+                }
+            },
+            series: [{
+                name: ' ',
+                data: [
+                    ['博士研究生', 726],
+                    ['硕士研究生', 150],
+                    ['本科', 1200],
+                    ['大专', 698],
+                    ['中专及以下', 345]
+                ]
+            }],
+            credits: {
+                enabled: false
+            }
+        });
+        /*
+         END 学历构成图表
+         */
+
+        /*
+         BEGIN 职称结构图表
+         */
+        $('#professional-summary-container').highcharts({
+            chart: {
+                type: 'bar',
+                backgroundColor: '#f6f6f6'
+            },
+            title: {
+                align: 'left',
+                style: {
+                    color: "#ca2222",
+                    fontWeight: 'bold',
+                    fontFamily: 'Microsoft Yahei',
+                    fontSize: "16px"
+                },
+                text: '职称结构'
+            },
+            xAxis: {
+                categories: ['高级职称', '中级职称', '初级职称', '员级职称', '无职称'],
+                title: {
+                    text: null
+                },
+                labels: {
+//                    rotation: -45,
+//                    align: 'right',
+                    style: {
+                        fontSize: '13px',
+                        fontWeight: 'bold',
+                        fontFamily: 'Microsoft Yahei'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    enabled: false
+
+                }
+            },
+            tooltip: {
+                valueSuffix: ' 人'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.y + '%';
+                        }
+                    }
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: ' ',
+                color: '#f8a20f',
+                data: [1.1, 17.9, 29.4, 9.2, 42.4]
+            }]
+        });
+
+        /*
+         END 职称结构图表
+         */
+    });
+</script>
+</body>
+</html>

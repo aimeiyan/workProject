@@ -1,0 +1,1269 @@
+@charset "utf-8";
+
+/*begin reset */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, pre, form, p, blockquote, input, abbr, article, aside, figcaption, fieldset, figure, footer, header, mark, meter, menu, nav, output, progress, section, summary, time, button {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+iframe, a, img, button {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+article, aside, footer, header, nav, section, figure, figcaption {
+    display: block;
+}
+
+input, textarea, select, button {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+i, em {
+    font-style: normal;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jnbankstyle-clear {
+    clear: both;
+}
+
+.jnbankstyle-fleft {
+    float: left;
+}
+
+.jnbankstyle-fright {
+    float: right;
+}
+
+.jnbankstyle-clearfix:before, .jnbankstyle-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.jnbankstyle-clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.jnbankstyle-clearfix {
+    zoom: 1;
+}
+
+.jnbankstyle-none {
+    display: none;
+}
+
+.jnbankstyle-hidden {
+    visibility: hidden;
+}
+
+.jnbankstyle-inline-block {
+    display: inline-block;
+}
+
+.jnbankstyle-block {
+    display: block;
+}
+
+.jnbankstyle-t-center {
+    text-align: center;
+}
+
+.jnbankstyle-t-right {
+    text-align: right;
+}
+
+.jnbankstyle-t-left {
+    text-align: left;
+}
+
+.jnbankstyle-t-indent {
+    text-indent: 2em;
+}
+
+.jnbankstyle-middle {
+    vertical-align: middle;
+}
+
+.jnbankstyle-hand {
+    cursor: pointer;
+}
+
+input[type=submit], input[type=button], input[type=text], textarea, button, select {
+    -webkit-appearance: none;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+.jnbankstyle-mt5 {
+    margin-top: 5px !important;
+}
+
+.jnbankstyle-mt10 {
+    margin-top: 10px !important;
+}
+
+.jnbankstyle-mt15 {
+    margin-top: 15px !important;
+}
+
+.jnbankstyle-mt20 {
+    margin-top: 20px !important;
+}
+
+.jnbankstyle-mt25 {
+    margin-top: 25px !important;
+}
+
+.jnbankstyle-mt30 {
+    margin-top: 30px !important;
+}
+
+.jnbankstyle-mt40 {
+    margin-top: 40px !important;
+}
+
+.jnbankstyle-mt50 {
+    margin-top: 50px !important;
+}
+
+.jnbankstyle-mb5 {
+    margin-bottom: 5px !important;
+}
+
+.jnbankstyle-mb10 {
+    margin-bottom: 10px !important;
+}
+
+.jnbankstyle-mb15 {
+    margin-bottom: 15px !important;
+}
+
+.jnbankstyle-mb20 {
+    margin-bottom: 20px !important;
+}
+
+.jnbankstyle-mb25 {
+    margin-bottom: 25px !important;
+}
+
+.jnbankstyle-mb30 {
+    margin-bottom: 30px !important;
+}
+
+.jnbankstyle-ml5 {
+    margin-left: 5px !important;
+}
+
+.jnbankstyle-ml10 {
+    margin-left: 10px !important;
+}
+
+.jnbankstyle-ml15 {
+    margin-left: 15px !important;
+}
+
+.jnbankstyle-ml20 {
+    margin-left: 20px !important;
+}
+
+.jnbankstyle-ml30 {
+    margin-left: 30px !important;
+}
+
+.jnbankstyle-ml40 {
+    margin-left: 40px !important;
+}
+
+.jnbankstyle-ml50 {
+    margin-left: 50px !important;
+}
+
+.jnbankstyle-ml60 {
+    margin-left: 60px !important;
+}
+
+.jnbankstyle-mr5 {
+    margin-right: 5px !important;
+}
+
+.jnbankstyle-mr10 {
+    margin-right: 10px !important;
+}
+
+.jnbankstyle-mr15 {
+    margin-right: 15px !important;
+}
+
+.jnbankstyle-mr20 {
+    margin-right: 20px !important;
+}
+
+.jnbankstyle-mr25 {
+    margin-right: 25px !important;
+}
+
+.jnbankstyle-mr30 {
+    margin-right: 30px !important;
+}
+
+.jnbankstyle-mr40 {
+    margin-right: 40px !important;
+}
+
+.jnbankstyle-mr50 {
+    margin-right: 50px !important;
+}
+
+.jnbankstyle-mr60 {
+    margin-right: 60px !important;
+}
+
+.jnbankstyle-pl5 {
+    padding-left: 5px !important;
+}
+.jnbankstyle-pl0 {
+    padding-left: 0 !important;
+}
+
+.jnbankstyle-pl15 {
+    padding-left: 15px !important;
+}
+
+.jnbankstyle-pl10 {
+    padding-left: 10px !important;
+}
+
+.jnbankstyle-pl20 {
+    padding-left: 20px !important;
+}
+
+.jnbankstyle-pt10 {
+    padding-top: 10px !important;
+}
+
+.jnbankstyle-pt20 {
+    padding-top: 20px !important;
+}
+
+.jnbankstyle-pt5 {
+    padding-top: 5px !important;
+}
+
+.jnbankstyle-pt15 {
+    padding-top: 15px !important;
+}
+
+.jnbankstyle-pt25 {
+    padding-top: 25px !important;
+}
+
+.jnbankstyle-pb5 {
+    padding-bottom: 5px !important;
+}
+
+.jnbankstyle-pb10 {
+    padding-bottom: 10px !important;
+}
+
+.jnbankstyle-pb20 {
+    padding-bottom: 20px !important;
+}
+
+.jnbankstyle-pb15 {
+    padding-bottom: 15px !important;
+}
+
+.jnbankstyle-pr10 {
+    padding-right: 10px !important;
+}
+
+.jnbankstyle-pr15 {
+    padding-right: 15px !important;
+}
+
+.jnbankstyle-pr20 {
+    padding-right: 20px !important;
+}
+
+.jnbankstyle-f-12 {
+    font-size: 12px !important;
+}
+
+.jnbankstyle-f-14 {
+    font-size: 14px !important;
+}
+
+.jnbankstyle-f-16 {
+    font-size: 16px !important;
+}
+
+.jnbankstyle-f-17 {
+    font-size: 17px !important;
+}
+
+.jnbankstyle-f-15 {
+    font-size: 15px !important;
+}
+
+.jnbankstyle-f-18 {
+    font-size: 18px !important;
+}
+
+.jnbankstyle-f-20 {
+    font-size: 20px !important;
+}
+
+.jnbankstyle-f-22 {
+    font-size: 22px !important;
+}
+
+.jnbankstyle-f-24 {
+    font-size: 24px !important;
+}
+
+.jnbankstyle-f-26 {
+    font-size: 26px !important;
+}
+
+.jnbankstyle-f-36 {
+    font-size: 36px !important;
+}
+
+.jnbankstyle-f-50 {
+    font-size: 50px !important;
+}
+
+.jnbankstyle-f-w {
+    font-weight: bold !important;
+}
+
+.jnbankstyle-w100 {
+    width: 100% !important;
+}
+
+body {
+    font: 400 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+
+input, button, textarea {
+    font: 400 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    border: none;
+}
+
+u {
+    color: #eb7676;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a.a-u {
+    text-decoration: underline !important;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #ccc !important;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #ccc !important;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #ccc !important;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #ccc !important;
+}
+
+.jnbankstyle-txt-a97334 {
+    color: #a97334 !important;
+}
+
+/*end reset */
+
+/*begin 登陆页样式*/
+.jnbankstyle-login-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 680px;
+    background: url("../images/jnbank_login_bg.png") no-repeat 50% 100% #f5f2ee;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg {
+    position: absolute;
+    height: 308px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -154px;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-logo {
+    position: absolute;
+    left: 50%;
+    top: -130px;
+    margin-left: -565px;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box {
+    width: 649px;
+    height: 307px;
+    margin: 0 auto;
+    background: url("../images/jnbank_login.png") no-repeat 0 0;
+    position: relative;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form {
+    position: absolute;
+    width: 249px;
+    height: 156px;
+    right: 87px;
+    top: 67px;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-input {
+    position: relative;
+    padding-left: 39px;
+    height: 30px;
+
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-input label {
+    position: absolute;
+    left: 45px;
+    top: 7px;
+    color: #8e8e8f;
+    z-index: 1;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-input-passwd {
+    margin-top: 18px;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-checkbox {
+    margin-top: 18px;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-checkbox .jnbankstyle-remember-password-action {
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-checkbox .jnbankstyle-remember-password-action * {
+    color: #a97334;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-checkbox .jnbankstyle-remember-password-action img {
+    position: absolute;
+    left: 1px;
+    top: 4px;
+    display: block;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-checkbox .jnbankstyle-remember-password-action .jnbankstyle-check {
+    display: none;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-checkbox .jnbankstyle-active .jnbankstyle-check {
+    display: block;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-checkbox .jnbankstyle-active .jnbankstyle-empty {
+    display: none;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-login-btn {
+    margin-top: 8px;
+}
+
+.jnbankstyle-login-page .jnbankstyle-login-bg .jnbankstyle-login-box .jnbankstyle-login-form .jnbankstyle-login-input input {
+    width: 194px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 5px;
+    z-index: 2;
+    position: absolute;
+    left: 40px;
+    top: 4px;
+    background-color: transparent;
+}
+
+#jnbankstyle-erroer-Msg{
+    position: absolute;
+    top: -26px;
+    left: 63px;
+    color: #888;
+    font-size: 12px;
+}
+
+/*end 登陆页样式*/
+
+/*begin 首页样式*/
+
+.jnbankstyle_homepage_container {
+    background: url("../images/jnbank_homepage_bg.png") no-repeat 50% 0 #f5f2ee;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_top {
+    height: 45px;
+    background: url("../images/jnbank_homepage_top.png") repeat-x 0 0;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_logo {
+    position: relative;
+    height: 110px;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_logo .jnbankstyle_homepage_logo_right {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    font-weight: bolder;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_logo .jnbankstyle_homepage_logo_right .jnbankstyle_homepage_tuichu {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 15px;
+    background: url("../images/jnbank_homepage_tuichu.png") no-repeat 0 2px;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_left {
+    width: 230px;
+    min-height: 900px;
+    float: left;
+    padding: 15px 0;
+    background: #fff;
+    border-top: 7px solid #ae0c2c;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right {
+    width: 750px;
+    float: right;
+    background: #fff;
+    border-top: 7px solid #ae0c2c;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    padding-bottom: 50px;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_right_subwrapper {
+    padding: 0 40px;
+}
+
+/*首页左侧菜单*/
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_left li {
+    border-bottom: 1px dashed #e0ecf4;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_left li a {
+    color: #333333;
+    display: block;
+    position: relative;
+    font-weight: bolder;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_left li a:hover {
+    color: #ae0c2a;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_left li.jnbankstyle_active a {
+    color: #ae0c2a;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_left li .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+/*首页右侧内容*/
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_links {
+    height: 85px;
+    line-height: 85px;
+    margin: 40px 0;
+    background: #fbf9f8;
+
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_links li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_part .jnbankstyle_homepage_title {
+    margin: 20px 0;
+    position: relative;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_part .jnbankstyle_homepage_title .jnbankstyle_homepage_more {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 12px;
+    padding-right: 7px;
+    background: url("../images/jnbank_homepage_right_angle.png") no-repeat 100% 50%;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_part .jnbankstyle_homepage_subwrapper table tr td {
+    padding: 7px 0;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_part .jnbankstyle_homepage_subwrapper table tr td a {
+    color: #3f3f3f;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_part .jnbankstyle_homepage_subwrapper table tr td .jnbankstyle_homepage_double_angle_right {
+    margin-right: 10px;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_part .jnbankstyle_homepage_subwrapper table tr td {
+    color: #3f3f3f;
+    padding: 7px 0;
+}
+
+.jnbankstyle_homepage_container .jnbankstyle_homepage_main .jnbankstyle_homepage_wrapper .jnbankstyle_homepage_right .jnbankstyle_homepage_part .jnbankstyle_homepage_subwrapper table tr td.jnbankstyle-homepage-date {
+    text-align: right;
+    padding-right: 10px;
+    color: #666666;
+    min-width: 120px;
+}
+
+.jnbankstyle_homepage_footer {
+    margin-top: 60px;
+    height: 40px;
+    line-height: 40px;
+    background: url("../images/jnbank_homepage_foot.jpg") repeat-x 0 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+/*end 首页样式*/
+
+/*begin 员工自助样式*/
+.jnbankstyle_employeeSelfService_body {
+    background: url("../images/jnbankstyle_employeeSelfService_zuo.png") no-repeat 0 0 #f5f2ee;;
+}
+
+.jnbankstyle_employeeSelfService_container {
+    background: url("../images/jnbankstyle_employeeSelfService_you.png") no-repeat 100% 100%;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_top {
+    height: 45px;
+    background: url("../images/jnbank_homepage_top.png") repeat-x 0 0;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main {
+    width: 90%;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_logo {
+    position: relative;
+    height: 110px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_logo .jnbankstyle_employeeSelfService_logo_right {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    font-weight: bolder;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_logo .jnbankstyle_employeeSelfService_logo_right .jnbankstyle_employeeSelfService_tuichu {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 15px;
+    background: url("../images/jnbank_homepage_tuichu.png") no-repeat 0 2px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left {
+    width: 230px;
+    min-height: 570px;
+    float: left;
+    background: #fff;
+    border-top: 7px solid #ae0c2c;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right_wrapper {
+    width: 100%;
+    float: left;
+    margin-left: -230px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right {
+    background: #fff;
+    margin-left: 250px;
+    border-top: 7px solid #ae0c2c;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_right_subwrapper {
+    padding: 30px 40px 0;
+    position: relative;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_right_subwrapper .jnbankstyle_ess_line {
+    position: absolute;
+    width: 1px;
+    height: 400px;
+    left: 49%;
+    top: 50%;
+    margin-top: -95px;
+    background: url("../images/jnbankstyle_employeeSelfService_line.png") no-repeat 0 0;
+}
+
+/*员工自助左侧菜单*/
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li {
+    line-height: 50px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li .jnbankstyle_employeeSelfService_snd-menu {
+    display: none;
+    padding-left: 32px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li.jnbankstyle_show .jnbankstyle_employeeSelfService_snd-menu {
+    display: block;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li.jnbankstyle_active > a {
+    color: #ae0c2a;
+    background-color: #f7e6e9;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left > ul > li:hover {
+    background-color: #fbf3f4;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left > ul > li.jnbankstyle_active:hover {
+    background-color: #fff;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li a {
+    color: #333333;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li a .angle-icon {
+    width: 6px;
+    height: 9px;
+    background: url("../images/jnbankstyle_employeeSelfService_icon_shouqi.png") no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    left: 180px;
+    margin-top: -4px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li .jnbankstyle_on .angle-icon {
+    width: 8px;
+    height: 5px;
+    top: 50%;
+    left: 180px;
+    margin-top: -3px;
+    background: url("../images/jnbankstyle_employeeSelfService_icon_zhankai.png") no-repeat 0 0;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_left li .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*员工自助样式右侧内容*/
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part {
+    width: 47%;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part_xiaoxi {
+    float: left;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part_gonggao {
+    float: right;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part .jnbankstyle_employeeSelfService_title {
+    margin: 20px 0;
+    position: relative;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part .jnbankstyle_employeeSelfService_title .jnbankstyle_employeeSelfService_more {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 12px;
+    padding-right: 7px;
+    background: url("../images/jnbank_homepage_right_angle.png") no-repeat 100% 50%;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part .jnbankstyle_employeeSelfService_subwrapper table tr td {
+    padding: 7px 0;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part .jnbankstyle_employeeSelfService_subwrapper table tr td a {
+    color: #3f3f3f;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part .jnbankstyle_employeeSelfService_subwrapper table tr td .jnbankstyle_employeeSelfService_double_angle_right {
+    margin-right: 10px;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part .jnbankstyle_employeeSelfService_subwrapper table tr td {
+    color: #3f3f3f;
+    padding: 7px 0;
+}
+
+.jnbankstyle_employeeSelfService_container .jnbankstyle_employeeSelfService_main .jnbankstyle_employeeSelfService_wrapper .jnbankstyle_employeeSelfService_right .jnbankstyle_employeeSelfService_part .jnbankstyle_employeeSelfService_subwrapper table tr td.jnbankstyle-homepage-date {
+    text-align: right;
+    padding-right: 10px;
+    color: #666666;
+    min-width: 120px;
+}
+
+.jnbankstyle_employeeSelfService_shortcut_wrapper {
+    padding: 70px 40px 80px;
+}
+
+.jnbankstyle_employeeSelfService_shortcut li {
+    float: left;
+    width: 33.33%;
+}
+
+.jnbankstyle_employeeSelfService_shortcut li a {
+    width: 90%;
+    margin: 0 auto;
+    height: 148px;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    display: block;
+    vertical-align: middle;
+}
+
+.jnbankstyle_employeeSelfService_shortcut li a .jnbankstyle_ess_content_wrapper {
+    height: 146px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.jnbankstyle_employeeSelfService_shortcut li a div.jnbankstyle_ess_content {
+    position: relative;
+    padding-left: 105px;
+    padding-right: 20px;
+}
+
+.jnbankstyle_employeeSelfService_shortcut li a img {
+    position: absolute;
+    left: 19px;
+    top: 0;
+}
+
+.jnbankstyle_employeeSelfService_shortcut li a .jnbankstyle-employee-title {
+    color: #a97334;
+    margin-bottom: 8px;
+}
+
+.jnbankstyle_employeeSelfService_shortcut li a .jnbankstyle-employee-intro {
+    color: #3f3f3f;
+    font-size: 12px;
+}
+
+.jnbankstyle_employeeSelfService_footer {
+    margin-top: 60px;
+    height: 40px;
+    line-height: 40px;
+    background: url("../images/jnbank_homepage_foot.jpg") repeat-x 0 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+/*end 员工自助样式*/
+
+/*begin 领导查询样式*/
+
+.jnbankstyle_leaderQuery_container {
+    background: url("../images/jnbank_homepage_bg.png") no-repeat 50% 0 #f5f2ee;
+}
+
+.jnbankstyle_leaderQuery_container .jnbankstyle_leaderQuery_top {
+    height: 45px;
+    background: url("../images/jnbank_homepage_top.png") repeat-x 0 0;
+}
+
+.jnbankstyle_leaderQuery_container .jnbankstyle_leaderQuery_main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.jnbankstyle_leaderQuery_container .jnbankstyle_leaderQuery_main .jnbankstyle_leaderQuery_logo {
+    position: relative;
+    height: 90px;
+}
+
+.jnbankstyle_leaderQuery_container .jnbankstyle_leaderQuery_main .jnbankstyle_leaderQuery_logo .jnbankstyle_leaderQuery_logo_right {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: bolder;
+}
+
+.jnbankstyle_leaderQuery_container .jnbankstyle_leaderQuery_main .jnbankstyle_leaderQuery_logo .jnbankstyle_leaderQuery_logo_right .jnbankstyle_leaderQuery_tuichu {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 15px;
+    background: url("../images/jnbank_homepage_tuichu.png") no-repeat 0 2px;
+}
+
+/*BEGIN 领导查询专有样式*/
+.jnbankstyle_leaderQuery_inner-container {
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_leader_nav li {
+    float: left;
+    height: 60px;
+    margin-right: 50px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_leader_nav li:hover a {
+    color: #ae0a29;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_leader_nav li a {
+    color: #333333;
+    display: block;
+    text-align: center;
+    padding: 20px 0 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_leader_nav li.jnbankstyle_leaderQuery_active a {
+    color: #ae0a29;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_main {
+    border-top: 7px solid #ae0c2c;
+    background-color: #ffffff;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_subwrapper {
+    padding-left: 20px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_subwrapper table {
+    line-height: 2;
+    margin-top: 5px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_subwrapper table a {
+    color: #3f3f3f;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_zuo {
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+    width: 475px;
+    height: 155px;
+    float: left;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_you {
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+    width: 325px;
+    height: 155px;
+    float: right;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2.5;
+    position: relative;
+    color: #ae0a29;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_title .jnbankstyle_leaderQuery_english {
+    font-size: 12px;
+    color: #c9ae94;
+    margin-left: 5px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_title .jnbankstyle_leaderQuery_more {
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    top: 12px;
+    right: 7px;
+    background: url("../images/jnbankstyle_leaderQuery_gengduo.png") no-repeat 0 0;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_title_bg {
+    margin: 40px 0;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_organ_info {
+    width: 336px;
+    padding-left: 20px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_organ_chart {
+    width: 550px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_part_wrapper .jnbankstyle_leaderQuery_double_angle_right {
+    margin-right: 13px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_organ_summary .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part:first-child {
+    width: 40%;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_organ_summary .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_subwrapper {
+    margin-top: 10px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_organ_summary .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_subwrapper p {
+    line-height: 1.9;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary {
+    margin-top: -75px;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part {
+    width: 100%;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_subwrapper ul li {
+    width: 33.33%;
+    float: left;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary .jnbankstyle_leaderQuery_inner-container .jnbankstyle_leaderQuery_part .jnbankstyle_leaderQuery_subwrapper ul li > div {
+    width: 333px;
+    height: 333px;
+    margin: 0 auto;
+}
+
+.jnbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_t_ae0c2a {
+    color: #ae0c2a;
+}
+
+/*END 领导查询专有样式*/
+
+.jnbankstyle_leaderQuery_footer {
+    margin-top: 60px;
+    height: 40px;
+    line-height: 40px;
+    background: url("../images/jnbank_homepage_foot.jpg") repeat-x 0 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+/*end 领导查询样式*/
+
+/*begin 二级页面样式*/
+
+.jnbankstyle_second_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("../images/jnbankstyle_second_bg.png") no-repeat 50% 100% #f5f2ee;
+}
+
+.jnbankstyle_second_container .jnbankstyle_second_bg2 {
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+
+.jnbankstyle_second_container .jnbankstyle_second_top {
+    height: 45px;
+    background: url("../images/jnbank_homepage_top.png") repeat-x 0 0;
+}
+
+.jnbankstyle_second_container .jnbankstyle_second_main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.jnbankstyle_second_container .jnbankstyle_second_main .jnbankstyle_second_logo {
+    position: relative;
+    height: 85px;
+}
+
+.jnbankstyle_second_container .jnbankstyle_second_main .jnbankstyle_second_logo .jnbankstyle_second_logo_right {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    font-weight: bolder;
+}
+
+.jnbankstyle_second_container .jnbankstyle_second_main .jnbankstyle_second_logo .jnbankstyle_second_logo_right .jnbankstyle_second_tuichu {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 15px;
+    background: url("../images/jnbank_homepage_tuichu.png") no-repeat 0 2px;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header {
+    height: 36px;
+    line-height: 36px;
+    background: url("../images/jnbankstyle_second_nav.jpg") repeat-x 0 0;
+}
+
+.jnbankstyle_second_inner-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_nav li {
+    float: left;
+    margin-right: 30px;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_nav li a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li a {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    padding-left: 25px;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li.jnbankstyle_second_caidan a.jnbankstyle_second_item {
+    background: url("../images/jnbankstyle_second_caidan.png") no-repeat 0 4px;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li.jnbankstyle_second_caidan .jnbankstyle_second_caidan_dropdownmenu {
+    position: absolute;
+    width: 240px;
+    right: -30px;
+    display: none;
+
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li.jnbankstyle_second_caidan .jnbankstyle_second_caidan_dropdownmenu ul {
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    padding: 20px 12px;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li.jnbankstyle_second_caidan .jnbankstyle_second_caidan_dropdownmenu li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-left: 0;
+    line-height: 2;
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li.jnbankstyle_second_caidan .jnbankstyle_second_caidan_dropdownmenu li a {
+    color: #3f3f3f;
+    font-size: 14px;
+    padding-left: 0;
+
+}
+
+.jnbankstyle_second_wrapper .jnbankstyle_second_header .jnbankstyle_second_inner-container .jnbankstyle_second_shoutcut-link li.jnbankstyle_second_back a.jnbankstyle_second_item {
+    background: url("../images/jnbankstyle_second_back.png") no-repeat 0 11px;
+}
+
+/*end 二级页面样式*/
+

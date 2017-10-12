@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script  src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="mustache.js"></script>
+
+    <script type="text/tmpl" id="ul-tpl">
+
+        <ul>
+
+        {{#arr}}
+        <li class="what">{{.}}</li>
+        {{/arr}}
+
+        </ul>
+
+    </script>
+
+    <script>
+        $(function() {
+
+            var arr = ["1", "2", "3", "4"];
+
+            var html = "<ul>";
+            for(var i = 0; i< arr.length; i++) {
+                html += "<li>" + arr[i] + "</li>";
+            }
+            html += "</ul>";
+
+
+            var tpl = $('#ul-tpl').html();
+
+            $.get('what.tpl', function(resp) {
+
+                var html2 = Mustache.render(resp, {arr: arr});
+                console.log('--------------------', resp)
+
+            });
+
+            var html2 = Mustache.render(tpl, {arr: arr});
+
+            console.log(html);
+            console.log(html2);
+
+        });
+    </script>
+
+</head>
+<body>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+
+
+</body>
+</html>

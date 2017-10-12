@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .login-input-wrapper * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .login-input-wrapper {
+            position: relative;
+            width: 210px;
+            height: 28px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .login-input-wrapper .login-input {
+            width: 180px;
+            height: 26px;
+            padding-left: 5px;
+            border: 0;
+
+        }
+
+        .login-input-wrapper .login-input:focus {
+            border: 0;
+            outline: 0;
+        }
+
+        .login-input-wrapper .login-down-arrow {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 28px;
+            background: url("images/down-arrow.gif") no-repeat 0 0;
+            top: 0;
+            right: 0;
+
+        }
+
+        .login-input-wrapper .login-down-arrow.active{
+            background: url("images/activeclick.gif") no-repeat 0 0;
+        }
+
+        .login-input-wrapper .login-lists-item {
+            position: absolute;
+            border: 1px solid #ccc;
+            border-top: 0;
+            width: 210px;
+            top: 29px;
+            left: -1px;
+            z-index: 1100;
+            display: none;
+            background-color: #fff;
+        }
+
+        .login-input-wrapper .login-lists-item li {
+            list-style: none;
+        }
+
+        .login-input-wrapper .login-lists-item li a {
+            font-size: 14px;
+            color: #565656;
+            text-decoration: none;
+            display: block;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .login-input-wrapper .login-lists-item li a:hover {
+            background-color: dodgerblue;
+            color: #fff;
+        }
+    </style>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="login-input-wrapper" style="position:relative;z-index:2;">
+    <input class="login-input" placeholder="请选择招聘类型" value="请选择招聘类型" readonly>
+    <span class="login-down-arrow"></span>
+    <ul class="login-lists-item">
+        <li><a href="javascript:void(0);">校招</a></li>
+        <li><a href="javascript:void(0);">社招</a></li>
+        <li><a href="javascript:void(0);">内推</a></li>
+    </ul>
+</div>
+<div class="login-input-wrapper" style="position:relative;z-index:1;">
+    <input class="login-input" placeholder="请选择机构" value="请选择机构" readonly>
+    <span class="login-down-arrow"></span>
+    <ul class="login-lists-item">
+        <li><a href="javascript:void(0);">北京</a></li>
+        <li><a href="javascript:void(0);">上海</a></li>
+        <li><a href="javascript:void(0);">广州</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function () {
+
+        function showMenu(obj) {
+            obj.slideDown("fast");
+        }
+
+        function hideMenu(obj) {
+            obj.slideUp("fast");
+        }
+
+        $(document).on("click", ".login-input,.login-down-arrow", function () {
+            var $ul_lists = $(this).parent().find(".login-lists-item");
+            if ($ul_lists.is(":visible")) {
+                hideMenu($ul_lists);
+                $(this).parent().find(".login-down-arrow").removeClass("active");
+
+            } else {
+                showMenu($ul_lists);
+                $(this).parent().find(".login-down-arrow").addClass("active");
+
+            }
+        });
+
+        $(document).on("click", ".login-lists-item a", function () {
+            var $input=$(this).parent().parent().parent().find(".login-input");
+            var next_value = $(this).text();
+            $input.val(next_value);
+            hideMenu($(this).parents(".login-lists-item"));
+            $(this).parent().parent().parent().find(".login-down-arrow").removeClass("active");
+        });
+
+        $(document).click(function (event) {
+
+            if (!(event.target.className === "login-input-wrapper" || $(event.target).parents(".login-input-wrapper").length > 0)) {
+//                hideMenu();
+                $(".login-lists-item").slideUp("fast");
+            }
+        });
+
+
+    })
+</script>
+</body>
+</html>

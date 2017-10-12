@@ -1,0 +1,127 @@
+{
+  "recordsTotal": 57,
+  "recordsFiltered": 57,
+  "draw": "1",
+  "data": [
+    {
+      "salary": "$206,850",
+      "first_name": "Brenden",
+      "last_name": "Wagner",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Software Engineer",
+      "start_date": "7th Jun 11"
+    },
+    {
+      "salary": "$162,700",
+      "first_name": "Airi",
+      "last_name": "Satou",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Accountant",
+      "start_date": "28th Nov 08"
+    },
+    {
+      "salary": "$372,000",
+      "first_name": "Brielle",
+      "last_name": "Williamson",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Integration Specialist",
+      "start_date": "2nd Dec 12"
+    },
+    {
+      "salary": "$106,450",
+      "first_name": "Caesar",
+      "last_name": "Vance",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Pre-Sales Support",
+      "start_date": "12th Dec 11"
+    },
+    {
+      "salary": "$132,000",
+      "first_name": "Bradley",
+      "last_name": "Greer",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Software Engineer",
+      "start_date": "13th Oct 12"
+    },
+    {
+      "salary": "$145,600",
+      "first_name": "Cara",
+      "last_name": "Stevens",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Sales Assistant",
+      "start_date": "6th Dec 11"
+    },
+    {
+      "salary": "$433,060",
+      "first_name": "Cedric",
+      "last_name": "Kelly",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Senior Javascript Developer",
+      "start_date": "29th Mar 12"
+    },
+    {
+      "salary": "$86,000",
+      "first_name": "Ashton",
+      "last_name": "Cox",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Junior Technical Author",
+      "start_date": "12th Jan 09"
+    },
+    {
+      "salary": "$163,500",
+      "first_name": "Bruno",
+      "last_name": "Nash",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Software Engineer",
+      "start_date": "3rd May 11"
+    },
+    {
+      "salary": "$1,200,000",
+      "first_name": "Angelica",
+      "last_name": "Ramos",
+      "office": [
+        "off1",
+        "off2",
+        "off2"
+      ],
+      "position": "Chief Executive Officer (CEO)",
+      "start_date": "9th Oct 09"
+    }
+  ]
+}

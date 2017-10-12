@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title></title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">
+    <link type="text/css" rel="stylesheet" href="../js/third/Font-Awesome-master/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet"
+          href="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <!--<link type="text/css" rel="stylesheet" href="../js/third/font-awesome/css/font-awesome.min.css">-->
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<!--begin header part-->
+<div class="header">
+
+    <div class="subwrapper">
+        <div class="header_inner clearfix">
+            <a class="inner_logo fleft" href="index.html"></a>
+            <ul class="inner_nav fleft clearfix">
+                <li><a class="" href="index.html">首页</a></li>
+                <li><a class="" href="consultingOptimization.html">数据咨询</a></li>
+                <li><a class="" href="jianguanzhibo.html">监管直播</a></li>
+                <li><a class="" href="aboutUs.html">关于我们</a></li>
+            </ul>
+            <div class="inner_login fright" style="">
+                <a href="signin.html"
+                   class="login_in">登录</a><span class="seperate-line">|</span>
+                <a class="logoutCss"
+                   href="signup.html">注册</a>
+                <!--<span href="javascript:void(0);" class="account-user">-->
+                <div class="account-user">
+                    <a href="#">
+                        <img class="user-img" src="../images/user01.gif" alt="会员头像">
+                        <span class="user-name">王阳明</span>
+                    </a>
+
+                    <div class="person-dropdown-info">
+                        <ul>
+                            <li><a href="personalCenter.html">我的主页</a></li>
+                            <li><a href="basicInfo.html">完善个人信息</a></li>
+                            <li><a href="index.html">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div>-->
+
+                <!--</div>-->
+                <!--</span>-->
+                <!--<span class="account_user clear">-->
+                <!--<a class="img_link clear" href="/personal">-->
+                <!--<img class="user_img" src="http://static.zealer.com/images/plus/mb_pic50.gif" alt="会员头像">-->
+                <!--</a>-->
+                <!--<span class="user_active bigHead">-->
+                <!--<a href="/personal" class="active_name" rel="nofollow">nancy</a>-->
+                <!--<a href="/user/logout" rel="nofollow">退出</a>-->
+                <!--</span>-->
+                <!--</span>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header part-->
+<div class="detail-wrapper">
+    <div class="ribbon">
+        <!-- breadcrumb -->
+        <ul class="breadcrumb clearfix">
+            <li><a href="#">首页</a></li>
+            <!--<li><span class="arrow ml5 mr5">&gt;</span></li>-->
+            <!--<li><a href="index.html#fangwenjia">房问＋</a></li>-->
+            <li><span class="arrow ml5 mr5">&gt;</span></li>
+            <li><a href="javascript:void(0);">监管直播</a></li>
+        </ul>
+        <!-- end breadcrumb -->
+    </div>
+    <!--<div class="form-input-container">-->
+    <!--<h2 class="form-name">数据咨询与优化</h2>-->
+
+    <!--<div class="form-input-inner clearfix">-->
+    <!--<div class="fleft input-part">-->
+    <!--<form action="" method="post">-->
+    <!--<div class="form-control">-->
+    <!--<input type="text" placeholder="您的称呼" class="">-->
+    <!--</div>-->
+    <!--<div class="form-control">-->
+    <!--<input type="text" placeholder="您的联系方式">-->
+    <!--</div>-->
+    <!--<div class="form-control">-->
+    <!--<input type="text" placeholder="楼盘名称">-->
+    <!--</div>-->
+    <!--<div class="form-control demand">-->
+    <!--<textarea name="problem" placeholder="主要问题"></textarea>-->
+    <!--</div>-->
+    <!--<div class="form-control submit normal">-->
+    <!--<input type="submit" value="提交">-->
+    <!--</div>-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--<div class="fright caption">-->
+    <!--<div class="inner">-->
+    <!--<div class="declare">-->
+    <!--<p>张女士，您的信息将被严格保密，除“房问问”外绝不泄密，资料提交后24小时将有工作人员与您联系。</p>-->
+    <!--</div>-->
+    <!--<div class="service-explain">-->
+    <!--<p>20元/m²的装修监管预约，</p>-->
+
+    <!--<p>线上预约，团购更优惠，</p>-->
+
+    <!--<p>线下和您签订合约或网签，</p>-->
+
+    <!--<p>时刻为您服务。</p>-->
+    <!--</div>-->
+    <!--<div class="contact-explain">-->
+    <!--<p>您也可以</p>-->
+
+    <!--<p>加入公众号：fangwenwencd</p>-->
+
+    <!--<p>扫描二维码：见右侧</p>-->
+
+    <!--<p>留言直接预约装修监管服务</p>-->
+    <!--</div>-->
+    <!--<img class="service-qr" src="../images/weixin03.jpg">-->
+    <!--</div></div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+     
+
+
+
+    <!--<div id="" class="jianguanzhibo-slected">-->
+        <!--<div class="main">-->
+            <!--<ul style="/* display: none; */">-->
+                <!--<li id="citys" class="city">-->
+                    <!--<span>城市划分</span>-->
+                    <!--<a href="javascript:" class="select" data-item="0">全部</a>-->
+                    <!--<a href="javascript:" data-item="0101" class="beijing">北京</a>-->
+                    <!--<a href="javascript:" data-item="0201" class="shanghai">上海</a>-->
+
+                <!--</li>-->
+                <!--<li id="attr" class="districtid expend bjarea" style="display: block;">-->
+                    <!--<span>区域划分</span>-->
+                    <!--<a href="javascript:" class="select" data-item="0">全部</a>-->
+                    <!--<a href="javascript:" data-item="1">朝阳区</a>-->
+                    <!--<a href="javascript:" data-item="19">燕郊区</a>-->
+                    <!--<a href="javascript:" data-item="18">门头沟区</a>-->
+                    <!--<a href="javascript:" data-item="2">海淀区</a>-->
+                    <!--<a href="javascript:" data-item="3">丰台区</a>-->
+                    <!--<a href="javascript:" data-item="4">东城区</a>-->
+                    <!--<a href="javascript:" data-item="5">西城区</a>-->
+                    <!--<a href="javascript:" data-item="6">昌平区</a>-->
+                    <!--<a href="javascript:" data-item="7">密云县</a>-->
+                    <!--<a href="javascript:" data-item="8">大兴区</a>-->
+                    <!--<a href="javascript:" data-item="9">怀柔区</a>-->
+                    <!--<a href="javascript:" data-item="10">顺义区</a>-->
+                    <!--<a href="javascript:" data-item="11">通州区</a>-->
+                    <!--<a href="javascript:" data-item="12">崇文区</a>-->
+                    <!--<a href="javascript:" data-item="13">宣武区</a>-->
+                    <!--<a href="javascript:" data-item="14">延庆县</a>-->
+                    <!--<a href="javascript:" data-item="15">房山区</a>-->
+                    <!--<a href="javascript:" data-item="16">石景山区</a>-->
+                    <!--<a href="javascript:" data-item="17">平谷区</a>-->
+
+                    <!--<div id="expend_btn" class="move_drop">展开</div>-->
+                <!--</li>-->
+                <!--<li class="status">-->
+                    <!--<span>工地阶段</span>-->
+                    <!--<a href="javascript:;" class="select" data-item="0">全部</a>-->
+                    <!--<a href="javascript:;" data-item="1">施工中</a>-->
+                    <!--<a href="javascript:;" data-item="9">已完工</a>-->
+                <!--</li>-->
+                <!--<li class="housetype">-->
+                    <!--<span>户型结构</span>-->
+                    <!--<a href="javascript:;" class="select" data-item="0">全部</a>-->
+                    <!--<a href="javascript:;" data-item="1">平房</a>-->
+                    <!--<a href="javascript:;" data-item="2">一居</a>-->
+                    <!--<a href="javascript:;" data-item="3">二居</a>-->
+                    <!--<a href="javascript:;" data-item="4">三居</a>-->
+                    <!--<a href="javascript:;" data-item="5">跃层</a>-->
+                    <!--<a href="javascript:;" data-item="6">复式</a>-->
+                    <!--<a href="javascript:;" data-item="7">联排</a>-->
+                    <!--<a href="javascript:;" data-item="8">别墅</a>-->
+                <!--</li>-->
+                <!--<li class="budget">-->
+                    <!--<span>装修预算</span>-->
+                    <!--<a href="javascript:;" class="select" data-item="0">全部</a>-->
+                    <!--<a href="javascript:;" data-item="1">5万以下</a>-->
+                    <!--<a href="javascript:;" data-item="2">5-10万</a>-->
+                    <!--<a href="javascript:;" data-item="3">10万-15万</a>-->
+                    <!--<a href="javascript:;" data-item="4">15-20万</a>-->
+                    <!--<a href="javascript:;" data-item="5">20万以上</a>-->
+                <!--</li>-->
+                <!--<li class="areaid">-->
+                    <!--<span>房屋面积</span>-->
+                    <!--<a href="javascript:;" class="select" data-item="0">全部</a>-->
+                    <!--<a href="javascript:;" data-item="1">0-60㎡</a>-->
+                    <!--<a href="javascript:;" data-item="2">60-100㎡</a>-->
+                    <!--<a href="javascript:;" data-item="3">100-150㎡</a>-->
+                    <!--<a href="javascript:;" data-item="4">150-300㎡</a>-->
+                    <!--<a href="javascript:;" data-item="5">300㎡以上</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<div id="ui_drop">展开分类</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="row sortid jianguanzhibo-infos">
+        <div class="top_nav main clearfix">共有<span>426</span>个公开的工地
+            <!--<div class="sorting"><a href="javascript:;" data-item="0" class="selected">默认</a>|<a href="javascript:;"-->
+            <!--data-item="1" class="">发布时间</a>|<a-->
+            <!--href="javascript:;" data-item="2" class="">浏览量</a></div>-->
+        </div>
+    </div>
+
+    <div class="detail-introduce clearfix">
+        <div class="detail-primary-content">
+            <div class="jianguanzhibo-info-list">
+                <a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                    北京大兴区<span>【2篇日志】</span></h2>
+
+                    <p class="infos"><span>户型：二居</span><span>面积：130.00m2</span><span>预算：3.90万元</span>进行到<i>已开工</i>阶段</p>
+
+                    <p><span class="dates">2016-04-24</span>监理杨宝睿：今日水电交底，水电点位已确定，部分材料已进场，现场铲墙皮施工中，检查无异常。</p>
+                    <ul class="gallery clearfix">
+                        <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74634&amp;small=1"
+                                 alt="北京大兴区-已开工-2016-04-24"></li>
+                        <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74649&amp;small=1"
+                                 alt="北京大兴区-已开工-2016-04-24"></li>
+                        <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74650&amp;small=1"
+                                 alt="北京大兴区-已开工-2016-04-24"></li>
+                        <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74651&amp;small=1"
+                                 alt="北京大兴区-已开工-2016-04-24"></li>
+                        <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74652&amp;small=1"
+                                 alt="北京大兴区-已开工-2016-04-24"></li>
+                    </ul>
+                </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">北京北河沿大街<span>【2篇日志】</span>
+            </h2>
+
+                <p class="infos"><span>户型：二居</span><span>面积：70.00m2</span><span>预算：9999.99万元</span>进行到<i>已开工</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理高圣杰：现场交底确认水电位置了，确认厨柜方案，暖气，热水器位置。</p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74621&amp;small=1"
+                             alt="北京北河沿大街-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74632&amp;small=1"
+                             alt="北京北河沿大街-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74631&amp;small=1"
+                             alt="北京北河沿大街-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74630&amp;small=1"
+                             alt="北京北河沿大街-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74629&amp;small=1"
+                             alt="北京北河沿大街-已开工-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                北京麦子店街6号楼<span>【2篇日志】</span></h2>
+
+                <p class="infos"><span>户型：平房</span><span>面积：47.00m2</span><span>预算：1.50万元</span>进行到<i>已开工</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理杜腊春：今天水电验收！电线水管走向横平竖直！电线点位布局合理规范，线位间距混水器15cm电线与水管间距超过40cm！水管打压8个压力由伟星专业测试打压！线头出盒15灯线头40cm，整体施工工艺规范达标！
+                </p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74594&amp;small=1"
+                             alt="北京麦子店街6号楼-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74609&amp;small=1"
+                             alt="北京麦子店街6号楼-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74610&amp;small=1"
+                             alt="北京麦子店街6号楼-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74611&amp;small=1"
+                             alt="北京麦子店街6号楼-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74612&amp;small=1"
+                             alt="北京麦子店街6号楼-已开工-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                北京潘家园东里<span>【4篇日志】</span></h2>
+
+                <p class="infos"><span>户型：未知</span><span>面积：60.00m2</span><span>预算：3.50万元</span>进行到<i>已开工</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理蔡细毛：水电路基本改造完，现场检查没呵发现恶意绕线，水管无绕管。</p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74552&amp;small=1"
+                             alt="北京潘家园东里-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74561&amp;small=1"
+                             alt="北京潘家园东里-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74560&amp;small=1"
+                             alt="北京潘家园东里-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74559&amp;small=1"
+                             alt="北京潘家园东里-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74558&amp;small=1"
+                             alt="北京潘家园东里-已开工-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                北京天通苑<span>【21篇日志】</span></h2>
+
+                <p class="infos"><span>户型：未知</span><span>面积：114.00m2</span><span>预算：0.00万元</span>进行到<i>竣工阶段</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理于河军：1、竣工验收。
+                    2、检查开工控制面板、插座控制面板、检查厨房、卫生间墙砖。
+                    3、检查墙面油漆。</p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74524&amp;small=1"
+                             alt="北京天通苑-竣工阶段-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74539&amp;small=1"
+                             alt="北京天通苑-竣工阶段-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74540&amp;small=1"
+                             alt="北京天通苑-竣工阶段-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74541&amp;small=1"
+                             alt="北京天通苑-竣工阶段-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74542&amp;small=1"
+                             alt="北京天通苑-竣工阶段-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">北京丰台区宋家庄路甲12号院<span>【4篇日志】</span>
+            </h2>
+
+                <p class="infos"><span>户型：一居</span><span>面积：57.00m2</span><span>预算：2.40万元</span>进行到<i>已开工</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理杨威：工长未联系伟星打压，验收不合格</p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74523&amp;small=1"
+                             alt="北京丰台区宋家庄路甲12号院-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74509&amp;small=1"
+                             alt="北京丰台区宋家庄路甲12号院-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74508&amp;small=1"
+                             alt="北京丰台区宋家庄路甲12号院-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74507&amp;small=1"
+                             alt="北京丰台区宋家庄路甲12号院-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74506&amp;small=1"
+                             alt="北京丰台区宋家庄路甲12号院-已开工-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                北京首开常青藤<span>【58篇日志】</span></h2>
+
+                <p class="infos"><span>户型：跃层</span><span>面积：152.99m2</span><span>预算：9.00万元</span>进行到<i>竣工阶段</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理由祺：衣帽间墙面工长已修补完成 现已安装完衣柜 </p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74425&amp;small=1"
+                             alt="北京首开常青藤-竣工阶段-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74426&amp;small=1"
+                             alt="北京首开常青藤-竣工阶段-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74427&amp;small=1"
+                             alt="北京首开常青藤-竣工阶段-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                北京劲松农光里中社区<span>【3篇日志】</span></h2>
+
+                <p class="infos"><span>户型：一居</span><span>面积：62.00m2</span><span>预算：2.00万元</span>进行到<i>已开工</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理杜腊春：水电改造工作基本完成！走线布管横平竖直点位都是直线距离比较规范合格！厨房插座接线头需改成4平方线头己告之师付现场改过！水管布局合理到位！混水器等位头平正间距15cm水管间距25cm！施工工艺规范！厨卫墙面己抹灰找平处理！下星期做卫生间防水工作厨房贴墙地砖！
+                </p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74396&amp;small=1"
+                             alt="北京劲松农光里中社区-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74410&amp;small=1"
+                             alt="北京劲松农光里中社区-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74411&amp;small=1"
+                             alt="北京劲松农光里中社区-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74412&amp;small=1"
+                             alt="北京劲松农光里中社区-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74413&amp;small=1"
+                             alt="北京劲松农光里中社区-已开工-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                北京北七家望都家园<span>【2篇日志】</span></h2>
+
+                <p class="infos"><span>户型：未知</span><span>面积：142.00m2</span><span>预算：0.00万元</span>进行到<i>已开工</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理陆小宝：正常巡查2016年4月24号工地现场检查情况如下：1.开工登记定水电位置。2.工人铲墙皮。</p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74358&amp;small=1"
+                             alt="北京北七家望都家园-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74369&amp;small=1"
+                             alt="北京北七家望都家园-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74368&amp;small=1"
+                             alt="北京北七家望都家园-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74367&amp;small=1"
+                             alt="北京北七家望都家园-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74366&amp;small=1"
+                             alt="北京北七家望都家园-已开工-2016-04-24"></li>
+                </ul>
+            </a><a href="jianguanzhibodetail.html" class="list_wrap" style="z-index:1"><h2 class="title">
+                北京大兴区明发雅苑<span>【1篇日志】</span></h2>
+
+                <p class="infos"><span>户型：二居</span><span>面积：103.00m2</span><span>预算：3.60万元</span>进行到<i>已开工</i>阶段</p>
+
+                <p><span class="dates">2016-04-24</span>监理杨宝睿：今日开工交底，检查原房屋结构，设备设施发现问题如下：1.卫生间下水管渗漏水。2.地暖管线多处裸露并铁丝固定，3.墙面局部有受潮返碱现象。
+                </p>
+                <ul class="gallery clearfix">
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74323&amp;small=1"
+                             alt="北京大兴区明发雅苑-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74342&amp;small=1"
+                             alt="北京大兴区明发雅苑-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74343&amp;small=1"
+                             alt="北京大兴区明发雅苑-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74344&amp;small=1"
+                             alt="北京大兴区明发雅苑-已开工-2016-04-24"></li>
+                    <li><img src="http://image.zhuangxiaomi.com/getwxtempimage?id=74345&amp;small=1"
+                             alt="北京大兴区明发雅苑-已开工-2016-04-24"></li>
+                </ul>
+            </a>
+
+                <div id="addmore" style="display: block;">加载更多</div>
+                <div id="jianguanzhibo-loading"><img src="../images/loading.gif" alt="加载更多"></div>
+                <div id="nocases" style="display: block;">
+                    <img src="../images/nocases.png" alt="没有符合条件的工地">
+
+                    <h3>目前还没有符合条件的工地!</h3>
+                </div>
+            </div>
+            <!--<div class="post-recommend">-->
+                <!--<div class="recommend-content">-->
+                    <!--<div class="recommend-title">-->
+                        <!--更多精彩内容推荐-->
+                    <!--</div>-->
+                    <!--<ul class="recommend-list clearfix">-->
+                        <!--<li class="clear">-->
+                            <!--<a href="/post/58529.html" target="_blank">【搞机时代】 求学路上陪伴我过的手机们</a>-->
+<!--<span>-->
+<!--<s class="global-grey-icons grey-view"></s>-->
+<!--<em class="global-icons-gap">610</em>-->
+<!--<s class="global-grey-icons grey-num"></s>-->
+<!--<em class="global-icons-gap">4</em>-->
+<!--</span>-->
+                        <!--</li>-->
+                        <!--<li class="clear">-->
+                            <!--<a href="/post/9832.html" target="_blank">iOS 9.3 Beta 2 发布：控制中心增加减弱蓝光功能</a>-->
+<!--<span>-->
+<!--<s class="global-grey-icons grey-view"></s>-->
+<!--<em class="global-icons-gap">12065</em>-->
+<!--<s class="global-grey-icons grey-num"></s>-->
+<!--<em class="global-icons-gap">27</em>-->
+<!--</span>-->
+                        <!--</li>-->
+                        <!--<li class="clear">-->
+                            <!--<a href="/post/8633.html" target="_blank">细说一下 iOS 不如国产安卓的方方面面</a>-->
+<!--<span>-->
+<!--<s class="global-grey-icons grey-num"></s>-->
+<!--<em class="global-icons-gap">37420</em>-->
+<!--<s class="global-grey-icons grey-num"></s>-->
+<!--<em class="global-icons-gap">186</em>-->
+<!--</span>-->
+                        <!--</li>-->
+                        <!--<li class="clear">-->
+                            <!--<a href="/post/440.html" target="_blank">iOS不越狱也可以这么玩。</a>-->
+<!--<span>-->
+<!--<s class="global-grey-icons grey-num"></s>-->
+<!--<em class="global-icons-gap">550</em>-->
+<!--<s class="global-grey-icons grey-num"></s>-->
+<!--<em class="global-icons-gap">18</em>-->
+<!--</span>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="detail-content-sidebar">
+            <div class="author-organ">
+                <div class="triangle-bottomright">
+                </div>
+                <div class="wen-logo">&nbsp;</div>
+                <div class="explain">
+                    <h4 class="organ-name">fangwenwen</h4>
+
+                    <p class="organ-slogan">让我用70年的生命去陪伴您!</p>
+
+                    <p class="organ-info"><span class="name">发帖</span><span class="num">121</span><span class="divider">|</span><span
+                            class="name">回复</span><span
+                            class="num">20</span></p>
+                </div>
+            </div>
+            <div class="recommend-article">
+                <div class="tab-list">
+                    <ul class="clearfix">
+                        <li class="active"><a data-id="newArticle">最新</a></li>
+                        <li><a data-id="choseArticle">精选</a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <ul class="new-article-list">
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="chose-article-list">
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐22财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐22财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="topic-title"><span>【搜狐财经】</span>ios9.3即将到来，你会第一时间更新么？</h3>
+
+                            <div class="topic-annotate clearfix">
+                                <span class="topic-author">王峰</span>
+                                <span class="topic-time">12分钟前</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qr-code">
+                <img src="../images/wx2.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!--begin footer part-->
+<div class="footer">
+    <div class="inner clearfix">
+        <div class="inner_copyr fleft">真实的房屋数据提供者<em class="ml10 mr10">|</em>FWW<em class="ml10 mr10">|</em>&nbsp;
+            蜀ICP备15024827号
+        </div>
+        <div class="inner_follow fright">
+            <a class="follow_wx" href="javascript:void(0);">
+                <img src="../images/weixin.png" class="qr_code">
+            </a>
+            <a class="follow_wb" href="http://www.weibo.com/fwwfww" target="_blank"></a>
+        </div>
+    </div>
+</div>
+<!--end footer part-->
+
+<!--begin scroll-top part-->
+<!--end scroll-top part-->
+
+<div class="side_btn">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!--end footer data part-->
+
+<script type="text/javascript" src="../js/third/jssor.slider.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript"
+        src="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="../js/custom.js"></script>
+
+
+<!-- #endregion Jssor Slider End -->
+
+</body>
+</html>

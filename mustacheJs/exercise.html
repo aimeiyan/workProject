@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/mustache.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<script type="x-tmpl-mustache" id="template">
+
+    {{#beatles}}
+    * {{name}}
+    {{/beatles}}
+
+</script>
+
+<script type="text/javascript">
+
+    var data = {
+        "beatles": [
+            {"firstName": "John", "lastName": "Lennon"},
+            {"firstName": "Paul", "lastName": "McCartney"},
+            {"firstName": "George", "lastName": "Harrison"},
+            {"firstName": "Ringo", "lastName": "Starr"}
+        ],
+        "name": function () {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+    var html2 = Mustache.render("template", {beatles: data.beatles});
+    console.log(html2);
+
+</script>
+
+</body>
+</html>

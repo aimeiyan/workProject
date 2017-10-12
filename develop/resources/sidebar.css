@@ -1,0 +1,226 @@
+/**样式选择框**/
+.theme-panel {
+    position: fixed;
+    right: -175px;
+    top: 100px;
+    z-index: 1020;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    width: 175px;
+    -webkit-transition: right .2s linear;
+    -moz-transition: right .2s linear;
+    transition: right .2s linear
+}
+
+.theme-panel .theme-list {
+    margin: 0;
+    padding: 0
+}
+
+.theme-panel .theme-list + .theme-list {
+    margin-top: 10px
+}
+
+.theme-panel .theme-list > li {
+    float: left
+}
+
+.theme-panel .theme-list > li + li {
+    margin-left: 10px
+}
+
+.theme-panel .theme-list > li > a {
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: block;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.theme-panel .theme-list > li.active > a {
+    position: relative
+}
+
+.theme-panel .theme-list > li.active > a:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    text-align: center
+}
+
+.theme-panel .theme-list > li > a:focus, .theme-panel .theme-list > li > a:hover, .twitter-typeahead .tt-hint {
+    opacity: .6;
+    filter: alpha(opacity=60)
+}
+
+.theme-panel .theme-list > li.active > a.bg-white:before {
+    color: #666
+}
+
+.theme-panel .theme-panel-content {
+    margin: -15px;
+    padding: 15px;
+    background: #fff;
+    position: relative;
+    z-index: 1020
+}
+
+.theme-panel .theme-list a.bg-white {
+    border: 1px solid #e2e7eb
+}
+
+.theme-panel .control-label {
+    line-height: 30px
+}
+
+.theme-panel .control-label.double-line {
+    line-height: 15px
+}
+
+.theme-panel .divider {
+    height: 1px;
+    margin: 15px 0;
+    background: #f2f2f2
+}
+
+/**我的消息提示框**/
+.right-message-panel {
+    position: fixed;
+    right: -250px;
+    top: 135px;
+    z-index: 1021;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    width: 250px;
+    height: 200px;
+    -webkit-transition: right .2s linear;
+    -moz-transition: right .2s linear;
+    transition: right .2s linear;
+    border: 1px solid #ccc;
+}
+
+/**我的公告**/
+.right-notice-panel {
+    position: fixed;
+    right: -400px;
+    top: 200px;
+    z-index: 1021;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    width: 400px;
+    min-height: 200px;
+    -webkit-transition: right .2s linear;
+    -moz-transition: right .2s linear;
+    transition: right .2s linear;
+    border: 1px solid #ccc;
+}
+
+/**我的收藏夹**/
+.right-favorite-panel {
+    position: fixed;
+    right: -250px;
+    top: 200px;
+    z-index: 1021;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    width: 250px;
+    height: 200px;
+    -webkit-transition: right .2s linear;
+    -moz-transition: right .2s linear;
+    transition: right .2s linear;
+    border: 1px solid #ccc;
+
+}
+
+/**常用链接**/
+.right-link-panel {
+    position: fixed;
+    right: -250px;
+    top: 350px;
+    z-index: 1021;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    width: 250px;
+    height: 200px;
+    -webkit-transition: right .2s linear;
+    -moz-transition: right .2s linear;
+    transition: right .2s linear;
+    border: 1px solid #ccc;
+}
+
+/**激活时Panel样式**/
+.theme-panel.active,
+.right-message-panel.active,
+.right-favorite-panel.active,
+.right-link-panel.active, .right-notice-panel.active {
+    right: 0;
+    z-index: 9999;
+}
+
+/**右侧悬浮图标**/
+.theme-panel .theme-collapse-btn,
+.right-message-panel .right-message-collapse-btn,
+.right-favorite-panel .right-favorite-collapse-btn,
+.right-link-panel .right-link-collapse-btn, .right-notice-panel .right-notice-collapse-btn {
+    position: absolute;
+    left: -30px;
+    top: 50px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #fff;
+    background: #22AD89;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    box-shadow: -1px 0 3px -1px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: -1px 0 3px -1px rgba(0, 0, 0, .4);
+    -moz-box-shadow: -1px 0 3px -1px rgba(0, 0, 0, .4)
+}
+
+.right-notice-panel .right-notice-collapse-btn {
+    top: 20px;
+}
+
+.right-notice-panel.active .right-notice-collapse-btn {
+    top: 50px;
+}
+
+.right-favorite-panel .right-favorite-collapse-btn {
+    top: 55px;
+}
+
+/**悬浮图标打开时的图标**/
+.theme-panel.active .theme-collapse-btn .fa:before,
+.right-message-panel.active .right-message-collapse-btn .fa:before,
+.right-favorite-panel.active .right-favorite-collapse-btn .fa:before,
+.right-link-panel.active .right-link-collapse-btn .fa:before, .right-notice-panel.active .right-notice-collapse-btn .fa:before {
+    content: '\f00d'
+}

@@ -1,0 +1,71 @@
+a:link { text-decoration:none; color:#336699; }
+a:visited { text-decoration:none; color:#336699; }
+a:active { text-decoration:none; color:#336699; }
+a:hover { text-decoration:none; color:#000000; }
+body{ margin:0px; padding:0px;overflow: auto;}
+div,td,input,legend{font:12px "Tahoma","verdana","arial","helvetica","sans-serif";}
+form,pre{ margin:0px; padding:0px; }
+input {
+	height:20px;
+}
+legend{
+	font-weight: bold;
+	color: #000000;
+}
+fieldset {
+	border: 1px solid #cccccc;
+	padding: 3px 3px;
+}
+
+input.addfile {   
+	cursor:pointer!important; 
+	height:18px; 
+	left:-13px; 
+	*left:0px;
+	*right:13px; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+	position:absolute; 
+	top:2px; 
+	width:0px; 
+	border:0px;
+} 
+a.addfile {     
+	background-image:url(../images/attachment-icon.gif);     
+	background-repeat:no-repeat; 
+	background-position:0px 4px;  
+	display:block;     
+	/*float:left;*/     
+	height:20px;     
+	margin-top:-1px;    
+	position:relative;    
+	text-decoration:none;     
+	top:0pt;     
+	width:80px;
+	z-index: 10;
+	cursor: default;
+}
+a.addpicture {     
+	background-image:url(../images/zp-icon.gif);     
+	background-repeat:no-repeat; 
+	background-position:0px 4px;  
+	display:block;     
+	/*float:left;*/     
+	height:20px;     
+	margin-top:-1px;    
+	position:relative;    
+	text-decoration:none;     
+	top:0pt;     
+	width:80px;
+	z-index: 10;
+	cursor: default;
+}  
+/* 删除按钮 */
+span.deleteATM
+{
+	background-image: url(../images/attachment-icon.gif);
+	background-repeat:no-repeat; 
+	background-position:0px -18px;  
+	cursor: pointer;
+	width: 14px;
+}

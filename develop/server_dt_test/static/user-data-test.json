@@ -1,0 +1,527 @@
+{
+  "recordsTotal": 100,
+  "recordsFiltered": 100,
+  "draw": "1",
+  "data": [
+    {
+      "idx": 1,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":1,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":1,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 2,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":2,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":2,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 3,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":3,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":3,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 4,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":4,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":4,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 5,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":5,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":5,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 6,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":6,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":6,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 7,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":7,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":7,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 8,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":8,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":8,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 9,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":9,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":9,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 10,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":10,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":10,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 11,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":11,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":11,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 12,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":12,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":12,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 13,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":13,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":13,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 14,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":14,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":14,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 15,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":15,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":15,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 16,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":16,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":16,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 17,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":17,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":17,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 18,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":18,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":18,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 19,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":19,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":19,
+        "text": "密码重置"
+      }
+    },
+    {
+      "idx": 20,
+      "id": 12345,
+      "name": "张三",
+      "sex":"男",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": "薪酬专员",
+      "email": "lis@qq.com",
+      "tel": "13652675647",
+      "entryTime": "2013-12-09",
+      "lastLoginTime": "2014-04-09",
+      "address": "北京",
+      "IP": "192.78.97.96",
+      "browser": "IE8",
+      "useEquipment": "PC机",
+      "switch": {
+        "id":20,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": {
+        "id":20,
+        "text": "密码重置"
+      }
+    }
+  ]
+}

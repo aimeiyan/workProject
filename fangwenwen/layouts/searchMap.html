@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title></title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">
+    <link type="text/css" rel="stylesheet" href="../js/third/Font-Awesome-master/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <!--<link type="text/css" rel="stylesheet" href="../js/third/font-awesome/css/font-awesome.min.css">-->
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=49ae9ffa8fbf7d506a882467f1af410f"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/MarkerManager/1.2/src/MarkerManager.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+    <style>
+        .search-map {
+            width: 1120px;
+            margin: 0 auto 20px;
+        }
+
+        .search-map #allmap {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<!--begin header part-->
+<div class="header">
+
+    <div class="subwrapper">
+        <div class="header_inner clearfix">
+            <a class="inner_logo fleft" href="index.html"></a>
+            <ul class="inner_nav fleft clearfix">
+                <li><a class="" href="index.html">首页</a></li>
+                <li><a class="" href="consultingOptimization.html">数据咨询</a></li>
+                <li><a class="" href="jianguanzhibo.html">监管直播</a></li>
+                <li><a class="" href="aboutUs.html">关于我们</a></li>
+            </ul>
+            <div class="inner_login fright" style="">
+                <a href="signin.html"
+                   class="login_in">登录</a><span class="seperate-line">|</span>
+                <a class="logoutCss"
+                   href="signup.html">注册</a>
+                <!--<span href="javascript:void(0);" class="account-user">-->
+                <div class="account-user">
+                    <a href="#">
+                        <img class="user-img" src="../images/user01.gif" alt="会员头像">
+                        <span class="user-name">王阳明</span>
+                    </a>
+
+                    <div class="person-dropdown-info">
+                        <ul>
+                            <li><a href="personalCenter.html">我的主页</a></li>
+                            <li><a href="basicInfo.html">完善个人信息</a></li>
+                            <li><a href="index.html">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div>-->
+
+                <!--</div>-->
+                <!--</span>-->
+                <!--<span class="account_user clear">-->
+                <!--<a class="img_link clear" href="/personal">-->
+                <!--<img class="user_img" src="http://static.zealer.com/images/plus/mb_pic50.gif" alt="会员头像">-->
+                <!--</a>-->
+                <!--<span class="user_active bigHead">-->
+                <!--<a href="/personal" class="active_name" rel="nofollow">nancy</a>-->
+                <!--<a href="/user/logout" rel="nofollow">退出</a>-->
+                <!--</span>-->
+                <!--</span>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header part-->
+<div class="content-wrapper">
+</div>
+<!--begin search data part-->
+
+<div class="search-data">
+    <div class="inner">
+        <h2 class="title">在售评测数据</h2>
+
+        <div class="search-box clearfix">
+            <div class="search-input fleft clearfix">
+                <input type="text">
+                <a href="searchResultOK.html" class="action">查数据</a>
+            </div>
+            <div class="fright classify">
+                <ul class="clearfix">
+                    <li class="fright t-center"><a href="index.html" class="table">
+                        <i class="fa fa-list f-26"></i>
+
+                        <p>列表</p>
+                    </a></li>
+                    <li class="fright t-center active"><a href="searchMap.html" class="table">
+<span class="fa-stack">
+  <i class="fa fa-map-o fa-stack-2x"></i>
+  <i class="fa fa-map-marker fa-stack-1x"></i>
+</span>
+
+                        <p>地图</p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="search-map">
+    <div id="allmap"></div>
+</div>
+<!--end search data part-->
+<!--begin footer part-->
+<div class="footer">
+    <div class="inner clearfix">
+        <div class="inner_copyr fleft">真实的房屋数据提供者<em class="ml10 mr10">|</em>FWW<em class="ml10 mr10">|</em>&nbsp;
+            蜀ICP备15024827号
+        </div>
+        <div class="inner_follow fright">
+            <a class="follow_wx" href="javascript:void(0);">
+                <img src="../images/weixin.png" class="qr_code">
+            </a>
+            <a class="follow_wb" href="http://www.weibo.com/fwwfww" target="_blank"></a>
+        </div>
+    </div>
+</div>
+<!--end footer part-->
+
+<!--begin scroll-top part-->
+<!--end scroll-top part-->
+
+<div class="side_btn">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!--end footer data part-->
+
+<script type="text/javascript" src="../js/third/jssor.slider.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+
+<!-- #endregion Jssor Slider End -->
+<script type="text/javascript">
+    //  标注点数组
+    var BASEDATA = [
+        {
+            text: "奥亚酒店",
+            mouseoverTxt: "北苑路169号",
+            point: "116.422792|40.009471",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "珀丽酒店",
+            mouseoverTxt: "将台西路8号",
+            point: "116.484289|39.97936",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "贵国酒店",
+            mouseoverTxt: "左家庄1号",
+            point: "116.454494|39.964011",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "科通酒店",
+            mouseoverTxt: "民族园路8号院2号楼",
+            point: "116.394601|39.987925",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "将台酒店",
+            mouseoverTxt: "酒仙桥路甲12号",
+            point: "116.496024|39.976864",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "成宏酒店",
+            mouseoverTxt: "北四环东路惠新东桥西北侧",
+            point: "116.429445|39.995392",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "华商酒店",
+            mouseoverTxt: "延静西里2号",
+            point: "116.488962|39.921939",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "标华酒店",
+            mouseoverTxt: "北京市 朝阳区红庙路柴家湾1号",
+            point: "116.489284|39.92104",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "万程酒店",
+            mouseoverTxt: "天坛路89号",
+            point: "116.411762|39.89457",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "黎昌酒店",
+            mouseoverTxt: "永定门外彭庄乙58号",
+            point: "116.393532|39.876272",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "北京图书馆",
+            mouseoverTxt: "北京市海淀区白石桥路39号",
+            point: "116.329593|39.952398",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "海淀图书馆",
+            mouseoverTxt: "丹棱街16西门",
+            point: "116.315551|39.984388",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "北京图书馆",
+            mouseoverTxt: "北京市西城区文津街附近",
+            point: "116.391713|39.929007",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "首都图书馆",
+            mouseoverTxt: "东三环南路88号",
+            point: "116.469899|39.87684",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "国家图书馆",
+            mouseoverTxt: "中关村南大街33号",
+            point: "116.331292|39.949031",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "崇文区图书馆",
+            mouseoverTxt: "北京市崇文区花市大街113号（乐天玛特超市旁）的敕建火德真君庙内",
+            point: "116.427671|39.903568",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "朝阳区图书馆",
+            mouseoverTxt: "北京市朝阳区朝外小庄金台里17号",
+            point: "116.47766|39.922295",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "宣武区图书馆",
+            mouseoverTxt: "教子胡同8号",
+            point: "116.374561|39.894302",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "东城区图书馆",
+            mouseoverTxt: "交道口东大街85号",
+            point: "116.41927|39.9474",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        },
+        {
+            text: "西城区图书馆",
+            mouseoverTxt: "北京市西城区后广平胡同26号",
+            point: "116.368099|39.942332",
+            href: "http://static.blog.csdn.net/images/medal/holdon_s.gif"
+        }
+    ];
+
+
+    function initialize() {
+
+        // 百度地图API功能
+        var mp = new BMap.Map("allmap", {enableMapClick: false});
+        mp.centerAndZoom(new BMap.Point(116.3964, 39.9093), 12);
+        mp.enableScrollWheelZoom();
+        // 复杂的自定义覆盖物
+        function ComplexCustomOverlay(point, text, mouseoverText, href) {
+            this._point = point;
+            this._text = text;
+            this._overText = mouseoverText;
+            this._href = href
+        }
+
+        ComplexCustomOverlay.prototype = new BMap.Overlay();
+        ComplexCustomOverlay.prototype.initialize = function (map) {
+            this._map = map;
+            var div = this._div = document.createElement("div");
+            div.style.position = "absolute";
+            div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+            div.style.backgroundColor = "#EE5D5B";
+            div.style.border = "1px solid #BC3B3A";
+            div.style.color = "white";
+            div.style.height = "22px";
+            div.style.lineHeight = "22px";
+            div.style.whiteSpace = "nowrap";
+            div.style.MozUserSelect = "none";
+            div.style.fontSize = "12px";
+
+            var lpTipDiv = this._lpTipDiv = document.createElement("div");
+            lpTipDiv.className = "lpTipDiv";
+            div.appendChild(lpTipDiv);
+
+            var linkA = this._linkA = document.createElement("a");
+            linkA.href = this._href;
+            linkA.target = "_blank";
+            linkA.style.color = "#ffffff";
+            lpTipDiv.appendChild(linkA);
+
+
+            var txtSpan = this._txtSpan = document.createElement("span");
+            txtSpan.className = "loadTxt";
+            txtSpan.style.display = "inline-block";
+            txtSpan.style.paddingLeft = "4px";
+            txtSpan.style.paddingRight = "4px";
+            txtSpan.appendChild(document.createTextNode(this._text));
+            linkA.appendChild(txtSpan);
+
+
+            var mouseOverspan = this._mouseOverspan = document.createElement("span");
+            mouseOverspan.style.backgroundColor = "#ffffff";
+            mouseOverspan.style.color = "#000000";
+            mouseOverspan.style.paddingLeft = "4px";
+            mouseOverspan.style.paddingRight = "4px";
+            mouseOverspan.className = "overText";
+            mouseOverspan.appendChild(document.createTextNode(this._overText));
+            mouseOverspan.style.display = "none";
+            linkA.appendChild(mouseOverspan);
+
+
+            var that = this;
+
+            var arrow = this._arrow = document.createElement("div");
+            arrow.style.background = "url(http://map.baidu.com/fwmap/upload/r/map/fwmap/static/house/images/label.png) no-repeat";
+            arrow.style.position = "absolute";
+            arrow.style.width = "11px";
+            arrow.style.height = "10px";
+            arrow.style.top = "22px";
+            arrow.style.left = "10px";
+            arrow.style.overflow = "hidden";
+            div.appendChild(arrow);
+
+            div.onmouseover = function () {
+                this.style.backgroundColor = "#6BADCA";
+                this.style.borderColor = "#0000ff";
+                // this.getElementsByClassName("overText")[0].style.display = "inline-block";
+                $(this).find(".overText").css({"display":"inline-block"});
+                arrow.style.backgroundPosition = "0px -20px";
+            };
+
+            div.onmouseout = function () {
+                this.style.backgroundColor = "#EE5D5B";
+                this.style.borderColor = "#BC3B3A";
+                // this.getElementsByClassName("overText")[0].style.display = "none";
+                $(this).find(".overText").css({"display":"none"});
+                arrow.style.backgroundPosition = "0px 0px";
+            };
+
+            mp.getPanes().labelPane.appendChild(div);
+
+            return div;
+        };
+        ComplexCustomOverlay.prototype.draw = function () {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._div.style.left = pixel.x - parseInt(this._arrow.style.left) + "px";
+            this._div.style.top = pixel.y - 30 + "px";
+        };
+
+
+//        ComplexCustomOverlay.prototype.show = function(){
+//            if(this._div){
+//                this._div.style.display = "";
+//            }
+//        };
+
+
+        var markers = [];
+        for (var i = 0; i < BASEDATA.length; i++) {
+            var p0 = BASEDATA[i].point.split("|")[0];
+            var p1 = BASEDATA[i].point.split("|")[1];
+            var pt = new BMap.Point(p0, p1);
+            var text = BASEDATA[i].text, mouseoverTxt = BASEDATA[i].mouseoverTxt, href = BASEDATA[i].href;
+            var myIcon = new BMap.Icon("../images/markericon.png", new BMap.Size(1, 1));
+            var marker = new BMap.Marker(pt, {icon: myIcon});
+            var ComplexCustom = new ComplexCustomOverlay(pt, text, mouseoverTxt, href);
+            mp.addOverlay(ComplexCustom);
+//
+//            ComplexCustom.prototype.show = function(){
+//                if(this._div){
+//                    this._div.style.display = "";
+//                }
+//            };
+
+//            ComplexCustom.show();
+
+//            marker.hide();
+
+            markers.push(marker);
+
+        }
+
+        mp.addEventListener("zoomend", function () {
+//            alert("地图缩放至：" + this.getZoom() + "级");
+            if (this.getZoom() === 10) {
+                $(".lpTipDiv").parent().hide();
+            } else {
+                $(".lpTipDiv").parent().show();
+            }
+        });
+//
+////        var padding = 200;
+///*        var mgr = new BMapLib.MarkerManager(mp, {
+//            borderPadding: padding,
+//            maxZoom: 18,
+//            trackMarkers: true
+//        });
+//
+//        mgr.addMarkers(markers, 8, 18);
+//        mgr.hide();*/
+        var markerClusterer = new BMapLib.MarkerClusterer(mp, {markers: markers, minClusterSize: 5});
+
+
+//        var map = new BMap.Map("allmap");
+//        var point = new BMap.Point(116.404, 39.915);
+//        map.centerAndZoom(point, 15);  // 编写自定义函数，创建标注
+//        function addMarker(point, index){  // 创建图标对象
+//            var myIcon = new BMap.Icon("http://api.map.baidu.com/mapCard/img/location.gif",
+//                    new BMap.Size(14, 23), {
+//                        // 指定定位位置。
+//                        // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+//                        // 角各偏移7像素和25像素。您可以看到在本例中该位置即是
+//                        // 图标中央下端的尖角位置。
+//                        anchor: new BMap.Size(7, 25)
+//                    });
+//            // 创建标注对象并添加到地图
+//            var marker = new BMap.Marker(point, {icon: myIcon});
+//            map.addOverlay(marker);
+//        }
+//        // 随机向地图添加10个标注
+//        var bounds = map.getBounds();
+//        var lngSpan = bounds.getNorthEast().lng - bounds.getSouthWest().lng;
+//        var latSpan = bounds.getNorthEast().lat- bounds.getSouthWest().lat;
+//        for (var i = 0; i < 10; i++) {
+//            var point = new BMap.Point(bounds.getSouthWest().lng + lngSpan * (Math.random() * 0.7 + 0.15), bounds.getSouthWest().lat + latSpan * (Math.random() * 0.7 + 0.15));
+//            addMarker(point, i);
+//        }
+
+    }
+
+    //    function loadScript() {
+    //        var script = document.createElement("script");
+    //        script.src = "http://api.map.baidu.com/api?v=2.0&ak=49ae9ffa8fbf7d506a882467f1af410f";
+    //        document.body.appendChild(script);
+    //    }
+
+    //    window.onload = loadScript;
+
+    initialize();
+
+</script>
+
+</body>
+</html>

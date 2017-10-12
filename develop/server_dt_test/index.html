@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="static/jquery-1.11.3.min.js"></script>
+    <script src="static/jquery.dataTables.js"></script>
+    <script src="static/template.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css"/>
+    <script></script>
+    <script type="text/html" id="colum4-tmpl">
+        <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-id-switch-state bootstrap-switch-animate"
+                >
+            <div class="bootstrap-switch-container"><span
+                    class="bootstrap-switch-handle-on bootstrap-switch-primary">&nbsp;</span><span
+                    class="bootstrap-switch-label">&nbsp;</span><span
+                    class="bootstrap-switch-handle-off bootstrap-switch-default">&nbsp;</span>
+            </div>
+
+            <ul>
+                {{each office as o index}}
+                <li>{{o}}</li>
+                {{/each}}
+            </ul>
+
+        </div>
+    </script>
+    <script>
+        $(function () {
+
+            var i18n = {
+                paginate: {
+                    first: "首页",
+                    previous: "上一页",
+                    next: "下一页",
+                    last: "末页"
+                }
+
+            };
+
+            var options = {
+//                destroy: true,
+
+
+                language: i18n,
+                'serverSide': true,
+                "ajax": "static/data.json",
+                'ordering': true,
+                "searching": false,
+
+                columnDefs: [
+                    {targets: '_all', orderable: false},
+                    {
+                        "targets": 0,
+                        "render": function (data, type, row) {
+                            return "<a href='/index'>" + data + "</a>";
+                        }
+                    },
+                    {
+                        "targets": 3,
+                        "render": function (data, type, row) {
+//                            console.log(data, row)
+//                            return 'abc';
+
+                            return template('colum4-tmpl', {office: data})
+                        }
+                    },
+
+                ],
+
+                "columns": [
+                    {"data": "first_name",'title':"first_name"},
+                    {"data": "last_name",'title':"last_name"},
+                    {"data": "position",'title':"position"},
+                    {"data": "office",'title':"office"},
+                    {"data": "start_date",'title':"start_date"},
+                    {"data": "salary",'title':"salary"}
+                ]
+            };
+
+            var order_options = [];
+
+            var is_default_first_sort = true;
+
+            // 常量
+            var default_sort_column = 0;
+
+            function add_default_sortable() {
+
+
+                $('#example th').each(function (idx, th) {
+                    var $th = $(th);
+                    var index = $th.index();
+
+                    if (is_default_first_sort && index === default_sort_column) {
+                        $th.removeClass();
+                        $th.addClass('sorting');
+                        return;
+                    }
+
+
+                    if (index == 0) return;
+
+
+                    $th.removeClass('sorting_disabled');
+                    if ($th.attr('class').indexOf('sorting') >= 0) {
+
+                    } else {
+                        $th.addClass('sorting');
+                    }
+                });
+            }
+
+            var mytable = $('#example').dataTable(options);
+
+            mytable.api().on('draw.dt', function () {
+                add_default_sortable();
+            });
+
+
+            // 搜索
+            $('#search').click(function () {
+                var q = $('#q').val();
+                var q2 = $('#q2').val();
+                if (q || q2) {
+                    var url = '/data?q=' + encodeURIComponent(q);
+
+                    url += '&q2=' + encodeURIComponent(q2);
+
+
+                    mytable.api().ajax.url(url).load();
+                }
+            });
+
+
+            $(document).on('click', '#example th', function (e) {
+                var $th = $(this);
+                var index = $th.index(); // 以前按照第几列排序
+                is_default_first_sort = false;
+
+
+                if (index == 0) return;
+
+                if (order_options.length === 1 && index !== default_sort_column) {
+                    var first = order_options[0];
+                    if (first[0] === 0 && first[1] == 'asc') {
+                        order_options = [];
+                    }
+                }
+
+                // 已经enable的排序方案
+                var old = null;
+                var new_order_options = [];
+                for (var i = 0; i < order_options.length; i++) {
+                    var o = order_options[i];
+                    if (o[0] === index) { // 已经有排序
+                        old = o;
+                    } else {
+                        new_order_options.push(o); // 把原有的方案保存下来
+                    }
+                }
+
+                if (!old) { // 原来 这一列没有排序. unshift加在最前面
+                    new_order_options.unshift([index, 'asc']);
+                } else {
+                    var oldsort = old[1];
+                    if (oldsort == 'asc') {
+                        new_order_options.unshift([index, 'desc']);
+                    } else if (oldsort == 'desc') {
+                        // 去掉这一列的排序
+                    }
+                }
+
+                order_options = new_order_options;
+                if (order_options.length === 0) { // 取消所有的排序， 则按照第一列排序
+                    order_options.push([default_sort_column, 'asc']);
+                    is_default_first_sort = true;
+                }
+
+                console.log(order_options);
+
+                mytable.api(true).order(order_options).draw();
+            });
+        });
+    </script>
+</head>
+<body>
+
+<!--<div>this is a test</div>-->
+
+<input id="q"/>
+<input id="q2"/>
+<button id="search">search</button>
+
+<table id="example" class="display" cellspacing="0" width="100%" border="1">
+
+    <!--<thead>-->
+    <!--<tr>-->
+        <!--<th>First name</th>-->
+        <!--<th>Last name</th>-->
+        <!--<th>Position</th>-->
+        <!--<th>Office</th>-->
+        <!--<th>Start date</th>-->
+        <!--<th>Salary</th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+
+</table>
+
+</body>
+</html>

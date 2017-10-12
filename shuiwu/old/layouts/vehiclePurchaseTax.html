@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <title>车购税|广州国税</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--<link rel="stylesheet" type="text/css" href="/sjwg/resources/nsfw/css/blue.css">-->
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="/sjwg/resources/nsfw/css/layout.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="/sjwg/resources/nsfw/css/base.css">-->
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link href="../third/Font-Awesome-master/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <link href="../css/gzgs.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/modify.css">
+
+
+
+</head>
+<body class="white-bg  body-small pace-done"
+      onload="MM_preloadImages('/sjwg/resources/wx/yy/style/gzgs/images/lanmu/btn_rscx02.gif','/sjwg/resources/wx/yy/style/gzgs/images/lanmu/btn_wxyy02.gif')">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div class="wrapper animated fadeInRight gzgs-nav-bar">
+    <div class="row">
+        <div class="col-xs-12 col-xm-12 container-fluid ">
+            <div class="row">
+                <div class="col-xs-1 col-xm-1 text-left">
+                    <a class="btn gzgs_btn" href="javascript:window.history.back();"><i class="fa fa-chevron-left fa-2x gzgs-font-white"></i></a>
+                </div>
+                <div class="col-xs-10 col-xm-10 container text-center">
+                    <a class="btn gzgs-font-white"><h3>车购税完税情况查询</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gzgs-seperator animated fadeInRight"></div>
+<div class="wrapper wrapper-content container animated fadeInRight">
+    <div class="row" style="margin-left: 2%; margin-right: 2%;">
+        <div class="row">
+            <div class="col-xs-12">
+                <form name="nsfwGdnssbForm" id="thisForm" method="post" action="/sjwg/wsbs/nsfw/gdnssbAction.do?method=listWap">
+                    <div class="form-group">
+                        <label>完税证明号码</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-tasks"></i>
+                            </div>
+                            <input type="text" class="form-control" name="wszmHm" id="wszmHm" placeholder="请输入">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>车架号</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-car"></i>
+                            </div>
+                            <input type="text" class="form-control" name="vin" id="vin" placeholder="请输入">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>验证码</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <input style="width:70%;height:40px" type="text" class="form-control" name="yzmName" id="yzm" placeholder="请输入">
+                            <img alt="验证码" width="80px" height="40px" id="yzmimg" src="../images/vimage.jpeg" onload="this.style.display=&quot;&quot;">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="button" name="button" id="button" onclick="yzsjzqx();">&nbsp;&nbsp;查&nbsp;&nbsp;询&nbsp;&nbsp;</button>
+                    </div>
+
+                    <p class="gzgs-sms-text">
+                        提示<br>
+                        1.本查询非实时数据，只可查询到昨天以前（含昨天）的完税情况。<br>
+                        2.完税证明号码或车架号码可任录一个,但必须录入完整的号码。<br>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<form name="nsfwNsrxydjForm" id="thisForm" method="post" action="/sjwg/wsbs/nsfw/nsrxydjAction.do?method=listNsr">
+<div class="padding_4 clearfix">
+<div class="check_form clearfix">
+<div class="item clearfix">
+    <input type="text" placeholder="纳税人名称" name="f_LIS_nsrMc" id="nsrMc">
+</div>
+<div class="item clearfix">
+    <input type="text" placeholder="纳税人识别号" name="f_EQS_nsrsbh" id="nsrsbh">
+</div>
+<div class="item clearfix">
+    <input type="text" placeholder="验证码" class="check_yzm" name="yzmName" id="yzm">
+    <div class="yzm_box"><div id="loadimg">&nbsp;正在加载图片…</div><img  alt="验证码" width="100%" height="100%"  id="yzmimg" src="/sjwg/common/vimage.jsp?v=14604322056760.5793995672458054" onload='this.previousSibling.style.display="none";this.style.display=""'>
+    </div>
+</div>
+<button type="button" class="checkBtn" name="button" id="button" onclick="yzsjzqx();">查   询</button>
+</div>
+<dl class="tip clearfix">
+    <dt>提示</dt>
+    <dd>1.上列查询条件可输入相应关键字进行查询。其中，纳税人名称可以进行模糊查询，纳税人识别号栏需。</dd>
+    <dd>2.点击查询结果列表框中的纳税人名称查看详细信息。</dd>
+    <dd>3.2014年度前不属于A、C、D类的纳税人为当年度B类或参照B类管理。</dd>
+    <dd>4.A级和AAA级纳税人电子证书可登陆广州市国税局网上办税大厅下载，具体下载指引详见“广州国税
+    网站->办税服务->办税指南->其他->其他服务指引->纳税人查询纳税信用级别指引（链接“<a href="http://www.gd-n-tax.gov.cn/pub/gzsgsww/bsfw/bszn/swdj_54124/E02040101_54447/201408/t20140811_475759.html" target="_blank">http://
+    www.gd-n-tax.gov.cn/pub/gzsgsww/bsfw/bszn/swdj_54124/E02040101_54447/
+    201408/t20140811_475759.html</a>”）”。</dd>
+    <dd>5.纯地税经管纳税人因没有国税纳税人识别号，本系统只能通过纳税人名称查询，如需更详细查询或下
+    载A级/AAA级证书，可登陆广州市地税局网站。</dd>
+</dl>
+</div>
+</form>
+-->
+
+
+<!-- Mainly scripts -->
+<script src="../js/jquery-2.1.1.js"></script>
+<!--<script src="/sjwg/resources/wx/static/admin/js/jquery-ui-1.10.4.min.js"></script>-->
+<!--<script src="/sjwg/resources/wx/static/admin/js/bootstrap.min.js"></script>-->
+
+<!--<script src="/sjwg/resources/wx/static/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>-->
+<!--<script src="/sjwg/resources/wx/static/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>-->
+
+<!-- Custom and plugin javascript -->
+<!--<script src="/sjwg/resources/wx/static/admin/js/inspinia.js"></script>-->
+<!--<script src="/sjwg/resources/wx/static/admin/js/plugins/pace/pace.min.js"></script>-->
+<!--<script src="/sjwg/resources/wx/static/admin/js/jquery.blockUI.js"></script>-->
+<!--<script src="/sjwg/resources/wx/static/admin/js/common.js"></script>-->
+<script type="text/javascript">
+    var jcontextPath = '/sjwg';
+
+    <!--<link rel="stylesheet" type="text/css" href="/sjwg/resources/nsfw/css/view4n.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="/sjwg/resources/nsfw/css/form4n.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="/sjwg/resources/nsfw/css/clockpick.css">-->
+
+    function yzsjzqx() {
+        var nsrsbh = $.trim($("#nsrsbh").val());
+        var nsrMc = $.trim($("#nsrMc").val());
+        $("#nsrsbh").val(nsrsbh);
+        $("#nsrMc").val(nsrMc);
+        if (nsrsbh == "" && nsrMc == "") {
+            alert("请输入纳税人识别号或纳税人名称！");
+            return;
+        }
+        var yzm = $.trim($("#yzm").val());
+        $("#yzm").val(yzm);
+        if (yzm == "") {
+            alert("请输入验证码！");
+            return;
+        }
+        //showWaitingWindow("正在查询，请稍候...");
+        var path = '/sjwg/resources/wx/static/admin/img/busy.gif';
+        showWait(path);
+        var strUrl = "/sjwg/wsbs/nsfw/nsrxydjAction.do?method=yzsjzqx";
+        $.ajax({
+            type: "POST",
+            url: strUrl,
+            data: {yzm: yzm, nsrsbh: nsrsbh, nsrMc: nsrMc},
+            dataType: "json",
+            success: function (response) {
+                if (response.result == "yzmError") {
+                    var imgpath = "/sjwg/common/vimage.jsp?v=" + getLongRandomString();
+                    document.getElementById("yzmimg").style.display = "none";
+                    //document.getElementById("loadimg").style.display="";
+                    document.getElementById("yzmimg").src = imgpath;
+                    closeWait();
+                    alert("请输入正确的验证码！");
+                } else if (response.result == "fgzgsjgqyError") {
+                    var imgpath = "/sjwg/common/vimage.jsp?v=" + getLongRandomString();
+                    document.getElementById("yzmimg").style.display = "inline";
+                    //document.getElementById("loadimg").style.display="";
+                    document.getElementById("yzmimg").src = imgpath;
+                    closeWait();
+                    alert("查询不到记录！");
+                    return;
+                } else if (response.result == "countError") {
+                    var imgpath = "/sjwg/common/vimage.jsp?v=" + getLongRandomString();
+                    document.getElementById("yzmimg").style.display = "inline";
+                    //document.getElementById("loadimg").style.display="";
+                    document.getElementById("yzmimg").src = imgpath;
+                    closeWait();
+                    alert("输入的纳税人名称过于模糊！");
+                    return;
+                } else {
+                    $("#thisForm").submit();
+                }
+            },
+            error: function () {
+                //closeWaitingWindow();
+                closeWait();
+            }
+        });
+    }
+    function refreshYZM() {
+        var imgpath = "/sjwg/common/vimage.jsp?v=" + getLongRandomString();
+        document.getElementById("yzmimg").style.display = "inline";
+        document.getElementById("yzmimg").src = imgpath;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+
+    var sxh = 'null';
+
+    var nsrsbh = '';
+
+    $(function () {
+        if (nsrsbh.length != 0 && nsrsbh != "null") {
+            $("#nsrsbh").val(nsrsbh);
+            $("#yzm").focus().select(); //设置验证码焦点
+        }
+    });
+</script>
+</body>
+</html>

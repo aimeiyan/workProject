@@ -1,0 +1,24 @@
+{
+  "left": [
+    {"structure": true},
+    {"role": true},
+    {"search": true}
+  ],
+  "right": [{
+    "text": "加入权限集",
+    "class": "btn btn-white m-r-5 hr-add-authority-set-btn",
+    "icon": "fa fa-cogs"
+  },{
+    "text": "清空权限",
+    "class": "btn btn-white m-r-5 hr-empty-authority-btn",
+    "icon": "fa fa-cogs"
+  }, {
+    "text": "导出",
+    "class": "btn btn-success dropdown-toggle",
+    "icon": ""
+  }, {
+    "text": "打印",
+    "class": "btn btn-success dropdown-toggle",
+    "icon": ""
+  }]
+}

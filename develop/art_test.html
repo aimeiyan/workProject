@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script type="text/template" id="my-test-tmpl">
+    {{each datas as p index}}
+
+    <tr class="odd" role="row">
+        <td><input type="checkbox" class="select-single"></td>
+        <td>{{p.idx}}</td>
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.company}}</td>
+        <td>{{p.depart}}</td>
+        <td><a href="javascript:void(0);" class="btn-link hr-authority-post">{{p.job}}</a></td>
+        <td>
+            {{each p.premissionSet as value i}}
+            <a href="javascript:void(0);" class="btn-link hr-authority-classify-item">{{value}}</a>
+            {{/each}}
+        </td>
+        <td><a href="javascript:void(0);" class="iconfont f-s-20 {{p.admin.class}}"
+               data-admin="{{p.admin.status}}">{{p.admin.value}}</a>
+        </td>
+        <td>
+            <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-id-switch-state bootstrap-switch-animate {{p.switch.class}}"
+                 data-state="{{p.switch.status}}">
+                <div class="bootstrap-switch-container"><span
+                        class="bootstrap-switch-handle-on bootstrap-switch-primary">&nbsp;</span><span
+                        class="bootstrap-switch-label">&nbsp;</span><span
+                        class="bootstrap-switch-handle-off bootstrap-switch-default">&nbsp;</span>
+                </div>
+            </div>
+        </td>
+        <td><a href="javascript:void(0);" class="fa fa-plus-square-o m-r-5"></a><a
+                href="javascript:void(0);" class="fa fa-minus-square"></a></td>
+    </tr>
+    {{/each}}
+</script>
+
+<table id="my-table">
+
+</table>
+
+<script type="text/template" id="random">
+    {{if w >10}}
+    <p>贵</p>
+    {{/if}}
+    {{if 10 > w >5}}
+    <p>一般</p>
+    {{/if}}
+    {{if w <5}}
+    <p>便宜</p>
+    {{/if}}
+</script>
+<div id="randoms"></div>
+<script src="resources/template.js"></script>
+
+<script>
+
+    var datas = [
+        {
+            idx: 2,
+            id: 12345,
+            name: '张三',
+            company: '中信银行总部',
+            depart: '人力资源部',
+            job: '薪酬专员',
+            premissionSet: ['薪酬', '合同', '招聘'],
+            admin: {
+                status: 'true',
+                class: 'hr-orange-f59c1a',
+                value: '&#xe629;'
+            },
+            switch: {
+                status: 'enabled',
+                class: 'bootstrap-switch-on'
+            }
+        },
+        {
+            idx: 2,
+            id: 12345,
+            name: '张三',
+            company: '中信银行总部',
+            depart: '人力资源部',
+            job: '薪酬专员',
+            premissionSet: ['薪酬', '合同', '招聘'],
+            admin: {
+                status: 'true',
+                class: 'hr-orange-f59c1a',
+                value: '&#xe629;'
+            },
+            switch: {
+                status: 'disabled',
+                class: 'bootstrap-switch-off'
+            }
+        }
+    ];
+
+    var html = template('my-test-tmpl', {datas: datas});
+    document.getElementById('my-table').innerHTML = html;
+
+    var w = Math.random() * 10;
+    console.log(w, '[[=====');
+
+    var rhtml = template('random', {w: w});
+    document.getElementById('randoms').innerHTML = rhtml;
+
+
+</script>
+
+</body>
+</html>

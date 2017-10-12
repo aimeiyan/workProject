@@ -1,0 +1,647 @@
+@charset "utf-8";
+/*begin 首页样式*/
+.tfbankstyle_homepage_logo {
+    position: relative;
+    /*height: 110px;*/
+}
+
+.tfbankstyle-index-logo-img {
+    height: 60px;
+}
+
+.tfbankstyle-mt20 {
+    margin-top: 20px !important;
+}
+
+.tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+.tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle-user-portrait-wrapper {
+    position: relative;
+}
+
+.tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle-user-portrait-wrapper .tfbankstyle-user-portrait-img {
+    position: absolute;
+    left: -45px;
+    top: -10px;
+    width: 35px;
+}
+
+.tfbankstyle-txt-a97334 {
+    color: #a97334 !important;
+}
+
+.tfbankstyle-txt-6a3800 {
+    color: #6a3800 !important;
+}
+
+.tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle_homepage_tuichu {
+    display: inline-block;
+    margin-left: 22px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle_homepage_tuichu .tfbankstyle_homepage_tuichu_icon {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 15px;
+}
+
+.tfbankstyle-index-inner-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container {
+    position: relative;
+    min-width: 1000px;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container {
+    min-width: 1400px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar {
+    width: 260px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 2px 4px 1px #dedede;
+    border-radius: 2px;
+    overflow-y: auto;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main {
+    width: 100%;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar .menu-name {
+    font-size: 22px;
+    padding: 28px 0 8px 45px;
+    font-weight: bold;
+    border-top: 4px solid #fd8c0a;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li {
+    border-bottom: 1px dashed #e0ecf4;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li:last-child {
+    border-bottom: none;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li a {
+    color: #6a3800;
+    display: block;
+    position: relative;
+    padding-left: 28px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li a:hover {
+    text-decoration: underline;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li .tfbankstyle-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -12px;
+    width: 20px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper {
+    margin-left: 260px;
+    padding-left: 25px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part {
+    margin-top: 20px;
+    padding: 5px 36px 36px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 0 4px 1px #dedede;
+    border-radius: 2px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-left-part {
+    margin-right: 10px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-right-part {
+    margin-left: 10px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.8;
+    position: relative;
+
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title .tfbank-title-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: url("../images/cdtf_title_line.png") no-repeat 0 0;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title .tfbankstyle-title-more {
+    position: absolute;
+    font-size: 12px;
+    top: 12px;
+    right: 5px;
+    color: #fd8c0a;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper {
+    position: relative;
+    padding-left: 155px;
+    margin: 30px 0;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper .tfbankstyle-subject-img {
+    position: absolute;
+    width: 130px;
+    left: 10px;
+    display: block;
+}
+
+.tfbankstyle-w100 {
+    width: 100% !important;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td {
+    color: #3f3f3f;
+    padding: 7px 0;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td .double-angle-right {
+    margin-right: 10px;
+    color: #deb589;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td .tfbankstyle-item-para-text {
+    display: inline-block;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td .tfbankstyle-item-para-text {
+    width: 220px;
+}
+
+.tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td.date {
+    text-align: right;
+    padding-right: 10px;
+    color: #666666;
+    width: 6em;
+    min-width: 6em;
+}
+
+.tfbankstyle-index-banner {
+    position: relative;
+    width: 100%;
+    height: 145px;
+    text-align: right;
+    font-size: 0;
+    margin: 0 -4px;
+
+}
+
+.tfbankstyle-index-banner .tfbankstyle-top-banner-bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tfbankstyle-index-banner a {
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    display: inline-block;
+}
+
+.tfbankstyle-index-banner a.tfbankstyle-leader-query-btn {
+    right: 135px;
+}
+
+.tfbankstyle-index-banner a.tfbankstyle-staff_service-btn {
+    right: 0;
+}
+
+.tfbankstyle-index-footer {
+    margin: 70px 0 30px;
+    font-size: 14px;
+}
+
+/*end 首页样式*/
+
+/*begin 员工自助页面*/
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-main-wrapper .tfbankstyle-part {
+    margin-top: 0 !important;
+    border-top: 4px solid #fd8c0a !important;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar .menu-name {
+    color: #6a3800;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li {
+    padding-left: 42px;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-main-wrapper .tfbankstyle-part-wrapper {
+    width: 50%;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-main-wrapper .tfbankstyle-part-wrapper {
+    float: left;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-main-wrapper .tfbankstyle-part-right-wrapper {
+    float: right;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title .tfbankstyle-title-more {
+    color: #6d6d6d !important;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut_wrapper {
+    margin-top: 20px;
+    padding: 60px 0;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 0 4px 1px #dedede;
+    border-radius: 2px;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-clearfix {
+    zoom: 1;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-clearfix:before, .tfbankstyle-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-clearfix:before, .tfbankstyle-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle-clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li {
+    float: left;
+    width: 25%;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a div.tfbankstyle_ess_content {
+    position: relative;
+    padding-left: 105px;
+    padding-right: 20px;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a img {
+    position: absolute;
+    left: 19px;
+    top: 0;
+    width: 65px;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a .tfbankstyle-employee-title {
+    color: #a97334;
+    margin-bottom: 8px;
+}
+
+.tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a .tfbankstyle-employee-intro {
+    color: #3f3f3f;
+    font-size: 12px;
+}
+
+/*end 员工自助页面*/
+
+/*begin 二级页面样式*/
+.tfbankstyle_second_container .tfbankstyle_second_bg_wrapper {
+    position: relative;
+    background: url(../images/cdtj_body_bg.png) repeat-y 0 0;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_bg {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_bg2 {
+    position: absolute;
+    height: 20%;
+    right: 5%;
+    top: 30%;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo {
+    position: relative;
+    padding: 20px 0;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    bottom: 15px;
+    font-weight: bolder;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right .tfbankstyle-second-user-portrait-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right .tfbankstyle-second-user-portrait-wrapper .tfbankstyle-second-user-portrait-img {
+    position: absolute;
+    left: -40px;
+    top: -10px;
+    width: 35px;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right .tfbankstyle_second_tuichu {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    color: #3f3f3f;
+}
+
+.tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right .tfbankstyle_second_tuichu .tfbankstyle_homepage_tuichu_icon {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 15px;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header {
+    height: 36px;
+    line-height: 36px;
+    background-color: #f9dd01;
+    color: #6a3800;
+}
+
+.tfbankstyle_second_inner-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_nav li {
+    float: left;
+    margin-right: 30px;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_nav li a {
+    color: #6a3800;
+    font-size: 15px;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li a {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    padding-left: 25px;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li.tfbankstyle_second_caidan a.tfbankstyle_second_item {
+    background: url("../images/tfbankstyle_second_caidan.png") no-repeat 100% 50%;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li.tfbankstyle_second_caidan .tfbankstyle_second_caidan_dropdownmenu {
+    position: absolute;
+    width: 240px;
+    right: -30px;
+    display: none;
+    z-index: 2;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li.tfbankstyle_second_caidan .tfbankstyle_second_caidan_dropdownmenu ul {
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    padding: 20px 12px;
+    border: 1px solid #d0d0d0;
+}
+
+.jnbankstyle-clearfix {
+    zoom: 1;
+}
+
+.jnbankstyle-clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.jnbankstyle-clearfix:before, .jnbankstyle-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li.tfbankstyle_second_caidan .tfbankstyle_second_caidan_dropdownmenu li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-left: 0;
+    line-height: 2;
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li.tfbankstyle_second_caidan .tfbankstyle_second_caidan_dropdownmenu li a {
+    color: #3f3f3f;
+    font-size: 14px;
+    padding-left: 0;
+
+}
+
+.tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li.tfbankstyle_second_back a.tfbankstyle_second_item {
+    background: url("../images/tfbankstyle_second_back.png") no-repeat 0 9px;
+    color: #6a3800;
+}
+
+.jnbankstyle-fright {
+    float: right;
+}
+
+.jnbankstyle-fleft {
+    float: left;
+}
+
+/*end 二级页面样式*/
+
+/*begin 1920分辨率的页面样式*/
+
+@media screen and (min-width: 1880px) {
+
+    /*begin 首页样式*/
+    .tfbankstyle-index-logo-img {
+        height: 70px;
+    }
+
+    .tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right {
+        font-size: 18px;
+    }
+
+    .tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle_homepage_tuichu .tfbankstyle_homepage_tuichu_icon {
+        top: 0;
+        width: 20px;
+    }
+
+    .tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle_homepage_tuichu {
+        padding-left: 25px;
+    }
+
+    .tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle-user-portrait-wrapper .tfbankstyle-user-portrait-img {
+        width: 41px;
+    }
+
+    .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li a {
+        font-size: 18px;
+    }
+
+    .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title {
+        font-size: 22px;
+    }
+
+    .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title .tfbankstyle-title-more {
+        font-size: 14px;
+    }
+
+    .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td .tfbankstyle-item-para-text {
+        font-size: 18px;
+    }
+
+    .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td.date {
+        font-size: 16px;
+    }
+
+    .tfbankstyle-index-footer {
+        font-size: 16px;
+    }
+
+    .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper .tfbankstyle-subject-img {
+        width: 170px;
+    }
+
+    .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper {
+        padding-left: 205px;
+    }
+
+    .tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-left-sidebar li .tfbankstyle-icon {
+        width: 22px;
+    }
+
+    /*end 首页样式*/
+
+    /*begin 员工自助样式*/
+    .tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a .tfbankstyle-employee-title {
+        font-size: 20px;
+    }
+
+    .tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a .tfbankstyle-employee-intro {
+        font-size: 16px;
+    }
+
+    .tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a img {
+        width: 90px;
+    }
+
+    .tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a div.tfbankstyle_ess_content {
+        padding-left: 125px;
+        padding-right: 10px;
+    }
+
+    .tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container {
+        min-width: 1480px;
+    }
+
+    /*end 员工自助样式*/
+    /*begin 二级页面样式*/
+    .tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_nav li a {
+        font-size: 18px;
+    }
+
+    .tfbankstyle_second_wrapper .tfbankstyle_second_header {
+        height: 46px;
+        line-height: 46px;
+    }
+
+    .tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li a {
+        font-size: 18px;
+    }
+
+    .tfbankstyle_second_wrapper .tfbankstyle_second_header .tfbankstyle_second_inner-container .tfbankstyle_second_shoutcut-link li.tfbankstyle_second_back a.tfbankstyle_second_item {
+        background: url("../images/tfbankstyle_second_back.png") no-repeat 0 15px;
+    }
+
+    .tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right {
+        font-size: 18px;
+    }
+
+    .tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right .tfbankstyle_second_tuichu .tfbankstyle_homepage_tuichu_icon {
+        width: 20px;
+        top: 0;
+    }
+
+    .tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right .tfbankstyle_second_tuichu {
+        padding-left: 25px;
+    }
+
+    .tfbankstyle_second_container .tfbankstyle_second_main .tfbankstyle_second_logo .tfbankstyle_second_logo_right .tfbankstyle-second-user-portrait-wrapper .tfbankstyle-second-user-portrait-img {
+        left: -44px;
+        width: 40px;
+    }
+
+    /*end 二级页面样式*/
+
+}
+
+/*end 1920分辨率的页面样式*/

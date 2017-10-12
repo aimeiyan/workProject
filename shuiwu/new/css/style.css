@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*Begin 我要办税主页 banner slider */
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-container .swiper-pagination-bullet {
+    opacity: 1;
+    border: 1px solid #fff;
+    background: transparent;
+    width: 6px;
+    height: 6px;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+    background: #FFFFFF;
+}
+
+.swiper-container .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 3px;
+}
+
+/*END 我要办税主页 banner slider */
+
+/*BEGIN 我要办税主页样式*/
+.tax-project {
+    margin-top: 0.5rem;
+}
+
+.tax-project ul > li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.tax-project ul > li .icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    background: url("../images/icons/icon_nav_button.png") no-repeat;
+    background-size: 28px 28px;
+}
+
+.tax-project ul > li .txt {
+    font-size: 1.4rem;
+    color: #3f3f3f;
+    margin-top: 1rem;
+}
+
+.tax-project ul > li a {
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem 0;
+    box-shadow: 0 0 0.5rem rgba(221, 221, 221, 0.57);
+}
+
+.tax-project ul > li:first-child a {
+    margin-left: 1rem;
+}
+
+.tax-project ul > li:last-child a {
+    margin-right: 1rem;
+}
+
+/*END 我要办税主页样式*/
+
+/*页脚样式*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 4rem;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: #938f85;
+    font-size: 1.2rem;
+    text-align: center;
+    /*padding: 0.5rem 0;*/
+    font-weight: bold;
+}

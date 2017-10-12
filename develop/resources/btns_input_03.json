@@ -1,0 +1,45 @@
+{
+  "left": [
+    {
+      "structure": true
+    },
+    {
+      "role": false
+    },
+    {
+      "search": true
+    }
+  ],
+  "right": [
+    {
+      "text": "授权",
+      "class": "btn btn-white m-r-5 hr-add-authority-btn",
+      "icon": "fa fa-cogs"
+    },
+    {
+      "text": "复制集合",
+      "class": "btn btn-white m-r-5 hr-copy-authority-btn",
+      "icon": "fa fa-cogs"
+    },
+    {
+      "text": "添加集合",
+      "class": "btn btn-white m-r-5 hr-add-authority-btn",
+      "icon": "fa fa-cogs"
+    },
+    {
+      "text": "删除集合",
+      "class": "btn btn-white m-r-5 hr-delete-authority-btn",
+      "icon": "fa fa-cogs"
+    },
+    {
+      "text": "导出",
+      "class": "btn btn-success dropdown-toggle",
+      "icon": ""
+    },
+    {
+      "text": "打印",
+      "class": "btn btn-success dropdown-toggle",
+      "icon": ""
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css"/>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="query">
+
+    <form action="/t" id="query-form">
+
+        {% for q in data['query'] %}
+        {% if q['type'] == 'select' %}
+
+        <lable>{{q['label']}}</lable>
+        <select name="{{q['name']}}">
+            {% for o in q['options'] %}
+            <option {% if o[
+            'selected'] %} selected {% end %} value="{{o['val']}}">{{o['show']}}</option>
+            {% end %}
+        </select>
+
+        {% elif q['type'] == 'text' %}
+
+        <input type="{{q['name']}}" placeholder="{{q['placehodler']}}">
+
+        {% end %}
+
+
+        {% end %}
+
+    </form>
+</div>
+
+
+<div id="data">
+
+    <table class="table table-bordered">
+        <tr>
+            {% for l in data['labels'] %}
+
+            {% if l['sort'] %}
+            <th data-key="{{l['key']}}" class="{{l['sort']}}">{{l['show']}}</th>
+            {% else %}
+            <th>{{l['show']}}</th>
+            {% end %}
+            {% end %}
+        </tr>
+
+
+        {% for d in data['datas'] %}
+
+        <tr id="{{d['id']}}">
+
+            {% for c in d['columns'] %}
+            <td>
+                {% if c['type'] == 'checkbox' %}
+                <input type="checkbox">
+                {% elif c['type'] == 'text' %}
+                <span>{{c['data']}}</span>
+                {% end %}
+            </td>
+            {% end %}
+
+        </tr>
+
+        {% end %}
+
+
+    </table>
+
+</div>
+
+<script>
+
+    $(function () {
+
+        function handle_change() {
+            var sortKeys = []
+            $('.sort').each(function (idx, s) {
+                sortKeys.push($(s).attr('data-key'));
+            });
+
+            var sort = sortKeys.join(',');
+
+            var $form = $('#query-form');
+            var data = $form.serialize();
+            var url = '/t?' + data + '&sort=' + sort;
+
+            console.log(url);
+
+            $.get(url, function (resp) {
+
+//                $('#data').replaceWith(resp.body);
+
+            });
+
+        }
+
+
+        $('#query-form :input').change(function () {
+//            console.log(this)
+//            $(this).parents('#query-form').submit();
+
+            handle_change();
+
+        });
+
+        $(document).on('click', '.sort', function () {
+            handle_change();
+        });
+
+    });
+</script>
+
+</body>
+</html>

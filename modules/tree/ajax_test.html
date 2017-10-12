@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+<table data-url="/people">
+
+    <tr data-id="1212">
+        <td>张三</td>
+        <td data-attr="sex"><input data-value="true" checked type="checkbox"/></td>
+    </tr>
+
+    <tr data-id="1214">
+        <td>李四</td>
+        <td data-attr="sex"><input data-value="true" checked  type="checkbox"/></td>
+    </tr>
+
+    <tr data-id="1214">
+        <td>王五</td>
+        <td data-attr="sex"><input data-value="false" type="checkbox"/></td>
+    </tr>
+</table>
+
+<script>
+
+    $(function () {
+        $(input).change(function () {
+            var $this = $(input);
+            var val = $this.val();
+            var attr = $this.parents('[data-attr]').attr('data-attr');
+            var id = $this.parents('[data-id]').attr('data-id');
+            var url = $this.parents('[data-url]').attr('data-url');
+
+            $.post(url, {
+                val: val,
+                attr: attr,
+                id: id
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

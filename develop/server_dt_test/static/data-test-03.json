@@ -1,0 +1,215 @@
+{
+  "recordsTotal": 100,
+  "recordsFiltered": 100,
+  "draw": "1",
+  "data": [
+    {
+      "checkbox": 1,
+      "name": {
+        "id": 1,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 1,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 1
+    },
+    {
+      "checkbox": 2,
+      "name": {
+        "id": 2,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 2,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 2
+    },
+    {
+      "checkbox": 3,
+      "name": {
+        "id": 3,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 3,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 3
+    },
+    {
+      "checkbox": 4,
+      "name": {
+        "id": 4,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 4,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 4
+    },
+    {
+      "checkbox": 5,
+      "name": {
+        "id": 5,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 5,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 5
+    },
+    {
+      "checkbox": 6,
+      "name": {
+        "id": 6,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 6,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 6
+    },
+    {
+      "checkbox": 7,
+      "name": {
+        "id": 7,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 7,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 7
+    },
+    {
+      "checkbox": 8,
+      "name": {
+        "id": 8,
+        "value": "人事"
+      },
+      "premissionSet": {
+        "id": 8,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "usedPeople": 32,
+      "action": 8
+    }
+  ]
+}

@@ -1,0 +1,571 @@
+{
+  "status": 0,
+  "msgInfo": "OK",
+  "msgDetail": {
+    "recordsTotal": 110,
+    "recordsFiltered": 100,
+    "draw": "1",
+    "data": [
+      {
+        "checkbox": 1,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 1,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 1,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 1
+      },
+      {
+        "checkbox": 2,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 2,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 2,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 2
+      },
+      {
+        "checkbox": 3,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 3,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 3,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 3
+      },
+      {
+        "checkbox": 4,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 4,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 4,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 4
+      },
+      {
+        "checkbox": 5,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 5,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 5,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 5
+      },
+      {
+        "checkbox": 6,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 6,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 6,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 6
+      },
+      {
+        "checkbox": 7,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 7,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 7,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 7
+      },
+      {
+        "checkbox": 8,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 8,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 8,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 8
+      },
+      {
+        "checkbox": 9,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 9,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 9,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 9
+      },
+      {
+        "checkbox": 10,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 10,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 10,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 10
+      },
+      {
+        "checkbox": 11,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 11,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 11,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 11
+      },
+      {
+        "checkbox": 12,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 12,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 12,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 12
+      },
+      {
+        "checkbox": 13,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 13,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 13,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 13
+      },
+      {
+        "checkbox": 14,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 14,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 14,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 14
+      },
+      {
+        "checkbox": 15,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 15,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 15,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 15
+      },
+      {
+        "checkbox": 16,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 16,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 16,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 16
+      },
+      {
+        "checkbox": 17,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 17,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 17,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 17
+      },
+      {
+        "checkbox": 18,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 18,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 18,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 18
+      },
+      {
+        "checkbox": 19,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 19,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 19,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 19
+      },
+      {
+        "checkbox": 20,
+        "company": "中信银行总部",
+        "depart": "人力资源部",
+        "job": {
+          "id": 20,
+          "value": "薪酬专员"
+        },
+        "premissionSet": {
+          "id": 20,
+          "value": [
+            {
+              "id": "1",
+              "text": "薪酬"
+            },
+            {
+              "id": "2",
+              "text": "合同"
+            },
+            {
+              "id": "3",
+              "text": "招聘"
+            }
+          ]
+        },
+        "peopleOnJob": 32,
+        "action": 20
+      }
+    ]
+  }
+}

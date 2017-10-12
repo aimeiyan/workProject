@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>二级页面</title>
+    <!--<link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">-->
+    <link type="text/css" rel="stylesheet" href="../css/jnbankcustomstyle.css">
+
+</head>
+<body>
+<div class="jnbankstyle_second_container">
+    <img src="../images/jnbankstyle_second_bg02.png" alt="" class="jnbankstyle_second_bg2">
+    <div class="jnbankstyle_second_top">&nbsp;</div>
+    <div class="jnbankstyle_second_main">
+        <div class="jnbankstyle_second_logo">
+            <img class="jnbankstyle-mt20" src="../images/jnbank_homepage_logo.png" alt=""/>
+
+            <div class="jnbankstyle_second_logo_right">
+                <span><span class="jnbankstyle-txt-a97334">李想</span>，您好！欢迎登录人力资源管理平台！</span><a href="jnbankLogin.html"
+                                                                                               class="jnbankstyle_second_tuichu"><span
+                    class="jnbankstyle-txt-a97334">退出</span></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="jnbankstyle_second_wrapper">
+        <div class="jnbankstyle_second_header">
+            <div class="jnbankstyle_second_inner-container jnbankstyle-clearfix">
+                <div class="jnbankstyle_second_nav jnbankstyle-fleft">
+                    <ul class="jnbankstyle-clearfix">
+                        <li><a href="#">机构信息管理</a></li>
+                        <li><a href="#">机构编制</a></li>
+                        <li><a href="#">机构排序</a></li>
+                        <li><a href="#">组织机构图</a></li>
+                        <li><a href="#">机构历史</a></li>
+                        <li><a href="#">机构档案浏览</a></li>
+                        <li><a href="#">机构考核数据查询</a></li>
+                    </ul>
+                </div>
+                <div class="jnbankstyle_second_shoutcut-link jnbankstyle-fright">
+                    <ul class="jnbankstyle-clearfix">
+                        <li class="jnbankstyle_second_caidan"><a href="javascript:void(0);"
+                                                                 class="jnbankstyle_second_item">&nbsp;</a>
+                            <div class="jnbankstyle_second_caidan_dropdownmenu">
+                                <ul class="jnbankstyle-clearfix jnbankstyle_second_ul">
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">机构</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">岗位</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">人员</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">合同</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">考评</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">薪资</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">报表</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">培训</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">考勤</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">查询</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">党务</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">流程</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">运行</a></li>
+                                    <li><a href="javascript:void(0);" class="jnbankstyle_second_submenu">系统</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="jnbankstyle_second_back"><a href="jnbankLogin.html" class="jnbankstyle_second_item">返回首页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+
+    /**
+     * BEGIN 二级页面点击菜单出现下拉框的效果
+     */
+    if ($(".jnbankstyle_second_caidan").length) {
+        $(".jnbankstyle_second_caidan .jnbankstyle_second_item").click(function () {
+            $(this).parent().find(".jnbankstyle_second_caidan_dropdownmenu").toggle();
+        });
+
+
+        //点击除了选择框和下来菜单的地方，隐藏下拉框
+        $("body").click(function (e) {
+            if ($(".jnbankstyle_second_caidan .jnbankstyle_second_caidan_dropdownmenu").is(":visible")) {
+                if (!($(e.target).parent(".jnbankstyle_second_caidan_dropdownmenu").length || $(e.target).attr("class") === "jnbankstyle_second_item")) {
+                    $(".jnbankstyle_second_caidan .jnbankstyle_second_caidan_dropdownmenu").hide();
+                }
+            }
+        });
+
+
+    }
+    /**
+     * END 二级页面点击菜单出现下拉框的效果
+     */
+    })
+</script>
+
+</body>
+</html>

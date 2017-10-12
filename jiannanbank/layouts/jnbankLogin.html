@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>登录页面</title>
+    <!--<link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">-->
+    <link type="text/css" rel="stylesheet" href="../css/jnbankcustomstyle.css">
+
+</head>
+<body>
+<div class="jnbankstyle-login-page">
+    <div class="jnbankstyle-login-bg">
+        <div class="jnbankstyle-logo">
+            <img src="../images/jnbank_login_logo.png">
+        </div>
+        <div class="jnbankstyle-login-box">
+            <form class="jnbankstyle-login-form" action="" method="post" autocomplete="off">
+                <div id="jnbankstyle-erroer-Msg"></div>
+                <div class="jnbankstyle-login-input">
+                    <label for="jnbankstyle-username">用户名</label>
+                    <input type="text" name="username" id="jnbankstyle-username"></div>
+                <div class="jnbankstyle-login-input jnbankstyle-login-input-passwd">
+                    <label for="jnbankstyle-password">密码</label>
+                    <input type="password" name="password" id="jnbankstyle-password"></div>
+                <div class="jnbankstyle-login-input jnbankstyle-login-checkbox">
+                    <div class="jnbankstyle-remember-password-action">
+                        <a href="javascript:void(0);">
+                            <img class="jnbankstyle-empty" src="../images/jnbank_login_Select_Box.png" alt=""/>
+                            <img class="jnbankstyle-check" src="../images/jnbank_login_Selected.png" alt=""/>记住密码
+                        </a>
+                        <input type="hidden" name="jnbankstyle-remember-password">
+
+                    </div>
+                </div>
+                <div class="jnbankstyle-login-login-btn">
+                    <a href="javascript:void(0);" class="jnbank-login-submit"><img
+                            src="../images/jnbank_btn_login.png"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+            /**
+             * BEGIN 登录页面输入框placeholder处理，兼容IE8
+             */
+            $('.jnbankstyle-login-form .jnbankstyle-login-input input').each(function () {
+
+                if ($(this).val() != "") {
+                    $(this).css('background-color', 'white');
+                }
+
+                $(this).focus(function () {
+                            $(this).css('background-color', 'white');
+                        })
+                        .blur(function () {
+                            if ($.trim($(this).val()) == '') {
+                                $(this).css('background-color', 'transparent').val('');
+                            }
+                        });
+            });
+            /**
+             * END 登录页面输入框placeholder处理，以兼容IE8
+             */
+
+            /**
+             *  BEGIN 记住密码 复选框效果
+             */
+
+            function getCheckVal() {
+                if ($(".jnbankstyle-remember-password-action").hasClass("jnbankstyle-active")) {
+                    $("[name=jnbankstyle-remember-password]").val('true');
+                } else {
+                    $("[name=jnbankstyle-remember-password]").val('false');
+                }
+            }
+
+            getCheckVal();
+
+            $(".jnbankstyle-remember-password-action").click(function () {
+                $(this).toggleClass("jnbankstyle-active");
+                getCheckVal();
+            });
+
+
+            /**
+             *  END 记住密码 复选框效果
+             */
+
+
+            /**
+             *  BEGIN FORM 登录提交
+             */
+                //回车提交
+            document.onkeydown = function (e) {
+                e = e || event;
+                if (e.keyCode === 13) {
+                    $(".jnbank-login-submit").click();
+                    return false;
+                }
+            };
+
+             //点击提交按钮执行登录函数
+            $(".jnbank-login-submit").click(function () {
+                jiannanbankLogin();
+            });
+
+            //登录函数
+            function jiannanbankLogin() {
+
+                //空值验证
+                if ($("[name=username]").val() == "") {
+                    $("#jnbankstyle-erroer-Msg").html("用户名不能为空！");
+                    return;
+                }else{
+                     $("#jnbankstyle-erroer-Msg").html("");
+                }
+                if ($("[name=password]").val() == "") {
+                    $("#jnbankstyle-erroer-Msg").html("密码不能为空！");
+                    return;
+                }else{
+                    $("#jnbankstyle-erroer-Msg").html("");
+                }
+
+                //获取用户名、密码、记住密码的值
+                var login_data_username = $("[name=username]").val();
+                var login_data_password = $("[name=password]").val();
+                var login_data_remember_password = $("[name=jnbankstyle-remember-password]").val();
+
+
+                $.ajax({
+                    type: "POST",
+                    data: {
+                        username: login_data_username,
+                        password: login_data_password,
+                        remPasswd: login_data_remember_password
+                    },
+                    url: "/xxxx",
+                    async: false,
+                    success: function (data) {
+                        // 返回数据的格式，当然可以是其他格式，就是下面的代码要修改
+                        // data = {
+                        // status: "ok",
+                        // error:"用户名输入有误"
+                        // }
+
+                        //如果用户名和密码都正确，进行页面跳转
+                        if (data.status = "1") {
+                            top.location.href = "jnbankhomepage.jsp";
+                        }
+
+                        //显示验证错误信息
+                        if (data.status = "0") {
+                            $("#jnbankstyle-erroer-Msg").html(data.error);
+                        }
+                    }
+                });
+
+                /**
+                 *  END FORM 登录提交
+                 */
+            }
+
+    })
+</script>
+</body>
+</html>

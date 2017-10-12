@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title></title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">
+    <link type="text/css" rel="stylesheet" href="../js/third/Font-Awesome-master/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet"
+          href="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <!--<link type="text/css" rel="stylesheet" href="../js/third/font-awesome/css/font-awesome.min.css">-->
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!--begin header part-->
+<div class="header">
+
+    <div class="subwrapper">
+        <div class="header_inner clearfix">
+            <a class="inner_logo fleft" href="index.html"></a>
+            <ul class="inner_nav fleft clearfix">
+                <li><a class="" href="index.html">首页</a></li>
+                <li><a class="" href="consultingOptimization.html">数据咨询</a></li>
+                <li><a class="" href="jianguanzhibo.html">监管直播</a></li>
+                <li><a class="" href="aboutUs.html">关于我们</a></li>
+            </ul>
+            <div class="inner_login fright" style="">
+                <a href="signin.html"
+                   class="login_in">登录</a><span class="seperate-line">|</span>
+                <a class="logoutCss"
+                   href="signup.html">注册</a>
+                <!--<span href="javascript:void(0);" class="account-user">-->
+                <div class="account-user">
+                    <a href="#">
+                        <img class="user-img" src="../images/user01.gif" alt="会员头像">
+                        <span class="user-name">王阳明</span>
+                    </a>
+
+                    <div class="person-dropdown-info">
+                        <ul>
+                            <li><a href="personalCenter.html">我的主页</a></li>
+                            <li><a href="basicInfo.html">完善个人信息</a></li>
+                            <li><a href="index.html">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div>-->
+
+                <!--</div>-->
+                <!--</span>-->
+                <!--<span class="account_user clear">-->
+                <!--<a class="img_link clear" href="/personal">-->
+                <!--<img class="user_img" src="http://static.zealer.com/images/plus/mb_pic50.gif" alt="会员头像">-->
+                <!--</a>-->
+                <!--<span class="user_active bigHead">-->
+                <!--<a href="/personal" class="active_name" rel="nofollow">nancy</a>-->
+                <!--<a href="/user/logout" rel="nofollow">退出</a>-->
+                <!--</span>-->
+                <!--</span>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header part-->
+
+<div class="personal-info-modify">
+    <div class="main_content clearfix">
+        <div class="content_left">
+            <div class="left_logo">
+            </div>
+            <div class="user_pic">
+                <a href="javascript:;" rel="nofollow" target="_blank">
+                    <img src="../images/mb_pic50.gif" class="pic_size" alt="会员头像">
+                </a>
+                <a href="javascript:;" class="user_cover">更换头像</a>
+            </div>
+            <div style="display:none" class="repic_mask">
+                <div class="mask_bg">
+
+                </div>
+            </div>
+
+            <dl class="left_list">
+                <dd>
+                    <a href="basicInfo.html" otype="setbasic"><span
+                            class="left"> </span>基本设置<span class="right"> </span></a>
+                    <a href="bindemailtel.html" otype="setmail" class="sidebar_active"><span
+                            class="left"> </span>手机和邮箱<span
+                            class="right"> </span></a>
+                    <a href="modifyPasswd.html" otype="setpsd"><span class="left"> </span>修改密码<span
+                            class="right"> </span></a>
+                    <!--<a href="/user?pagetype=setaccount" otype="setaccount"><span class="left"> </span>第三方账号<span-->
+                    <!--class="right"> </span></a>-->
+                </dd>
+            </dl>
+        </div>
+        <div style="display:none" class="input_content">
+        </div>
+        <style>
+            .main_content .content_right .user_bind .bind_security {
+                margin: 15px 0;
+                height: 40px;
+                line-height: 40px;
+            }
+
+            .main_content .content_right .user_bind .bind_title {
+                height: 40px;
+                width: 90px;
+                font-size: 14px;
+                line-height: 40px;
+                display: inline-block;
+                color: #333;
+                vertical-align: top;
+            }
+
+            .main_content .content_right .user_bind .bind_security .security_content {
+                display: inline-block;
+                font-size: 0;
+                width: 180px;
+                height: 10px;
+                background-color: #e5e6e8;
+                margin-top: 15px;
+                position: relative;
+            }
+
+            .main_content .content_right .user_bind .bind_security .security_content span {
+                position: absolute;
+                display: inline-block;
+                width: 60px;
+                height: 10px;
+                background-color: #fe6649;
+            }
+
+            .main_content .content_right .user_bind .low_txt {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .main_content .content_right .user_bind .bind_phone {
+                margin-bottom: 30px;
+            }
+
+            .main_content .content_right .user_bind .bind_title {
+                height: 40px;
+                width: 90px;
+                font-size: 14px;
+                line-height: 40px;
+                display: inline-block;
+                color: #333;
+                vertical-align: top;
+            }
+
+            .main_content .content_right .user_bind .bind_phone .phone_content {
+                display: inline-block;
+            }
+
+            .main_content .content_right .user_bind button {
+                width: 110px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 2px;
+            }
+
+            .main_content .content_right .user_bind .bind_mail {
+                margin-bottom: 40px;
+            }
+
+            .main_content .content_right .user_bind .bind_title {
+                height: 40px;
+                width: 90px;
+                font-size: 14px;
+                line-height: 40px;
+                display: inline-block;
+                color: #333;
+                vertical-align: top;
+            }
+
+            .main_content .content_right .user_bind .bind_mail .mail_content {
+                display: inline-block;
+            }
+
+            .main_content .content_right .user_bind input {
+                width: 120px;
+                height: 38px;
+                border: 1px solid #e6e6e6;
+                padding: 0;
+                text-indent: 13px;
+                color: #333;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+
+            .main_content .content_right .user_bind .bind_mail .mail_content input, .main_content .content_right .user_bind .bind_phone .phone_content input {
+                width: 360px;
+                height: 35px;
+                margin-right: 20px;
+                background: #fafcff;
+            }
+
+            .main_content .content_right .user_bind button {
+                width: 110px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 2px;
+                font-size: 16px;
+                border: 0;
+                padding: 0;
+                text-align: center;
+                background: #111;
+                color: #fff;
+                cursor: pointer;
+            }
+        </style>
+
+        <div class="content_right">
+            <h2>
+                手机和邮箱
+            </h2>
+            <div class="user_bind">
+
+                <div class="bind_security">
+                    <div class="bind_title">账户安全</div>
+                    <div class="security_content process_wrap">
+                        <span style="width: 120px;"></span>
+                    </div>
+                    <span class="low_txt">一般</span>
+                </div>
+                <div class="bind_phone">
+                    <div class="bind_title">手机</div>
+                    <div class="phone_content">
+                        <button class="phone_add">添加绑定</button>
+                    </div>
+                </div>
+                <div class="bind_mail">
+                    <div class="bind_title">邮箱</div>
+                    <div class="mail_content">
+                        <button class="mail_add">添加绑定</button>
+                    </div>
+                </div>
+                <div class="bind_phone">
+                    <div class="bind_title">手机</div>
+                    <div class="phone_content">
+                        <input name="phone" readonly="readonly" type="text" value="13610259681">
+                        <button class="phone_change">修改</button>
+                    </div>
+                </div>
+                <div class="bind_mail">
+                    <div class="bind_title">邮箱</div>
+                    <div class="mail_content">
+                        <input name="mail" readonly="readonly" type="text" value="657074944@qq.com">
+                        <button class="mail_change">修改</button>
+                    </div>
+                </div>
+            </div>
+            <div class="save_btn">保存</div>
+        </div>
+    </div>
+</div>
+<!--begin footer part-->
+<div class="footer">
+    <div class="inner clearfix">
+        <div class="inner_copyr fleft">真实的房屋数据提供者<em class="ml10 mr10">|</em>FWW<em class="ml10 mr10">|</em>&nbsp;
+            蜀ICP备15024827号
+        </div>
+        <div class="inner_follow fright">
+            <a class="follow_wx" href="javascript:void(0);">
+                <img src="../images/weixin.png" class="qr_code">
+            </a>
+            <a class="follow_wb" href="http://www.weibo.com/fwwfww" target="_blank"></a>
+        </div>
+    </div>
+</div>
+<!--end footer part-->
+
+<!--begin scroll-top part-->
+<!--end scroll-top part-->
+
+<div class="side_btn">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!--end footer data part-->
+
+<script type="text/javascript" src="../js/third/jssor.slider.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript"
+        src="../js/third/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+<style type="text/css">
+    .global_dialog .pop_image {
+        background-image: url("../images/pop-close.png");
+        background-repeat: no-repeat;
+    }
+
+    .global_dialog .pop_close {
+        background-position: 0 0;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        cursor: pointer;
+    }
+
+    .global_dialog .bg_modify .bg_title, .global_dialog .show_bg .bg_title, .global_dialog .success_bg .bg_title {
+        height: 80px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 80px;
+        color: #31343b;
+        border-bottom: 1px solid #e2e5e7;
+    }
+
+    .global_dialog .bg_modify .bg_title .title_logo, .global_dialog .show_bg .bg_title .title_logo, .global_dialog .success_bg .bg_title .title_logo {
+        width: 10px;
+        height: 16px;
+        background: url("../images/userbind.png") no-repeat;
+        position: relative;
+        display: inline-block;
+        top: 2px;
+        margin-right: 5px;
+    }
+
+    .global_dialog .bg_modify input, .global_dialog .show_bg input, .global_dialog .success_bg input {
+        height: 38px;
+        text-indent: 14px;
+        font-size: 14px;
+        color: #999;
+        line-height: 38px;
+        border: 1px solid #e6e6e6;
+        padding: 0;
+    }
+
+    .show_bg .bg_content {
+        height: 338px;
+        font-size: 0;
+        text-align: center;
+    }
+
+    .show_bg button {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        border: 0;
+        padding: 0;
+        text-align: center;
+        background: #111;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .show_bg .bg_content .content_input .new_input {
+        width: 298px;
+        margin: 79px auto 20px;
+        display: block;
+    }
+
+    .show_bg .bg_content .content_input .phone_code {
+        width: 178px;
+        float: left;
+        margin-left: 120px;
+    }
+
+    .show_bg .bg_content .content_input .get_code {
+        float: left;
+    }
+
+    .show_bg .bg_content .content_input .phone_next {
+        clear: both;
+        float: left;
+        margin: 60px 0 20px 210px;
+    }
+
+    .show_bg .bg_content .content_success .success_title {
+        height: 30px;
+        font-size: 18px;
+        color: #0fae6f;
+        line-height: 30px;
+        margin-top: 108px;
+    }
+
+    .show_bg .bg_content .content_success .success_title .success_logo {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background: url("../images/userbind.png") 0 -16px no-repeat;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .show_bg .bg_content .content_success .success_tip {
+        margin-top: 26px;
+    }
+
+    .show_bg .bg_content .content_success .success_tip span, .show_bg .bg_content .content_success .success_tip a {
+        font-size: 14px;
+        color: #6d737e;
+        display: inline-block;
+    }
+
+    .show_bg .bg_content .content_success .success_tip .tip_back {
+        color: #0fae6f;
+    }
+</style>
+
+<div class="global_dialog">
+    <div class="dialog_closebg"></div>
+    <div class="dialog_inner autoHeight" style="margin-left: -280px; margin-top: -260px; width: 540px; height: auto;">
+        <div class="dialog_content">
+            <div class="show_bg">
+                <div class="pop_close pop_image"></div>
+                <div class="bg_title">
+                    <span style="width:13px; height:14px; background-position:0 -106px;" class="title_logo"></span>
+                    完善信息
+                </div>
+
+                <div class="bg_content">
+                    <div class="phone_success content_success t-center" style="display: none;">
+                        <div class="success_title">
+                            <span class="success_logo"></span>
+                            修改成功
+                        </div>
+                        <div class="success_tip">
+                            <span>你可以使用新手机号码登录。</span>
+                            <a class="tip_back" href="/user?pagetype=setmail">3s后自动返回&gt;</a>
+                        </div>
+                    </div>
+
+                    <div class="mail_success content_success t-center" style="display: none;">
+                        <div style="color:#3a7dda" class="success_title">
+                            <span style="background-position:0 -76px" class="success_logo"></span>
+                            修改成功
+                        </div>
+                        <div class="success_tip">
+                            <span>你可以使用新邮箱登录。</span>
+                            <a style="color:#3a7dda" class="tip_back" href="/user?pagetype=setmail">3s后自动返回&gt;</a>
+                        </div>
+                    </div>
+
+                    <div class="mail_waiting content_success t-center" style="display: none;">
+                        <div style="color:#3a7dda" class="success_title">
+                            <span style="background-position:0 -46px" class="success_logo"></span>
+                            邮箱验证
+                        </div>
+                        <div class="success_tip">
+                            <span>请前往bekii@zealer.com查收完成验证。未收到邮件？</span>
+                            <a style="color:#3a7dda" class="tip_back" href="javascript:;">重新发送</a>
+                        </div>
+                    </div>
+
+                    <div class="phone_input content_input" style="display: none;">
+                        <input type="text" class="new_phone new_input" name="newphone" placeholder="输入绑定手机">
+                        <input type="text" class="phone_code" name="phonecode" placeholder="输入验证码">
+                        <button class="get_code">获取验证码</button>
+                        <button class="phone_next">下一步</button>
+                    </div>
+
+                    <div class="mail_input content_input t-center" style="display: block;">
+                        <input type="text" class="new_mail new_input" style="margin-top:123px;" name="newphone"
+                               placeholder="输入绑定邮箱">
+
+                        <button class="mail_next" style="margin-top:60px;">下一步</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

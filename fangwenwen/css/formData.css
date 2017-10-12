@@ -1,0 +1,517 @@
+.main-page .header {
+    display: block;
+    height: 49px;
+    margin: 0;
+    padding: 0 10px 0 0;
+    line-height: 1;
+}
+
+#content {
+    padding: 10px 14px;
+
+}
+
+#content .page-name .page-title {
+    color: #4c4f53;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin: 12px 0 28px;
+}
+
+#content .page-name .page-icon {
+    display: inline-block;
+    background: url("../images/pageIcons.jpg") no-repeat 0 0;
+    width: 22px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+#content .widget-grid .header {
+    height: 34px;
+    background: #fafafa;
+    border-style: solid;
+    border-color: #C2C2C2 #C2C2C2 #e4e4e4 #C2C2C2;
+    border-width: 1px;
+    position: relative;
+}
+
+#content .widget-grid .header .widget-icon {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    left: 8px;
+    background: url("../images/widgetIcon.jpg") no-repeat 0 0;
+}
+
+/*----------------------------------------------------------------------*/
+/* form style
+/*----------------------------------------------------------------------*/
+
+#content .widget-body .smart-form {
+    display: block;
+    border-width: 1px 1px 2px;
+    border-style: solid;
+    border-color: #ccc;
+    background: #ffffff;
+}
+
+#content .widget-body .smart-form .fieldset {
+    padding: 25px 14px 25px;
+}
+
+#content .widget-body .smart-form .fieldset .section {
+    margin-bottom: 30px;
+}
+
+#content .widget-body .smart-form .fieldset .newstextarea textarea {
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#content .widget-body .smart-form .fieldset .section .input {
+    border: 1px solid #d7d7d7;
+    height: 32px;
+    padding: 0 37px 0 5px;
+    position: relative;
+}
+
+#content .widget-body .smart-form .fieldset .section .radio, #content .widget-body .smart-form .fieldset .section .checkbox, #content .widget-body .smart-form .fieldset .newstextarea {
+    position: relative;
+}
+
+#content .widget-body .smart-form .fieldset .section .IDnumber {
+    padding-right: 8px;
+}
+
+#content .widget-body .smart-form .fieldset .section .load-file {
+    padding: 0 82px 0 5px;
+}
+
+#content .widget-body .smart-form .fieldset .section .load-file .load-button {
+    position: absolute;
+    display: inline-block;
+    background: #3276B1;
+    padding: 2px 8px;
+    overflow: hidden;
+    color: #ffffff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    right: 3px;
+    top: 3px;
+    opacity: 0.8;
+    z-index: 10;
+    filter: alpha(opacity=80);
+}
+
+#content .widget-body .smart-form .fieldset .section .load-file .load-button input {
+    display: block;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#content .widget-body .smart-form .fieldset .section .select {
+    border: 1px solid #d7d7d7;
+    height: 32px;
+    padding: 1px 0 0 5px;
+    position: relative;
+}
+
+#content .widget-body .smart-form .fieldset .section .select select {
+    width: 99%;
+    height: 28px;
+    border: none;
+    background: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+}
+
+#content .widget-body .smart-form .fieldset .section label {
+    display: block;
+    margin-bottom: 6px;
+    line-height: 19px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #333;
+    text-align: left;
+}
+
+#content .widget-body .smart-form .fieldset .section .input .fa-phone {
+    background-position: -12px 0;
+}
+
+#content .widget-body .smart-form .fieldset .section .input .fa-time {
+    background-position: -29px -1px;
+}
+
+#content .widget-body .smart-form .fieldset .section .input .fa-lock {
+    background-position: 7px -15px;
+}
+
+#content .widget-body .smart-form .fieldset .section .input-group {
+    padding-right: 54px;
+    position: relative;
+}
+
+#content .widget-body .smart-form .fieldset .section .input-group .unit {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border-left: 1px solid #d7d7d7;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#content .widget-body .smart-form .fieldset .section .input input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 1px 0;
+    line-height: 30px;
+    outline: 0;
+    background: #fff;
+    font: 13px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #404040;
+    vertical-align: middle;
+}
+
+#content .widget-body .smart-form .fieldset .section .select-wrapper .select {
+    width: 49%;
+    float: left;
+}
+
+#content .widget-body .smart-form .fieldset .section .select-wrapper .select.last {
+    float: right;
+}
+
+#content .widget-body .smart-form .fieldset .section .passwd-wrapper .input {
+    float: left;
+    width: 68%;
+}
+
+#content .widget-body .smart-form .fieldset .section .passwd-wrapper .passwd-generate {
+    float: right;
+    width: 30%;
+}
+
+#content .widget-body .smart-form .fieldset .section .passwd-wrapper .passwd-generate button {
+    width: 100%;
+}
+
+#content .widget-body .smart-form .fieldset .section .radio label {
+    float: left;
+    margin-right: 25px;
+}
+
+#content .widget-body .smart-form .fieldset .section .radio label span {
+    margin-left: 8px;
+}
+
+#content .widget-body .smart-form .footer {
+    height: 112px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    background-color: #fafafa;
+    padding-top: 44px;
+}
+
+#content .widget-body .smart-form .fieldset .section .checkbox label {
+    float: left;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+/*----------------------------------------------------------------------*/
+/* errorMessage style
+/*----------------------------------------------------------------------*/
+
+div.errorMessage {
+    position: absolute;
+    color: #ed1c24;
+    bottom: -22px;
+    left: 0;
+    font-size: 12px;
+
+}
+
+#content .widget-body .smart-form .fieldset .section .checkbox .errorMessage {
+    bottom: -16px;
+}
+
+/*----------------------------------------------------------------------*/
+/* btn style
+/*----------------------------------------------------------------------*/
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    height: 32px;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+
+}
+
+.btn-link {
+    color: #3276b1;
+    margin-right: 6px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #2c699d;
+    padding: 0 22px;
+    font-size: 15px;
+    margin: 0 2px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #275b89;
+    border-color: #1f496d;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------*/
+/* editor style
+/*----------------------------------------------------------------------*/
+
+.edui-container, .edui-container .edui-toolbar {
+    box-shadow: none;
+}
+
+
+.ui-datepicker{
+    z-index: 1000 !important;
+}
+
+[scope="col"]{
+    font-size: 12px;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* datatable style
+/*----------------------------------------------------------------------*/
+
+#content .widget-body {
+    border-bottom: 1px solid #ddd;
+    *margin-top: -1px;
+    _margin-top: -1px;
+}
+
+#content .widget-body .dt-toolbar {
+    height: 46px;
+    *height: 44px;
+    _height: 44px;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    background: #fafafa;
+}
+
+#content .widget-body .dt-toolbar .dataTables-filter {
+    float: left;
+    padding: 7px 0 0 7px;
+    _padding: 5px 0 0 7px;
+}
+
+#content .widget-body .dt-toolbar .dataTables-filter .input-group-addon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    float: left;
+    background: url("../images/search.jpg") no-repeat center center #F0F0F0;
+    border-color: #ccc;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+}
+
+#content .widget-body .dt-toolbar .dataTables-filter .search {
+    border: 1px solid #ccc;
+    height: 32px;
+    display: block;
+    float: left;
+    line-height: 32px;
+    padding-left: 5px;
+}
+
+#content .widget-body .dt-toolbar .btn-group {
+    float: right;
+    padding-top: 6px;
+}
+
+#content .widget-body .dt-toolbar .btn-group li {
+    float: left;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#content .widget-body .dt-toolbar .btn-group li.hover a {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+.table thead tr th, .table tbody tr td, .table tbody tr th {
+    border: 1px solid #ddd;
+    height: 34px;
+    *height: 32px;
+    _height: 32px;
+    padding: 8px 9px;
+    *padding: 2px 9px;
+    _padding: 2px 9px;
+    text-align: left;
+}
+
+.table thead tr th {
+    border-bottom-width: 2px;
+    text-align: center;
+}
+
+.table tbody tr.odd td, .table tbody tr.odd th {
+    background: #fafafa;
+}
+
+.table tbody tr.even td, .table tbody tr.even th {
+    background: #ffffff;
+}
+
+.table-center tbody tr td {
+    text-align: center;
+}
+
+.table-center .content-text {
+    text-align: left;
+}
+
+#content .widget-body .dt-toolbar-footer {
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0 1px 1px;
+    height: 46px;
+    padding: 0 10px;
+    background: #fafafa;
+}
+
+#content .widget-body .dt-toolbar-footer .dt-basic-footer-info {
+    float: left;
+    font-weight: 700;
+    color: #969696;
+    padding-top: 12px;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate {
+    float: right;
+    padding-top: 7px;
+    _padding-top: 9px;
+    font-size: 12px;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate .paging-simple-numbers .pagination .paginate-button {
+    float: left;
+    display: inline-block;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate .paging-simple-numbers .pagination .paginate-button a {
+    color: #3276b1;
+    cursor: pointer;
+    _height: 23px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-left: -1px;
+    padding: 5px 10px;
+    _padding: 3px 9px 0;
+    display: inline-block;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate .paging-simple-numbers .pagination .active a {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #3276b1;
+    cursor: default;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate .paging-simple-numbers .pagination .hover a {
+    color: #214e75;
+    background-color: #eee;
+    border-color: #ddd;
+    cursor: pointer;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate .paging-simple-numbers .pagination .active a {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #3276b1;
+    cursor: pointer;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate .paging-simple-numbers .pagination .disabled a {
+    color: #999;
+    cursor: not-allowed;
+}
+
+#content .widget-body .dt-toolbar-footer .dataTables-paginate .paging-simple-numbers .pagination .paginate-button.previous a {
+    _margin-left: 0;
+}
+
+.main-page .page-footer {
+    position: absolute;
+    width: 100%;
+    top: 750px;
+    text-align: center;
+    border-top: 1px solid #CECECE;
+    background: #2a2725;
+    color: #aaa;
+    padding: 15px 13px 5px;
+    padding-left: 223px;
+    *padding-left: 107px;
+    _padding-left: 107px;
+
+}

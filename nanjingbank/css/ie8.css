@@ -1,0 +1,21 @@
+     .employee-self-service .banner .banner-inner {
+        background-position: 20% 0;
+    }
+
+    .page-container .banner .banner-inner {
+        background-position: 0 0;
+    }
+
+       .inner-page .header .inner-container .nav li{
+        padding: 0 8px;
+    }
+    .inner-page .header .inner-container .nav li a,.inner-page .header .inner-container .shoutcut-link li a{
+        font-size: 14px;
+    }
+     .leader-query .banner .banner-inner{
+                background-position: 20% 0;
+
+    }
+     .login-page .login-bg{
+        background-position: 38% 0;
+    }

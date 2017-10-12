@@ -1,0 +1,827 @@
+{
+  "recordsTotal": 100,
+  "recordsFiltered": 100,
+  "draw": "1",
+  "data": [
+    {
+      "checkbox": 1,
+      "idx": 1,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 1,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 1,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 1,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 1,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 1
+    },
+    {
+      "checkbox": 2,
+      "idx": 2,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 2,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 2,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 2,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 2,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 2
+    },
+    {
+      "checkbox": 3,
+      "idx": 3,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 3,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 3,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 3,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 3,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 3
+    },
+    {
+      "checkbox": 4,
+      "idx": 4,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 4,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 4,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 4,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 4,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 4
+    },
+    {
+      "checkbox": 5,
+      "idx": 5,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 5,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 5,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 5,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 5,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 5
+    },
+    {
+      "checkbox": 6,
+      "idx": 6,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 6,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 6,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 6,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 6,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 6
+    },
+    {
+      "checkbox": 7,
+      "idx": 7,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 7,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 7,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 7,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 7,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 7
+    },
+    {
+      "checkbox": 8,
+      "idx": 8,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 8,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 8,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 8,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 8,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 8
+    },
+    {
+      "checkbox": 9,
+      "idx": 9,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 9,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 9,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 9,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 9,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 9
+    },
+    {
+      "checkbox": 10,
+      "idx": 10,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 10,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 10,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 10,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 10,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 10
+    },
+    {
+      "checkbox": 11,
+      "idx": 11,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 11,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 11,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 11,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 11,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 11
+    },
+    {
+      "checkbox": 12,
+      "idx": 12,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 12,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 12,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 12,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 12,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 12
+    },
+    {
+      "checkbox": 13,
+      "idx": 13,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 13,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 13,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 13,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 13,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 13
+    },
+    {
+      "checkbox": 14,
+      "idx": 14,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 14,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 14,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 14,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 14,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 14
+    },
+    {
+      "checkbox": 15,
+      "idx": 15,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 15,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 15,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 15,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 15,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 15
+    },
+    {
+      "checkbox": 16,
+      "idx": 16,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 16,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 16,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 16,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 16,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 16
+    },
+    {
+      "checkbox": 17,
+      "idx": 17,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 17,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 17,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 17,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 17,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 17
+    },
+    {
+      "checkbox": 18,
+      "idx": 18,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 18,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 18,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 18,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 18,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 18
+    },
+    {
+      "checkbox": 19,
+      "idx": 19,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 19,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 19,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 19,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 19,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 19
+    },
+    {
+      "checkbox": 20,
+      "idx": 20,
+      "id": 12345,
+      "name": "张三",
+      "company": "中信银行总部",
+      "depart": "人力资源部",
+      "job": {
+        "id": 20,
+        "value": "薪酬专员"
+      },
+      "premissionSet": {
+        "id": 20,
+        "value": [
+          {
+            "id": "1",
+            "text": "薪酬"
+          },
+          {
+            "id": "2",
+            "text": "合同"
+          },
+          {
+            "id": "3",
+            "text": "招聘"
+          }
+        ]
+      },
+      "admin": {
+        "id": 20,
+        "status": "true",
+        "class": "hr-authority-orange",
+        "value": "&#xe629;"
+      },
+      "switch": {
+        "id": 20,
+        "status": "enabled",
+        "class": "bootstrap-switch-on"
+      },
+      "action": 20
+    }
+  ]
+}

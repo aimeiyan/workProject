@@ -1,0 +1,798 @@
+{
+    "status": "0",
+    "msgInfo": "OK",
+    "msgDetail": {
+        "recordsTotal": 38,
+        "recordsFiltered": 38,
+        "draw": "1",
+        "data": [
+            {
+                "checkbox": 1,
+                "idx": 1,
+                "id": "291B7317BF70DCADE050007F010021F3",
+                "userName": "ranhaoyu",
+                "name": "冉豪宇",
+                "company": "广东总行",
+                "depart": "广东总行零售金融部",
+                "job": {
+                    "id": "2959FABB12B017ACE050007F01002573",
+                    "value": "薪酬专员岗"
+                },
+                "premissionSet": {
+                    "id": "291B7317BF70DCADE050007F010021F3",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3CCDBEFCE050007F01007B72",
+                            "value": "考勤"
+                        },
+                        {
+                            "id": "2945EC7A3CCEBEFCE050007F01007B72",
+                            "value": "人事"
+                        },
+                        {
+                            "id": "2945EC7A3CCFBEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 1,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 1,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 1
+            },
+            {
+                "checkbox": 2,
+                "idx": 2,
+                "id": "2931D8B7434EBCABE050007F01005888",
+                "userName": "mashanmei",
+                "name": "马山梅 ",
+                "company": "北京总行",
+                "depart": "北京总行办公室",
+                "job": {
+                    "id": "2959FABB12B417ACE050007F01002573",
+                    "value": "社保专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B7434EBCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3CEFBEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3CF0BEFCE050007F01007B72",
+                            "value": "合同"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 2,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 2,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 2
+            },
+            {
+                "checkbox": 3,
+                "idx": 3,
+                "id": "2931D8B74350BCABE050007F01005888",
+                "userName": "bianlong",
+                "name": "卞龙 ",
+                "company": "北京总行",
+                "depart": "北京总行公司金融部",
+                "job": {
+                    "id": "2959FABB12AC17ACE050007F01002573",
+                    "value": "人事专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74350BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3CF1BEFCE050007F01007B72",
+                            "value": "考勤"
+                        },
+                        {
+                            "id": "2945EC7A3CF2BEFCE050007F01007B72",
+                            "value": "人事"
+                        },
+                        {
+                            "id": "2945EC7A3CF3BEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 3,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 3,
+                    "status": "disabled",
+                    "class": "bootstrap-switch-off"
+                },
+                "action": 3
+            },
+            {
+                "checkbox": 4,
+                "idx": 4,
+                "id": "2931D8B74352BCABE050007F01005888",
+                "userName": "miaoyunbiao",
+                "name": "苗云彪",
+                "company": "北京总行",
+                "depart": "北京总行零售金融部",
+                "job": {
+                    "id": "2959FABB12AC17ACE050007F01002573",
+                    "value": "人事专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74352BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3CF4BEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3CF5BEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3CF6BEFCE050007F01007B72",
+                            "value": "合同"
+                        },
+                        {
+                            "id": "2945EC7A3CF7BEFCE050007F01007B72",
+                            "value": "考勤"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 4,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 4,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 4
+            },
+            {
+                "checkbox": 5,
+                "idx": 5,
+                "id": "2931D8B74354BCABE050007F01005888",
+                "userName": "muhong",
+                "name": "穆鸿 ",
+                "company": "北京总行",
+                "depart": "北京总行计划财务部",
+                "job": {
+                    "id": "2959FABB12AE17ACE050007F01002573",
+                    "value": "考勤专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74354BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3CFABEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3CF8BEFCE050007F01007B72",
+                            "value": "人事"
+                        },
+                        {
+                            "id": "2945EC7A3CF9BEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 5,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 5,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 5
+            },
+            {
+                "checkbox": 6,
+                "idx": 6,
+                "id": "2931D8B74366BCABE050007F01005888",
+                "userName": "langwen",
+                "name": "郎玟 ",
+                "company": "北京总行",
+                "depart": "北京总行基建办公室",
+                "job": {
+                    "id": "2959FABB12B217ACE050007F01002573",
+                    "value": "绩效专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74366BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D13BEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3D14BEFCE050007F01007B72",
+                            "value": "合同"
+                        },
+                        {
+                            "id": "2945EC7A3D15BEFCE050007F01007B72",
+                            "value": "考勤"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 6,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 6,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 6
+            },
+            {
+                "checkbox": 7,
+                "idx": 7,
+                "id": "2931D8B74368BCABE050007F01005888",
+                "userName": "baxueshan",
+                "name": "巴雪珊 ",
+                "company": "北京总行",
+                "depart": "北京总行市场二部",
+                "job": {
+                    "id": "2959FABB12AC17ACE050007F01002573",
+                    "value": "人事专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74368BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D18BEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3D19BEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3D16BEFCE050007F01007B72",
+                            "value": "人事"
+                        },
+                        {
+                            "id": "2945EC7A3D17BEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 7,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 7,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 7
+            },
+            {
+                "checkbox": 8,
+                "idx": 8,
+                "id": "2931D8B7436ABCABE050007F01005888",
+                "userName": "zhucaishan",
+                "name": "朱采珊 ",
+                "company": "北京总行",
+                "depart": "北京总行市场五部",
+                "job": {
+                    "id": "2959FABB12AE17ACE050007F01002573",
+                    "value": "考勤专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B7436ABCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D1EBEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3D1ABEFCE050007F01007B72",
+                            "value": "合同"
+                        },
+                        {
+                            "id": "2945EC7A3D1BBEFCE050007F01007B72",
+                            "value": "考勤"
+                        },
+                        {
+                            "id": "2945EC7A3D1CBEFCE050007F01007B72",
+                            "value": "人事"
+                        },
+                        {
+                            "id": "2945EC7A3D1DBEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 8,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 8,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 8
+            },
+            {
+                "checkbox": 9,
+                "idx": 9,
+                "id": "2931D8B7436CBCABE050007F01005888",
+                "userName": "jiangyanfu",
+                "name": "蒋雁芙 ",
+                "company": "北京总行",
+                "depart": "行长室",
+                "job": {
+                    "id": "2959FABB12AC17ACE050007F01002573",
+                    "value": "人事专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B7436CBCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D1FBEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3D20BEFCE050007F01007B72",
+                            "value": "合同"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 9,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 9,
+                    "status": "disabled",
+                    "class": "bootstrap-switch-off"
+                },
+                "action": 9
+            },
+            {
+                "checkbox": 10,
+                "idx": 10,
+                "id": "2931D8B7436EBCABE050007F01005888",
+                "userName": "yuyiyu",
+                "name": "於亦玉 ",
+                "company": "北京总行",
+                "depart": "公司部",
+                "job": {
+                    "id": "2959FABB12AE17ACE050007F01002573",
+                    "value": "考勤专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B7436EBCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D21BEFCE050007F01007B72",
+                            "value": "考勤"
+                        },
+                        {
+                            "id": "2945EC7A3D22BEFCE050007F01007B72",
+                            "value": "人事"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 10,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 10,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 10
+            },
+            {
+                "checkbox": 11,
+                "idx": 11,
+                "id": "2931D8B74370BCABE050007F01005888",
+                "userName": "zhaocaiwen",
+                "name": "赵采文 ",
+                "company": "北京总行",
+                "depart": "零售部",
+                "job": {
+                    "id": "2959FABB12B017ACE050007F01002573",
+                    "value": "薪酬专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74370BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D24BEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3D23BEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 11,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 11,
+                    "status": "disabled",
+                    "class": "bootstrap-switch-off"
+                },
+                "action": 11
+            },
+            {
+                "checkbox": 12,
+                "idx": 12,
+                "id": "2931D8B74372BCABE050007F01005888",
+                "userName": "shuangchenwu",
+                "name": "双晨伍",
+                "company": "北京总行",
+                "depart": "营业室",
+                "job": {
+                    "id": "2959FABB12B217ACE050007F01002573",
+                    "value": "绩效专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74372BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D25BEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3D26BEFCE050007F01007B72",
+                            "value": "合同"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 12,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 12,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 12
+            },
+            {
+                "checkbox": 13,
+                "idx": 13,
+                "id": "2931D8B74374BCABE050007F01005888",
+                "userName": "wuletian",
+                "name": "邬乐天 ",
+                "company": "北京总行",
+                "depart": "北京总行",
+                "job": {
+                    "id": "2959FABB12B417ACE050007F01002573",
+                    "value": "社保专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74374BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D27BEFCE050007F01007B72",
+                            "value": "考勤"
+                        },
+                        {
+                            "id": "2945EC7A3D28BEFCE050007F01007B72",
+                            "value": "人事"
+                        },
+                        {
+                            "id": "2945EC7A3D29BEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 13,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 13,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 13
+            },
+            {
+                "checkbox": 14,
+                "idx": 14,
+                "id": "2931D8B74376BCABE050007F01005888",
+                "userName": "changfuyuan",
+                "name": "昌付元 ",
+                "company": "广东总行",
+                "depart": "广东总行",
+                "job": {
+                    "id": "2959FABB12B217ACE050007F01002573",
+                    "value": "绩效专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74376BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D2ABEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3D2BBEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3D2CBEFCE050007F01007B72",
+                            "value": "合同"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 14,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 14,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 14
+            },
+            {
+                "checkbox": 15,
+                "idx": 15,
+                "id": "2931D8B74378BCABE050007F01005888",
+                "userName": "yuqianrou",
+                "name": "于千柔",
+                "company": "广东总行",
+                "depart": "广东总行领导层",
+                "job": {
+                    "id": "2959FABB12B417ACE050007F01002573",
+                    "value": "社保专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B74378BCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D2DBEFCE050007F01007B72",
+                            "value": "考勤"
+                        },
+                        {
+                            "id": "2945EC7A3D2EBEFCE050007F01007B72",
+                            "value": "人事"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 15,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 15,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 15
+            },
+            {
+                "checkbox": 16,
+                "idx": 16,
+                "id": "2931D8B7437ABCABE050007F01005888",
+                "userName": "feiwenbo",
+                "name": "费文博 ",
+                "company": "广东总行",
+                "depart": "广东总行人力资源部",
+                "job": {
+                    "id": "2959FABB12B017ACE050007F01002573",
+                    "value": "薪酬专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B7437ABCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D30BEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3D31BEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3D2FBEFCE050007F01007B72",
+                            "value": "薪酬"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 16,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 16,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 16
+            },
+            {
+                "checkbox": 17,
+                "idx": 17,
+                "id": "2931D8B7437CBCABE050007F01005888",
+                "userName": "xiefeng",
+                "name": "谢峰 ",
+                "company": "广东总行",
+                "depart": "广东总行培训中心",
+                "job": {
+                    "id": "2959FABB12B217ACE050007F01002573",
+                    "value": "绩效专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B7437CBCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D34BEFCE050007F01007B72",
+                            "value": "招聘"
+                        },
+                        {
+                            "id": "2945EC7A3D32BEFCE050007F01007B72",
+                            "value": "合同"
+                        },
+                        {
+                            "id": "2945EC7A3D33BEFCE050007F01007B72",
+                            "value": "考勤"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 17,
+                    "status": "true",
+                    "class": "hr-authority-orange"
+                },
+                "switch": {
+                    "id": 17,
+                    "status": "disabled",
+                    "class": "bootstrap-switch-off"
+                },
+                "action": 17
+            },
+            {
+                "checkbox": 18,
+                "idx": 18,
+                "id": "2931D8B7437EBCABE050007F01005888",
+                "userName": "zuoxinping",
+                "name": "左鑫平 ",
+                "company": "广东总行",
+                "depart": "广东总行董事会办公室",
+                "job": {
+                    "id": "2959FABB12B417ACE050007F01002573",
+                    "value": "社保专员岗"
+                },
+                "premissionSet": {
+                    "id": "2931D8B7437EBCABE050007F01005888",
+                    "rightGroup": [
+                        {
+                            "id": "2945EC7A3D35BEFCE050007F01007B72",
+                            "value": "绩效"
+                        },
+                        {
+                            "id": "2945EC7A3D36BEFCE050007F01007B72",
+                            "value": "合同"
+                        },
+                        {
+                            "id": "2945EC7A3D37BEFCE050007F01007B72",
+                            "value": "考勤"
+                        }
+                    ]
+                },
+                "admin": {
+                    "id": 18,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 18,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 18
+            },
+            {
+                "checkbox": 19,
+                "idx": 19,
+                "id": "2959482250D8B7B2E050007F01001C7B",
+                "userName": "huajie",
+                "name": "花洁 ",
+                "company": "北京总行",
+                "depart": "北京总行人力资源部",
+                "job": {
+                    "id": "2959FABB12AC17ACE050007F01002573",
+                    "value": "人事专员岗"
+                },
+                "premissionSet": {
+                    "id": "2959482250D8B7B2E050007F01001C7B",
+                    "rightGroup": []
+                },
+                "admin": {
+                    "id": 19,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 19,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 19
+            },
+            {
+                "checkbox": 20,
+                "idx": 20,
+                "id": "2959482250DAB7B2E050007F01001C7B",
+                "userName": "tangdonglian",
+                "name": "汤冬莲 ",
+                "company": "北京总行",
+                "depart": "北京总行人力资源部",
+                "job": {
+                    "id": "2959FABB12AE17ACE050007F01002573",
+                    "value": "考勤专员岗"
+                },
+                "premissionSet": {
+                    "id": "2959482250DAB7B2E050007F01001C7B",
+                    "rightGroup": []
+                },
+                "admin": {
+                    "id": 20,
+                    "status": "false",
+                    "class": "hr-authority-grey"
+                },
+                "switch": {
+                    "id": 20,
+                    "status": "enabled",
+                    "class": "bootstrap-switch-on"
+                },
+                "action": 20
+            }
+        ]
+    }
+
+}

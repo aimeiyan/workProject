@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script language="javascript">var jcontextPath='/sjwg';</script>-->
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/gzgs.min.css" rel="stylesheet">
+    <link href="../third/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        .login-msg {
+            color: #993300;
+            font-size: 12px;
+        }
+    </style>
+
+
+
+    <title>应用授权</title>
+</head>
+<body class="white-bg">
+
+
+<div id="wrapper" class="wrapper gzgs-wrapper-content  gzgs-banner-bg">
+    <div class="row container-fluid center-block">
+        <div class="col-xs-12 center-block container-fluid">
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-4" style="margin-top:-10px;">
+                    <img src="../images/gs_logo.png" class="img-responsive center-block">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center gzgs-font-white">
+
+
+                    <h3>
+                        <b>达州市渠县地方税务局</b>
+                    </h3>
+                    <h5 class="">DAZHOU QUXIAN LOCAL OFFICE, SAT</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gzgs-seperator "></div>
+<div class="wrapper wrapper-content container ">
+    <div class="row" style="margin-left: 2%; margin-right: 2%;">
+        <div class="row">
+            <div class="col-xs-12">
+                <form name="frm" method="post" id="frmId" action="/sjwg/wsbs/nsrsqAction.do?method=getReturn">
+                    <div class="form-group">
+                        <label>用户名</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <input type="text" class="form-control" name="loginName" id="loginName"
+                                   onkeydown="if(event.keyCode==13) event.keyCode=9;" placeholder="请输入">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <input type="password" class="form-control" name="loginPass"
+                                   onkeydown="if(event.keyCode==13) event.keyCode=9;" placeholder="请输入">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>验证码</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <input style="width:70%;height:40px" type="text" class="form-control" name="yzm"
+                                   placeholder="请输入">
+
+                            <div class="loadimg" id="loadimg" style="display: none;">&nbsp;正在加载图片…</div>
+                            <img class="loadimg" width="80px" height="40px" id="yzmimg"
+                                 src="../images/vimage.jpeg">
+                            <!--<img class="loadimg" width="80px" height="40px" id="yzmimg"-->
+                                 <!--src="/sjwg/common/vimage.jsp?v=14603849966470.7109362373455915"-->
+                                 <!--onload="this.previousSibling.previousSibling.style.display=&quot;none&quot;;this.style.display=&quot;&quot;">-->
+                        </div>
+                    </div>
+                    <div style="overflow: hidden; height: 28px; width: 190px;" id="outputText" class="login-msg"></div>
+
+
+                    <!-- 通过hidden input传递参数 -->
+                    <input type="hidden" name="id" id="idField" value="3"> <input type="hidden" name="paramsInputString"
+                                                                                  id="paramsInputStringField" value="">
+                    <input type="hidden" name="returnURL" id="returnURLField" value="http">
+                    <input type="hidden" name="zsNsrBz" id="zsNsrBzField" value="">
+
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="button" name="bth_search" id="bth_search"
+                                onclick="return CheckOnSubmitWx(frm);">&nbsp;&nbsp;登&nbsp;&nbsp;录&nbsp;&nbsp;</button>
+                    </div>
+                    <br>
+
+                    <p class="gzgs-sms-text">
+                        <font style="color:red">温馨提示：您正在申请的是 微信纳税人绑定 </font><br>
+
+
+                        <font style="color:black">请使用达州市渠县地方税务局网上办税大厅</font>
+                        <font style="font-weight: bold;color:red;">2号窗</font>
+                        <font style="color:black">的用户名和密码登录</font><br>
+
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-2.1.1.js"></script>
+
+<script type="text/javascript" language="javascript" src="../js/common.js"></script>
+<script type="text/javascript" language="javascript" src="../js/nsrsq.js"></script>
+<script type="text/javascript">
+    var confirmNotice = "";
+    var isXys = false;
+    window.onload = function () {
+        var nsrsbh = 'null';
+        if (nsrsbh != null && nsrsbh != "" && nsrsbh != 'null') {
+            $('#loginName').val(nsrsbh);
+            $('#loginName').attr("readonly", true);
+        }
+        var xysid = "3";
+        if (xysid != null && xysid != "" && xysid != "0") {
+            //document.getElementById("sqsdiv").style.display = "block";
+            isXys = true;
+        }
+    }
+    function checkXys() {
+        return true;
+    }
+    function showConfirm() {
+        if (confirmNotice != null && confirmNotice != "") {
+            if (window.confirm(confirmNotice)) {
+                return true;
+            } else {
+                window.location.reload();
+                return false;
+            }
+        } else
+            return true;
+    }
+</script>
+
+</body>
+</html>

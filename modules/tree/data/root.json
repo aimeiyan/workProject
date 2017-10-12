@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "text": "总行",
+    "children": [
+      {
+        "id": 101,
+        "text": "北京",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 102,
+        "text": "上海",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 103,
+        "text": "广州",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 104,
+        "text": "深圳",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 105,
+        "text": "天津",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 106,
+        "text": "河北",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 107,
+        "text": "山东",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 108,
+        "text": "黑龙江",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 109,
+        "text": "吉林",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 110,
+        "text": "辽宁",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 111,
+        "text": "江苏",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 112,
+        "text": "甘肃",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 113,
+        "text": "浙江",
+        "children": false,
+        "type": "root"
+      }
+    ],
+    "type": "root"
+  },
+  {
+    "id": 2,
+    "text": "总行",
+    "children": [
+      {
+        "id": 201,
+        "text": "北京",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 202,
+        "text": "上海",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 203,
+        "text": "广州",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 204,
+        "text": "深圳",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 205,
+        "text": "天津",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 206,
+        "text": "河北",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 207,
+        "text": "山东",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 208,
+        "text": "黑龙江",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 209,
+        "text": "吉林",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 210,
+        "text": "辽宁",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 211,
+        "text": "江苏",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 212,
+        "text": "甘肃",
+        "children": true,
+        "type": "root"
+      },
+      {
+        "id": 213,
+        "text": "浙江",
+        "children": false,
+        "type": "root"
+      }
+    ],
+    "type": "root"
+  }
+]

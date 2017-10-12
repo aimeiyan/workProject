@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../dataTable/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/themes/default/style.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
+    <link href="../dataTable/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <script>
+
+        $(function () {
+            $('#container').jstree({
+                'core': {
+                    'data': {
+                        "url": "data/data_root.json",
+                        "data": function (node) {
+                            console.log(node);
+                            return {
+                                "name": node.id,
+                                'abc': 12121
+                            };
+                        }
+                    }
+                },
+                types: {
+                    "default": {icon: "fa fa-folder text-warning fa-lg"},
+                    file: {icon: "fa fa-file text-warning fa-lg"}
+                },
+                plugins: ["dnd", "state", "types", "change"]
+            });
+        })
+    </script>
+</head>
+<body>
+
+
+<div id="container">
+
+</div>
+
+</body>
+</html>

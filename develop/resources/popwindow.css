@@ -1,0 +1,48 @@
+.sys-pop-win {
+}
+
+.sys-pop-win-top {
+}
+
+.sys-pop-win-l {
+    position:relative;
+    height: 100%;
+    background-color: #fff;
+}
+
+.sys-pop-win-m {
+
+}
+
+.sys-pop-win-r {
+
+}
+
+.sys-pop-win-footer {
+    position:relative;
+    bottom: 0;
+    height:40px;
+    width:100%;
+    background-color: #0d7eff;
+    border-top: 1px solid #eee;
+}
+.sys-pop-win .modal-content{
+    margin: 35px auto !important;
+}
+.sys-pop-win .modal-header .modal-title{
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+}
+.sys-pop-win .modal-header .close{
+    color: #fff;
+    opacity: 1;
+    font-weight: 100;
+    margin-top:0;
+    line-height: 30px;
+    font-size: 28px;
+}
+.sys-pop-win .modal-header{
+	height: 30px;
+    padding:0 15px;
+}

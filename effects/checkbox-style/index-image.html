@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .gt-ie8 .hr-authority-table .hr-table-checkbox-wrapper {
+            line-height: 24px;
+            position: relative;
+        }
+
+        .gt-ie8 .hr-authority-table input[type="checkbox"]:checked + label:before,
+        .gt-ie8 .hr-authority-table input[type="checkbox"]:not(:checked) + label:before {
+            background: #fff url("download.png");
+            content: " ";
+            height: 22px;
+            left: 0;
+            position: absolute;
+            width: 22px;
+        }
+
+        .gt-ie8 .hr-authority-table input[type="checkbox"]:not(:checked):focus + label:before,
+        .gt-ie8 .hr-authority-table input[type="checkbox"]:not(:checked) + label:hover:before {
+            background-position: -24px 0;
+        }
+
+        .gt-ie8 .hr-authority-table input[type="checkbox"]:checked + label:before {
+            background-position: -48px 0;
+        }
+
+        .gt-ie8 .hr-authority-table input[type="checkbox"][disabled]:not(:checked) + label:before {
+            background-position: -72px 0;
+        }
+
+        .gt-ie8 .hr-authority-table input[type="checkbox"][disabled]:checked + label:before {
+            background-position: -96px 0;
+        }
+    </style>
+</head>
+<body class="gt-ie8">
+<div class="hr-table-checkbox-wrapper"><input id="hr-table-checkbox" type="checkbox"><label for="hr-table-checkbox"></label></div>
+</body>
+</html>

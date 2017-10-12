@@ -1,0 +1,24 @@
+{
+  "left": [
+    {"structure": true},
+    {"role": false},
+    {"search": true}
+  ],
+  "right": [{
+    "text": "授权",
+    "class": "btn btn-white m-r-5 hr-add-authority-btn",
+    "icon": "fa fa-cogs"
+  },{
+    "text": "清空授权",
+    "class": "btn btn-white m-r-5 hr-empty-authority-btn",
+    "icon": "fa fa-cogs"
+  }, {
+    "text": "导出",
+    "class": "btn btn-success dropdown-toggle",
+    "icon": ""
+  }, {
+    "text": "打印",
+    "class": "btn btn-success dropdown-toggle",
+    "icon": ""
+  }]
+}

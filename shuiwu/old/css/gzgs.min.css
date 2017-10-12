@@ -1,0 +1,321 @@
+﻿@CHARSET "UTF-8";
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    margin-bottom: 3rem !important;
+}
+.gzgs-banner-bg {
+    background-color: #1a527b
+}
+
+.gzgs-content-bg {
+    background-color: #eae8d6
+}
+
+.gzgs-content-bg-white {
+    background-color: white
+}
+
+.gzgs-font-white {
+    color: white
+}
+
+.gzgs-line-space {
+    margin-top: -8px
+}
+
+.gzgs-wrapper-content {
+    padding: 20px 10px 10px
+}
+
+.gzgs-btn-bg {
+    background-color: #e6e2d7;
+    color: #52b3ae;
+    padding: 3px 3px
+}
+
+.gzgs-btn-txt-color {
+    color: #8f8e89
+}
+
+.gzgs-footer {
+    color: white;
+    background-color: #938f85;
+    font-size: 12px;
+    padding: 4px 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0
+}
+
+.gzgs-nav-bar {
+    color: white;
+    background-color: #1a527b
+}
+
+.gzgs-seperator {
+    background-color: #4fc1e9;
+    height: 5px;
+    margin-top: -4px
+}
+
+.gzgs-text-gray {
+    color: rbg(164, 170, 178);
+    font-size: 16px
+}
+
+.gzgs-nsr-label {
+    background-color: #4fc1e9;
+    color: white
+}
+
+.label-info, .badge-info {
+    background-color: #4fc1e9
+}
+
+.label, .badge {
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4fc1e9;
+    border-radius: 15px
+}
+
+.gzgs-selection-seprator {
+    background-image: url(../images/seprator.png);
+    height: 7px;
+    background-clip: padding-box;
+    margin-top: -1px
+}
+
+.gzgs-selection-bg {
+    background-color: #5d9cec
+}
+
+.gzgs-selection-text-left {
+    vertical-align: middle;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    color: white
+}
+
+.gzgs-selection-text-right-top {
+    font-size: 18px;
+    margin-top: 3px;
+    margin-right: -40px;
+    color: white
+}
+
+.gzgs-selection-text-right-bottom {
+    font-size: 12px;
+    margin-top: -3px;
+    margin-right: -40px;
+    color: white
+}
+
+.gzgs-selection-cell {
+    padding: 0
+}
+
+.area_list {
+    width: 80%;
+    position: absolute;
+    left: 12%;
+    top: 51px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 999;
+    padding: 0 3%;
+    display: none
+}
+
+.area_list li {
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #ededed;
+    list-style-type: none
+}
+
+.area_list li a {
+    display: block;
+    padding-left: 3%
+}
+
+.area_list li:first-child {
+    border-top: 0
+}
+
+.gzgs_btn {
+    padding: 6px 0
+}
+
+.gzgs-btn-bg:hover, .gzgs-btn-bg:active {
+    background-color: #e6e2d7;
+    color: #52b3ae
+}
+
+.gzgs-yy-btn-bg {
+    background-color: #5d9cec;
+    padding: 2px 2px;
+    height: 90px
+}
+
+.gzgs-yy-btn-index-txt {
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px !important
+}
+
+.gzgs-yy-btn-index {
+    background-color: #5d9cec;
+    padding-top: 2px;
+    height: 40px
+}
+
+.gzgs-yy-btn-index-footer-txt {
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    margin-top: 6px !important
+}
+
+.gzgs-yy-btn-index-footer {
+    text-align: center;
+    background-color: #5d9cec;
+    height: 30px;
+    font-size: 12px;
+    position: fixed;
+    width: 100%;
+    bottom: 0
+}
+
+.gzgs-yy-img {
+    width: 65px
+}
+
+.gzgs-yy-btn-txt-color {
+    color: white;
+    font-size: 13px;
+    margin-top: -10px !important
+}
+
+.gzgs-yy-menu {
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.btn-primary {
+    background-color: #1a527b;
+    color: #fff;
+    background-image: -moz-linear-gradient(top, #1a527b, #3186c4);
+    background-image: -ms-linear-gradient(top, #1a527b, #3186c4);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1a527b), to(#3186c4));
+    background-image: -webkit-linear-gradient(top, #1a527b, #3186c4);
+    background-image: -o-linear-gradient(top, #1a527b, #3186c4);
+    background-image: linear-gradient(top, #1a527b, #3186c4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#' 1 a527b, endColorstr='#' 3186 c4, GradientType=0);
+    border-color: #7EBAEF
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: #4a4646;
+    border-color: #7EBAEF;
+    background-image: -moz-linear-gradient(top, #4a4646, #4a4646);
+    background-image: -ms-linear-gradient(top, #4a4646, #4a4646);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4a4646), to(#4a4646));
+    background-image: -webkit-linear-gradient(top, #4a4646, #4a4646);
+    background-image: -o-linear-gradient(top, #4a4646, #4a4646);
+    background-image: linear-gradient(top, #4a4646, #4a4646)
+}
+
+.gzgs-sms-head {
+    background-color: #f5f7f9;
+    color: #606264
+}
+
+.gzgs-sms-text {
+    color: #6e6e6e
+}
+
+.area_rq_list {
+    width: 80%;
+    position: absolute;
+    left: 12%;
+    top: 31px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 999;
+    padding: 0 3%;
+    display: none
+}
+
+.area_rq_list li {
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #ededed;
+    list-style-type: none
+}
+
+.area_rq_list li a {
+    display: block;
+    padding-left: 3%
+}
+
+.area_rq_list li:first-child {
+    border-top: 0
+}
+
+.InfoLabel {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #1a527b;
+    color: white;
+    height: 25px;
+    padding: 2px 10px 2px;
+    position: relative;
+    display: inline-block
+}
+
+.InfoLabelTail {
+    width: 0;
+    height: 14px;
+    border-left: 10px solid #1a527b;
+    border-top: 10px solid white;
+    position: absolute;
+    display: inline-block;
+    margin-left: -10px
+}
+
+p.Infotext {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    padding-left: 14px
+}
+
+.gzgs-table-nsr {
+    background-color: #5d9cec;
+    width: 100%;
+    color: white
+}
+
+.gzgs-table-nsr td {
+    padding: 3px 15px
+}
+
+.gzgs-seprator-td {
+    background-image: url(../images/seprator.png);
+    height: 7px;
+    background-clip: padding-box;
+    margin-top: -1px
+}

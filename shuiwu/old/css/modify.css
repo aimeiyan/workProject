@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, pre, form, p, blockquote, input, abbr, article, aside, figcaption, fieldset, figure, footer, header, mark, meter, menu, nav, output, progress, section, summary, time, button {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+iframe, a, img, button {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+article, aside, footer, header, nav, section, figure, figcaption {
+    display: block;
+}
+
+input, textarea, select, button {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.t-break {
+    word-break: break-all;
+}
+
+.t-wrap {
+    word-wrap: break-word;
+}
+
+.t-bold {
+    font-weight: bold;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-indent {
+    text-indent: 2rem;
+}
+
+.t-white {
+    color: #fff;
+}
+
+.m-t-05 {
+    margin-top: 0.5rem;
+}
+
+.m-t-1 {
+    margin-top: 1rem;
+}
+
+.m-t-2 {
+    margin-top: 2rem;
+}
+
+.m-t-3 {
+    margin-top: 3rem;
+}
+
+.m-t-5 {
+    margin-top: 5rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.dz-header {
+    font-size: 1.1rem;
+    line-height: 2.3;
+    border-bottom: 4px solid #6EC4FB;
+    position: relative;
+}
+
+.dz-header .arrow-left {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 1rem;
+    top: 0.2rem;
+}
+
+.dz-container .unbind-text {
+    font-size: 1rem;
+    padding-top: 5rem;
+}
+
+.btn-small {
+    padding: 0.3rem 1rem 0.3rem;
+    font-size: 0.8rem
+}
+
+/*begin 办事指南*/
+.wrapper-content .subtitle {
+    font-size: 1.5rem;
+    line-height: 2;
+    border-bottom: 2px solid #1d82d8;
+}
+
+.wrapper-content .guide-lists {
+
+}
+
+.wrapper-content .guide-lists li {
+    line-height: 2.5;
+    border-bottom: 1px solid #eee;
+}
+
+.wrapper-content .guide-lists li a {
+    color: #6e6e6e;
+    display: block;
+
+}
+
+.wrapper-content .guide-lists li a:hover {
+    color: #D00;
+    text-decoration: underline;
+}
+
+.wrapper-content .guide-lists .guide-classify-list tbody tr:first-child td {
+    border-top: 1px solid #eee;
+}
+
+.wrapper-content .guide-lists .guide-classify-list {
+    margin-top: 2rem;
+}
+
+.wrapper-content .guide-lists .guide-classify-list td {
+    line-height: 2.5;
+    border-bottom: 1px solid #eee;
+}
+
+.wrapper-content .guide-lists .guide-classify-list tr:nth-child(odd) td {
+    background-color: #fbfbfb;
+}
+
+.wrapper-content .guide-lists .guide-classify-list tr td:first-child {
+    text-align: left;
+}
+
+.wrapper-content .guide-lists .guide-classify-list tr td:first-child a {
+    color: #6e6e6e;
+}
+
+.wrapper-content .guide-lists .guide-classify-list tr td:first-child a:hover {
+    color: #D00;
+    text-decoration: underline;
+}
+
+.wrapper-content .guide-lists .guide-classify-list tr td:last-child {
+    text-align: right;
+    color: #aaa;
+    font-size: 1.1rem;
+    width: 10rem;
+}
+
+.wrapper-content .guide-lists .guide-search {
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.wrapper-content .guide-lists .guide-search input {
+    padding: 0.5rem 10rem 0.5rem 0.5rem;
+    border: none;
+    width: 100%;
+    height: 3rem;
+}
+
+.wrapper-content .guide-lists .guide-search .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 3rem;
+    padding: 0 0.8rem 0;
+    font-size: 1.3rem;
+    border-radius: 0;
+}
+
+.wrapper-content .guide-detail {
+    padding: 0 1rem;
+}
+
+.wrapper-content .guide-detail .guide-title .title {
+    padding: 1rem 0;
+}
+
+.wrapper-content .guide-detail .guide-title .guide-datetime {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.wrapper-content .guide-detail .guide-content p, .wrapper-content .guide-detail .guide-content ul li {
+    line-height: 2;
+}
+
+.wrapper-content .guide-content .tax-address-map .review-all-map {
+    color: #3A5FCD;
+}
+
+.wrapper-content .guide-title .tax-address-title {
+    font-size: 2rem;
+}
+
+/*begin 办事指南*/
