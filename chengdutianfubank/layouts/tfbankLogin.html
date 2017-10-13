@@ -6,7 +6,9 @@
     <title>登录页面</title>
     <!--<link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">-->
     <link type="text/css" rel="stylesheet" href="../css/tfbankstyle1.css">
+    <style>
 
+    </style>
 </head>
 <body>
 <div class="tfbankstyle-login-page">
@@ -18,31 +20,36 @@
 
                 <img src="../images/tf-panda_big.png" style="width:300px" alt=""/>
             </div>
-            <form class="tfbankstyle-login-form" action="" method="post" autocomplete="off">
-                <div id="tfbankstyle-erroer-Msg"></div>
-                <h3 class="tfbankstyle_login_title">欢迎登录</h3>
-                <div class="tfbankstyle-login-input">
-                    <label for="tfbankstyle-username">用户名</label>
-                    <input type="text" name="username" id="tfbankstyle-username" placeholder="员工名/手机号/公司邮箱"></div>
-                <br/><div class="tfbankstyle-login-input tfbankstyle-login-input-passwd">
-                    <label for="tfbankstyle-password">密码</label><br/>
-                    <input type="password" name="password" id="tfbankstyle-password" placeholder="密码"></div>
-                <!--<div class="tfbankstyle-login-input tfbankstyle-login-checkbox">-->
-                    <!--<div class="tfbankstyle-remember-password-action">-->
+            <div class="tfbankstyle-login-form-wrapper">
+                <form class="tfbankstyle-login-form" action="" method="post" autocomplete="off">
+                    <div id="tfbankstyle-erroer-Msg"></div>
+                    <h3 class="tfbankstyle_login_title">欢迎登录</h3>
 
-                     <!--<input type="checkbox" name="tfbankstyle-remember-password" style="position:absolute;"/> <label for=" ">记住密码</label>-->
+                    <div class="tfbankstyle-login-input">
+                        <label for="tfbankstyle-username">用户名</label>
 
+                        <div class="tfbankstyle-login-input-group">
+                            <input type="text" name="username" id="tfbankstyle-username" placeholder="员工名/手机号/公司邮箱">
+                        </div>
+                    </div>
 
-                    <!--</div>-->
-                    <!--<a href="" class="tfbankstyle-forget-password">忘记密码？</a>-->
-                <!--</div>-->
-                <div style="margin-top:48px" class="tfbankstyle-remember-password-action"><input type="checkbox" name="tfbankstyle-remember-password" />记住密码<a href="" class="tfbankstyle-forget-password">忘记密码？</a></div>
-                <div class="tfbankstyle-login-login-btn">
-                    <a href="javascript:void(0);" class="tfbank-login-submit"><img
-                            src="../images/tf_login_btn.png"></a>
-                </div>
-                <p>Copyright © 2017 四川天府银行 版权所有</p>
-            </form>
+                    <div class="tfbankstyle-login-input tfbankstyle-login-input-passwd">
+                        <label for="tfbankstyle-password">密码</label><br/>
+
+                        <div class="tfbankstyle-login-input-group">
+                            <input type="password" name="password" id="tfbankstyle-password" placeholder="密码"></div>
+                    </div>
+                    <div class="tfbankstyle-remember-password-action"><label for="tfbankstyle-remember-password"
+                                                                             class="tfbankstyle-remember-password-label"><input
+                            type="checkbox" name="tfbankstyle-remember-password" id="tfbankstyle-remember-password"/>记住密码</label><a
+                            href="" class="tfbankstyle-forget-password">忘记密码？</a></div>
+                    <div class="tfbankstyle-login-login-btn">
+                        <a href="javascript:void(0);" class="tfbank-login-submit"><img
+                                src="../images/tf_login_btn.png"></a>
+                    </div>
+                    <div class="tfbankstyle-login-login-copyright">Copyright © 2017 四川天府银行 版权所有</div>
+                </form>
+            </div>
         </div>
 
 
@@ -53,126 +60,133 @@
 <script type="text/javascript">
     $(function () {
 
-            /**
-             * BEGIN 登录页面输入框placeholder处理，兼容IE8
-             */
-            $('.tfbankstyle-login-form .tfbankstyle-login-input input').each(function () {
+        /**
+         * BEGIN 登录页面输入框placeholder处理，兼容IE8
+         */
+        $('.tfbankstyle-login-form .tfbankstyle-login-input input').each(function () {
 
-                if ($(this).val() != "") {
-                    $(this).css('background-color', 'white');
-                }
-
-                $(this).focus(function () {
-                            $(this).css('background-color', 'white');
-                        })
-                        .blur(function () {
-                            if ($.trim($(this).val()) == '') {
-                                $(this).css('background-color', 'transparent').val('');
-                            }
-                        });
-            });
-            /**
-             * END 登录页面输入框placeholder处理，以兼容IE8
-             */
-
-            /**
-             *  BEGIN 记住密码 复选框效果
-             */
-
-            function getCheckVal() {
-                if ($(".tfbankstyle-remember-password-action").hasClass("jnbankstyle-active")) {
-                    $("[name=tfbankstyle-remember-password]").val('true');
-                } else {
-                    $("[name=tfbankstyle-remember-password]").val('false');
-                }
+            if ($(this).val() != "") {
+                $(this).css('background-color', 'white');
             }
 
+            $(this).focus(function () {
+                $(this).css('background-color', 'white');
+            })
+                    .blur(function () {
+                        if ($.trim($(this).val()) == '') {
+                            $(this).css('background-color', 'transparent').val('');
+                        }
+                    });
+        });
+        /**
+         * END 登录页面输入框placeholder处理，以兼容IE8
+         */
+
+        /**
+         *  BEGIN 记住密码 复选框效果
+         */
+
+        function getCheckVal() {
+            if ($(".tfbankstyle-remember-password-action").hasClass("jnbankstyle-active")) {
+                $("[name=tfbankstyle-remember-password]").val('true');
+            } else {
+                $("[name=tfbankstyle-remember-password]").val('false');
+            }
+        }
+
+        getCheckVal();
+
+        $(".tfbankstyle-remember-password-action").click(function () {
+            $(this).toggleClass("tfbankstyle-active");
             getCheckVal();
-
-            $(".tfbankstyle-remember-password-action").click(function () {
-                $(this).toggleClass("tfbankstyle-active");
-                getCheckVal();
-            });
+        });
 
 
-            /**
-             *  END 记住密码 复选框效果
-             */
+        /**
+         *  END 记住密码 复选框效果
+         */
 
 
-            /**
-             *  BEGIN FORM 登录提交
-             */
-                //回车提交
-            document.onkeydown = function (e) {
-                e = e || event;
-                if (e.keyCode === 13) {
-                    $(".tfbank-login-submit").click();
-                    return false;
-                }
-            };
+        /**
+         *  BEGIN FORM 登录提交
+         */
+            //回车提交
+        document.onkeydown = function (e) {
+            e = e || event;
+            if (e.keyCode === 13) {
+                $(".tfbank-login-submit").click();
+                return false;
+            }
+        };
 
-             //点击提交按钮执行登录函数
-            $(".tfbank-login-submit").click(function () {
-                tfbankLogin();
-            });
+        //点击提交按钮执行登录函数
+        $(".tfbank-login-submit").click(function () {
+            tfbankLogin();
+        });
 
-            //登录函数
-            function tfbankLogin() {
+        //登录函数
+        function tfbankLogin() {
 
-                //空值验证
-                if ($("[name=username]").val() == "") {
-                    $("#tfbankstyle-erroer-Msg").html("用户名不能为空！");
-                    return;
-                }else{
-                     $("#tfbankstyle-erroer-Msg").html("");
-                }
-                if ($("[name=password]").val() == "") {
-                    $("#tfbankstyle-erroer-Msg").html("密码不能为空！");
-                    return;
-                }else{
-                    $("#tfbankstyle-erroer-Msg").html("");
-                }
-
-                //获取用户名、密码、记住密码的值
-                var login_data_username = $("[name=username]").val();
-                var login_data_password = $("[name=password]").val();
-                var login_data_remember_password = $("[name=tfbankstyle-remember-password]").val();
-
-
-                $.ajax({
-                    type: "POST",
-                    data: {
-                        username: login_data_username,
-                        password: login_data_password,
-                        remPasswd: login_data_remember_password
-                    },
-                    url: "/xxxx",
-                    async: false,
-                    success: function (data) {
-                        // 返回数据的格式，当然可以是其他格式，就是下面的代码要修改
-                        // data = {
-                        // status: "ok",
-                        // error:"用户名输入有误"
-                        // }
-
-                        //如果用户名和密码都正确，进行页面跳转
-                        if (data.status = "1") {
-                            top.location.href = "tfnbankhomepage.jsp";
-                        }
-
-                        //显示验证错误信息
-                        if (data.status = "0") {
-                            $("#tfbankstyle-erroer-Msg").html(data.error);
-                        }
-                    }
-                });
-
-                /**
-                 *  END FORM 登录提交
-                 */
+            //空值验证
+            if ($("[name=username]").val() == "") {
+                $("#tfbankstyle-erroer-Msg").html("用户名不能为空！");
+                return;
+            } else {
+                $("#tfbankstyle-erroer-Msg").html("");
+            }
+            if ($("[name=password]").val() == "") {
+                $("#tfbankstyle-erroer-Msg").html("密码不能为空！");
+                return;
+            } else {
+                $("#tfbankstyle-erroer-Msg").html("");
             }
 
+            //获取用户名、密码、记住密码的值
+            var login_data_username = $("[name=username]").val();
+            var login_data_password = $("[name=password]").val();
+            var login_data_remember_password = $("[name=tfbankstyle-remember-password]").val();
+
+
+            $.ajax({
+                type: "POST",
+                data: {
+                    username: login_data_username,
+                    password: login_data_password,
+                    remPasswd: login_data_remember_password
+                },
+                url: "/xxxx",
+                async: false,
+                success: function (data) {
+                    // 返回数据的格式，当然可以是其他格式，就是下面的代码要修改
+                    // data = {
+                    // status: "ok",
+                    // error:"用户名输入有误"
+                    // }
+
+                    //如果用户名和密码都正确，进行页面跳转
+                    if (data.status = "1") {
+                        top.location.href = "tfnbankhomepage.jsp";
+                    }
+
+                    //显示验证错误信息
+                    if (data.status = "0") {
+                        $("#tfbankstyle-erroer-Msg").html(data.error);
+                    }
+                }
+            });
+
+            /**
+             *  END FORM 登录提交
+             */
+
+        }
+
+
+        $(".tfbankstyle-login-form .tfbankstyle-login-input input").focus(function () {
+            $(this).addClass("focus");
+        }).blur(function () {
+            $(this).removeClass("focus");
+        })
     })
 </script>
 </body>

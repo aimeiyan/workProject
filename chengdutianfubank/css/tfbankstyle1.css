@@ -61,7 +61,7 @@ a {
 
 .tfbankstyle-fleft {
     float: left;
-    border-right:gold;
+    border-right: gold;
 }
 
 .tfbankstyle-fright {
@@ -134,12 +134,13 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button; /* 2 */
     cursor: pointer; /* 3 */
 }
+
 @media screen and (min-width: 1880px) {
 
     /*begin 登录页面样式*/
-
     /*end 首页样式*/
 }
+
 .jnbankstyle-mt5 {
     margin-top: 5px !important;
 }
@@ -267,6 +268,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 .jnbankstyle-pl5 {
     padding-left: 5px !important;
 }
+
 .tfbankstyle-pl0 {
     padding-left: 0 !important;
 }
@@ -435,85 +437,87 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     width: 100%;
     height: 100%;
     min-height: 680px;
-    background: url("../images/tflogin_bg.png") no-repeat 50% 100% #f5f2ee;
+    background: url("../images/tflogin_bg.png") repeat-y 0 0 #f5f2ee;
 }
-.tfbankstyle_login_title{
 
-    font-size:30px;
-    color:#333;
+.tfbankstyle_login_title {
+
+    font-size: 30px;
+    color: #333;
 
 }
-.tfbankstyle-login-left{
 
-    margin:90px 10px 100px 70px;
+.tfbankstyle-login-left {
+
+    margin: 90px 10px 100px 70px;
 }
+
 .tfbankstyle-login-page .tfbankstyle-login-bg {
     position: absolute;
-    height: 708px;
-    width: 100%;
-    top: 35%;
-    left: 0;
-    margin-top: -154px;
+    height: 540px;
+    width: 849px;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -425px;
 }
-
-
 
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box {
     width: 849px;
-    height:500px;
+    height: 540px;
     margin: 0 auto;
     background: #fff;
     position: relative;
-    border:1px solid #eee;
-    box-shadow:0px 0px 6px #dfdfdf;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 6px #dfdfdf;
 }
 
-.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form {
-    position: absolute;
-    width: 280px;
-
-    right: 87px;
-    top: 37px;
-}
+/*.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form {*/
+    /*position: absolute;*/
+    /*width: 280px;*/
+    /*right: 87px;*/
+    /*top: 37px;*/
+/*}*/
 
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input {
 
     position: relative;
 
-    margin-top:30px;
+    margin-top: 30px;
 
 }
 
-.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input input{
-    position: absolute;
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input input {
+    /*position: absolute;*/
+    width: 310px;
     border-radius: 6px;
     border: 1px solid #ccc;
-    height: 30px;
-    margin-top:20px;
-    width:252px;
-    top:16px;
-    left: 0px;
-    padding-left:10px;
+    /* height: 30px; */
+    /*margin-top: 20px;*/
+    /*top: 16px;*/
+    /*left: 0px;*/
+    /*padding-left: 10px;*/
+    font-size: 18px;
+    padding: 10px;
+}
 
-}
- 
 .tfbankstyle-login-input::-webkit-input-placeholder {
-  color: red;
+    color: red;
 }
- 
+
 .tfbankstyle-login-input:-moz-placeholder {
-  color: red;
+    color: red;
 }
- 
+
 .tfbankstyle-login-input:-ms-input-placeholder {
-  color: red;
+    color: red;
 }
 
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input label {
- 
+
     color: #333;
 
-    font-size:20px;
+    font-size: 20px;
 }
 
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input-passwd {
@@ -523,30 +527,70 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox {
     position: relative;
     margin-top: 38px;
-    width:120px;
+    width: 120px;
     height: 50px;
+}
+
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input input.focus{
+    border-color: #fddc6c;
+}
+
+.tfbankstyle-login-login-copyright {
+    line-height: 2.5;
+    text-align: center;
+    border-top: 1px dashed #dddddd;
+}
+
+.tfbankstyle-login-form-wrapper {
+    position: absolute;
+    width: 330px;
+    right: 87px;
+    top: 37px;
+}
+
+.tfbankstyle-remember-password-action {
+    margin-top: 20px;
+}
+
+.tfbankstyle-login-input-group {
+    margin-top: 5px;
+}
+
+.tfbankstyle-remember-password-label {
+    position: relative;
+    padding-left: 20px;
+}
+
+.tfbankstyle-remember-password-label input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    zoom: 1.2;
 }
 /*begin 1920分辨率的页面样式*/
 
 @media screen and (min-width: 1880px) {
 
     /*begin 登陆页面样式*/
-.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form
-.tfbankstyle-login-checkbox .tfbankstyle-remember-password-action label {
-   font-size: 14px;
-    color:#333;
-}
-.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input label {
+    .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form
+    .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action label {
+        font-size: 14px;
+        color: #333;
+    }
 
-    color: #333;
-    font-size:22px;
-}
-.tfbankstyle_login_title{
+    .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-input label {
 
-    font-size:36px;
-    color:#333;
+        color: #333;
+        font-size: 22px;
+    }
 
-}
+    .tfbankstyle_login_title {
+
+        font-size: 36px;
+        color: #333;
+
+    }
+
     /*end 登陆页面样式*/
 }
 
@@ -554,30 +598,26 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form
 .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action label {
 
-   font-size: 12px;
-    color:#333;
+    font-size: 12px;
+    color: #333;
 
 }
-.tfbankstyle-forget-password{
-    color:#337ec7;
+
+.tfbankstyle-forget-password {
+    color: #337ec7;
     float: right;
-    width:70px;
+    width: 70px;
     height: 30px;
 }
- .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action input {
-  
-     width:20px; 
-     height:20px; 
 
- } 
+.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action input {
 
-/*.tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action img {*/
-    /*position: absolute;*/
-    /*left: 1px;*/
-    /*top: 4px;*/
-    /*display: block;*/
-/*}*/
- 
+    width: 20px;
+    height: 20px;
+
+}
+
+
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-checkbox .tfbankstyle-remember-password-action .tfbankstyle-check {
     display: none;
 }
@@ -591,13 +631,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .tfbankstyle-login-page .tfbankstyle-login-bg .tfbankstyle-login-box .tfbankstyle-login-form .tfbankstyle-login-login-btn {
-    margin: 40px 0 40px 0 ;
-}
-.tfbankstyle-login-login-btn img{
-    width:270px;
+    margin: 40px 0 40px 0;
 }
 
-#tfbankstyle-erroer-Msg{
+.tfbankstyle-login-login-btn img {
+    display: block;
+    width: 100%;
+}
+
+#tfbankstyle-erroer-Msg {
     position: absolute;
     top: -26px;
     left: 63px;
@@ -607,290 +649,3 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*end 登陆页样式*/
 
- 
- 
-
- 
-
- 
-
- 
- 
-
- 
-
- 
-
- 
- 
-
-/*begin 领导查询样式*/
-
-.tfbankstyle_leaderQuery_container {
-    background: url("../images/tfbank_homepage_bg.png") no-repeat;
-}
-
-.tfbankstyle_leaderQuery_container .tfankstyle_leaderQuery_top {
-    height: 45px;
-    background: url("../images/tfbank_homepage_top.png") repeat-x 0 0;
-}
-
-.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main .tfbankstyle_leaderQuery_logo {
-    position: relative;
-    height:70px;
-}
-
-.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main .tfbankstyle_leaderQuery_logo .tfbankstyle_leaderQuery_logo_right {
-    font-size: 13px;
-    position: absolute;
-    right: 0;
-    bottom:16px;
-    font-weight: bold;
-}
-
-.tfbankstyle_leaderQuery_container .tfbankstyle_leaderQuery_main .tfbankstyle_leaderQuery_logo .tfbankstyle_leaderQuery_logo_right .tfbankstyle_leaderQuery_tuichu {
-    display: inline-block;
-    margin-left: 10px;
-    padding-left: 15px;
-    background: url("../images/tfbank_homepage_tuichu.png") no-repeat 0 2px;
-}
-
-/*BEGIN 领导查询专有样式*/
-.tfbankstyle_leaderQuery_inner-container {
-  
-    margin: 0 auto;
-     
-}
-.tfbankstyle_avatar{
-	float: right;
-	height: 50px;
-	line-height: 50px;
-}
-.tfbankstyle_leaderQuery_leader_nav li {
-    float: left;
-    height: 60px;
-    margin-right: 50px;
-}
-
-
- .tfbankstyle_leaderQuery_leader_nav li:hover a {
-    color: #333;
-}
-
-  .tfbankstyle_leaderQuery_leader_nav li a {
-    color: #6a3800;
-    display: block;
-    text-align: center;
-    padding: 20px 0 12px;
-    font-weight: bold;
-    font-size: 14px;
-}
-.tfbankstyle_leaderQuery_content{
- 
-
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_leader_nav li.tfbankstyle_leaderQuery_active a {
-    color: #ae0a29;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_main {
-     
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container {
-    padding-top: 40px;
-    padding-bottom: 25px;
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container ul li{
-    float: left;
-    width:33%;
-     
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper {
-    padding-left: 20px;
-    
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper table {
-    line-height: 2;
-    margin-top: 5px;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper table a {
-    color: #3f3f3f;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_zuo {
-    background-color: #fff;
-    padding: 15px 20px;
-    width: 56%;
-    height: 155px;
-    float: left;
-    box-shadow: 0px 0px 6px #dfdfdf;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_zhong {
-    background-color: #fff;
-    padding: 15px 20px;
-    width: 960px;
-    height: 155px;
-    float: left;
-    box-shadow:0px 0px 6px #dfdfdf;
-    margin-top:20px;
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_bottom{
-	background-color: #fff;
-    padding: 10px 10px;
-    width: 980px;
-    height: 250px;
-    float: left;
-    box-shadow: 0px 0px 6px #dfdfdf;
-    margin-top:20px;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_you {
-    background-color: #fff;
-    padding: 15px 20px;
-    width: 33%;
-    height: 155px;
-    float: right;
-    box-shadow: 0px 0px 6px #dfdfdf;
-
-}
-.tfbankstyle_leaderQuery_organ_summary{
-	clear:both;
-
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 2.5;
-    position: relative;
-    color: #333;
-}
-.tfbankstyle_leaderQuery_big{
-	font-size: 22px;
-	font-weight: bold;
-	 
-
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title .tfbankstyle_leaderQuery_english {
-    font-size: 12px;
-    color: #999;
-    margin-left: 25px;
-}
- 
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper table a .tfbankstyle_dot{
-    color: #6a3800;
-    font-weight: bold;
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title .tfbankstyle_leaderQuery_more {
-    position: absolute;
-    display: block;
-    width: 17px;
-    height: 17px;
-    top: 12px;
-    right:30px;
-    font-size: 12px;
-    color:#999;
-     
-}
-.tfbankstyle_leaderQuery_date{
-	padding-left:80px;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_title_bg {
-    margin: 40px 0;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_organ_info {
-    width: 332px;
-    padding: 20px;
-    background: #fff;  
-    float: left;   
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_organ_chart {
-    width: 550px;
-    float: right;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_part_wrapper .tfbankstyle_leaderQuery_double_angle_right {
-    margin-right: 13px;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_organ_summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part:first-child {
-    width: 40%;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_organ_summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper {
-    margin-top: 10px;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_organ_summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper p {
-    line-height: 1.9;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary {
-    margin-top: -75px;
-    border:1px solid #333;
-}
-.tfbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container {
-	 box-shadow: 0px 0px 10px #ccc;
-    background: #fff;
-    height: 500px;
-    width: 100%;
-    border:1px solid red;
-}
-
-.tfbankstyle_leaderQuery_content .jnbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part {
-    width: 100%;
-    box-shadow: 0px 0px 10px #ccc;
-    background: #fff;
-    height: 500px;
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper{
-	
-	height:500px;
-}
-.tfbankstyle_leaderQuery_part_wrapper{
-	height:500px;
-}
-.tfbankstyle_leaderQuery_subwrapper{
-	border-top:2px solid gold;
-}
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper ul li {
-    width: 33.33%;
-    float: left;
-}
- 
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_personal-summary .tfbankstyle_leaderQuery_inner-container .tfbankstyle_leaderQuery_part .tfbankstyle_leaderQuery_subwrapper ul li > div {
-    width: 333px;
-    height: 333px;
-    margin: 0 auto;
-}
-
-.tfbankstyle_leaderQuery_content .tfbankstyle_leaderQuery_t_ae0c2a {
-    color: #ae0c2a;
-}
-
-/*END 领导查询专有样式*/
-
-.tfbankstyle_leaderQuery_footer {   
-    height:80px;
-    line-height: 80px;  
-    color: #6a3800;
-    font-size: 12px;   
-    clear:both;
-    margin-top:20px;
-    text-align: center;
-}
-
-/*end 领导查询样式*/
- 
