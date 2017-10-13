@@ -5,20 +5,15 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <title>登录页面</title>
     <!--<link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32">-->
-    <link type="text/css" rel="stylesheet" href="../css/tfbankstyle1.css">
-    <style>
+    <link type="text/css" rel="stylesheet" href="../css/tfbanklogin.css">
 
-    </style>
 </head>
 <body>
 <div class="tfbankstyle-login-page">
     <div class="tfbankstyle-login-bg">
-
         <div class="tfbankstyle-login-box">
             <div class="tfbankstyle-login-left">
-
-
-                <img src="../images/tf-panda_big.png" style="width:300px" alt=""/>
+                <img src="../images/tf-panda_big.png"alt=""/>
             </div>
             <div class="tfbankstyle-login-form-wrapper">
                 <form class="tfbankstyle-login-form" action="" method="post" autocomplete="off">
@@ -26,18 +21,20 @@
                     <h3 class="tfbankstyle_login_title">欢迎登录</h3>
 
                     <div class="tfbankstyle-login-input">
-                        <label for="tfbankstyle-username">用户名</label>
+                        <div class="tfbankstyle-login-input-title">用户名</div>
 
                         <div class="tfbankstyle-login-input-group">
-                            <input type="text" name="username" id="tfbankstyle-username" placeholder="员工名/手机号/公司邮箱">
+                            <label for="tfbankstyle-username">员工名/手机号/公司邮箱</label>
+                            <input type="text" name="username" id="tfbankstyle-username">
                         </div>
                     </div>
 
                     <div class="tfbankstyle-login-input tfbankstyle-login-input-passwd">
-                        <label for="tfbankstyle-password">密码</label><br/>
+                        <div class="tfbankstyle-login-input-title">密码</div>
 
                         <div class="tfbankstyle-login-input-group">
-                            <input type="password" name="password" id="tfbankstyle-password" placeholder="密码"></div>
+                            <label for="tfbankstyle-password">密码</label>
+                            <input type="password" name="password" id="tfbankstyle-password"></div>
                     </div>
                     <div class="tfbankstyle-remember-password-action"><label for="tfbankstyle-remember-password"
                                                                              class="tfbankstyle-remember-password-label"><input
@@ -47,9 +44,11 @@
                         <a href="javascript:void(0);" class="tfbank-login-submit"><img
                                 src="../images/tf_login_btn.png"></a>
                     </div>
-                    <div class="tfbankstyle-login-login-copyright">Copyright © 2017 四川天府银行 版权所有</div>
                 </form>
+                <div class="tfbankstyle-login-login-copyright">Copyright © 2017 四川天府银行 版权所有</div>
+
             </div>
+
         </div>
 
 
@@ -63,7 +62,7 @@
         /**
          * BEGIN 登录页面输入框placeholder处理，兼容IE8
          */
-        $('.tfbankstyle-login-form .tfbankstyle-login-input input').each(function () {
+        $('.tfbankstyle-login-input-group input').each(function () {
 
             if ($(this).val() != "") {
                 $(this).css('background-color', 'white');
@@ -71,12 +70,12 @@
 
             $(this).focus(function () {
                 $(this).css('background-color', 'white');
-            })
-                    .blur(function () {
-                        if ($.trim($(this).val()) == '') {
-                            $(this).css('background-color', 'transparent').val('');
-                        }
-                    });
+            }).blur(function () {
+                if ($.trim($(this).val()) == '') {
+                    $(this).css('background-color', 'transparent').val('');
+                }
+            });
+
         });
         /**
          * END 登录页面输入框placeholder处理，以兼容IE8
