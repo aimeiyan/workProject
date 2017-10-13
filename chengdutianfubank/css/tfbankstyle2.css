@@ -517,6 +517,192 @@
 
 /*end 二级页面样式*/
 
+/*begin 领导查询样式*/
+.tfbankstyle-leader-query-content-container .tfbankstyle_homepage_logo_left {
+    overflow: hidden;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_leader_nav {
+    margin-top: 35px;
+    float: left;
+    margin-left: 50px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_leader_nav li {
+    float: left;
+    font-weight: bold;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_leader_nav li a {
+    color: #6a3800;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper {
+    margin: 0;
+    clear: both;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li {
+    width: 33%;
+    height: 300px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-employee-self-service-container .tfbankstyle-main-wrapper .tfbankstyle-part {
+    border-top: 1px solid #dedede !important;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_ess_content .tfbankstyle-title, .tfbankstyle_leader_middle_wrapper .tfbankstyle-title {
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a img {
+    position: absolute;
+    top: 34px;
+    left: 40px;
+    width: 100%;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-right {
+    padding: 0;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 0 4px 1px #dedede;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle-index-inner-container .tfbankstyle-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.8;
+    position: relative;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle-index-inner-container .tfbankstyle-title .tfbank-title-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: url("../images/cdtf_title_line.png") no-repeat 0 0;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle_leader_middle_subwrapper {
+    padding: 5px 36px 36px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle_leader_middle_subwrapper .tfbankstyle_leaderQuery_big {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle_leader_middle_subwrapper .tfbankstyle_leaderQuery_left_content {
+    width: 300px;
+    float: left;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle_leader_middle_subwrapper .tfbankstyle_leaderQuery_right_content {
+    float: left;
+    width: 550px;
+    margin: 20px 0 0 20px;
+    padding-left: 20px;
+    border-left: 1px solid #f1e0cd;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_charts_list li {
+    width: 33.33%;
+    float: left;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_charts_list li .tfbankstyle_ess_content_wrapper {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 0 4px 1px #dedede;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_charts_list li .tfbankstyle_ess_content_wrapper_last {
+
+    margin-right: 0;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_charts_list li .tfbankstyle_ess_content_wrapper .tfbankstyle-title {
+    text-align: center;
+    line-height: 3;
+    margin-top: 15px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_charts_list li .tfbankstyle_ess_content_wrapper .tfbankstyle_charts_item {
+    padding: 30px;
+    text-align: center;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_charts_list li .tfbankstyle_ess_content_wrapper .tfbankstyle_charts_item img {
+    width: 100%;
+    display: block;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_charts_list_container {
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle-index-inner-container {
+    margin: 0;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-part-left-wrapper {
+    width: 60% !important;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-part-right-wrapper {
+    width: 40% !important;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td .tfbankstyle-item-para-text {
+    width: 90% !important;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container {
+    min-width: 1120px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-index-inner-container {
+    min-width: 100% !important;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper {
+    padding-left: 0 !important;
+}
+
+.tfbankstyle-leader-query-content-container {
+    width: 90%;
+    min-width: 1080px;
+    margin: 0 auto;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_leader_nav li {
+    margin-right: 30px;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_leader_nav li.tfbankstyle_menu_li_last {
+    margin-right: 0;
+}
+
+.tfbankstyle-leader-query-content-container .tfbankstyle-index-logo-img {
+    height: 45px;
+}
+
+/*end 领导查询样式*/
+
 /*begin 1920分辨率的页面样式*/
 
 @media screen and (min-width: 1880px) {
@@ -580,7 +766,6 @@
     }
 
     /*end 首页样式*/
-
     /*begin 员工自助样式*/
     .tfbankstyle-employee-self-service-container .tfbankstyle_employeeSelfService_shortcut li a .tfbankstyle-employee-title {
         font-size: 20px;
@@ -641,7 +826,60 @@
     }
 
     /*end 二级页面样式*/
+    /*begin 领导查询样式*/
+    .tfbankstyle-leader-query-content-container .tfbankstyle-index-logo-img {
+        height: 70px;
+    }
 
+    .tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_leader_nav {
+        font-size: 18px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_leader_nav {
+        margin-top: 48px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right {
+        font-size: 20px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle_homepage_tuichu .tfbankstyle_homepage_tuichu_icon {
+        width: 20px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle_homepage_logo .tfbankstyle_homepage_logo_right .tfbankstyle-user-portrait-wrapper .tfbankstyle-user-portrait-img {
+        width: 41px;
+    }
+
+    .tfbankstyle-leader-query-content-container {
+        min-width: 1250px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title {
+        font-size: 22px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-title .tfbankstyle-title-more {
+        font-size: 14px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle-employee-self-service-container .tfbankstyle-index-content .tfbankstyle-index-inner-container .tfbankstyle-right-main .tfbankstyle-main-wrapper .tfbankstyle-part .tfbankstyle-main-subwrapper table tr td .tfbankstyle-item-para-text {
+        font-size: 18px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle_leader_middle_wrapper .tfbankstyle-index-inner-container .tfbankstyle-title {
+        font-size: 22px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle_leaderQuery_subwrapper {
+        font-size: 18px;
+    }
+
+    .tfbankstyle-leader-query-content-container .tfbankstyle_charts_list li .tfbankstyle_ess_content_wrapper .tfbankstyle-title {
+        font-size: 22px;
+    }
+
+    /*end 领导查询样式*/
 }
 
 /*end 1920分辨率的页面样式*/
